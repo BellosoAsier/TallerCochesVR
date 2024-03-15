@@ -2,7 +2,7 @@
 Hola, mi nombre es [x2] [x3] y recientemente he experimentado algunos inconvenientes con mi automóvil [x4]. Parece que hay un problema con el funcionamiento del coche y estoy buscando asistencia profesional para solucionarlo.
 Buen día, me presento, soy [x2] [x3]. Quería informarles que mi coche, un [x4], ha estado mostrando signos de mal funcionamiento últimamente. Necesitaría su experiencia para diagnosticar y reparar el problema. ¿Tendrías un hueco para la revisión?
 Saludos, aquí [x2] [x3], dueño de un [x4]. Desde hace un tiempo, he notado que mi vehículo no se desempeña como debería, y creo que es hora de llevarlo a su taller para una revisión y posibles reparaciones.
-¡Hola equipo!, soy [x2] [x3] y tengo un problema con mi automóvil, un [x4]. Últimamente, he detectado varios fallos en su rendimiento y me gustaría contar con su ayuda para resolverlos lo antes posible.
+¡Hola equipo!, soy [x2] [x3] y tengo un proBlema con mi automóvil, un [x4]. Últimamente, he detectado varios fallos en su rendimiento y me gustaría contar con su ayuda para resolverlos lo antes posible.
 [x1], mi nombre es [x2] [x3] y soy propietario de un vehículo [x4]. Me gustaría programar una cita en su taller para realizar un chequeo general y mantenimiento preventivo de mi coche.
 Buen día, aquí [x2] [x3], cliente frecuente de su taller. Estoy buscando programar una cita para un servicio de mantenimiento regular para mi coche [x4]. ¿Podrían ayudarme con eso?
 Saludos, mi nombre es [x2] [x3] y conduzco un [x4]. Me gustaría concertar una cita con ustedes para una inspección exhaustiva de mi vehículo y, si es necesario, llevar a cabo cualquier trabajo de reparación o mantenimiento requerido.

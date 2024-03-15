@@ -43,12 +43,15 @@ public class clientOrders : MonoBehaviour
 
     [SerializeField] private List<ClientOrder> listClientOrders;
 
-    private int pointerClients = 0;
+    public int pointerClients = 0;
 
+    [SerializeField] private GameObject initializeMovementArrows;
 
     // Start is called before the first frame update
     void Awake()
     {
+        pointerClients = PlayerPrefs.GetInt("ppap",0);
+        initializeMovementArrows.SetActive(true);
         listaNombresH = fm.ReadTXTFile(t_boyNames);
         listaNombresM = fm.ReadTXTFile(t_girlNames);
         listaApellidos = fm.ReadTXTFile(t_surnames);
@@ -73,6 +76,11 @@ public class clientOrders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        imgAvatar.sprite = listClientOrders[pointerClients].clientImg;
+        textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
+        textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
+        textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
+
         if (Input.GetKeyDown(KeyCode.A))
         {
             if (pointerClients != 4)
@@ -96,6 +104,8 @@ public class clientOrders : MonoBehaviour
                 textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
             }
         }
+
+        PlayerPrefs.SetInt("ppap",pointerClients);
     }
 
     private string ChoosePresentationPhrase(string name, string surname, string phrase)
@@ -128,9 +138,9 @@ public class clientOrders : MonoBehaviour
         newOrder.clientName = (girlOrBoyChance == 0) ? listaNombresM[rnd.Next(0,30)] : listaNombresH[rnd.Next(0, 30)];
         newOrder.clientSurname = listaApellidos[rnd.Next(0, 30)];
         newOrder.clientPresentation = ChoosePresentationPhrase(newOrder.clientName, newOrder.clientSurname, listaPresentaciones[rnd.Next(0,listaPresentaciones.Count)]);
-        newOrder.orderPrice = rnd.Next(1000, 10001);
-        newOrder.orderDuration = rnd.Next(180,481);
-       
+        newOrder.orderPrice = Mathf.RoundToInt(rnd.Next(1000,7001)/250)*250;
+        newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(180, 651) / 25) * 25;
+
         return newOrder;
     }
 
