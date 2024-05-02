@@ -1,0 +1,5 @@
+Color [color] - [p1]
+Color [color] y Cambio - [p2]
+Repostar gasolina
+Recargar bateria
+Reparar y Color [color] - Luces

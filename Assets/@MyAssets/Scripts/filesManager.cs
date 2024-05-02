@@ -18,7 +18,7 @@ public class filesManager : MonoBehaviour
             OrderList = orderList;
         }
     }
-    public List<string> ReadTXTFile(TextAsset file)
+    public List<string> ReadTXTFile(TextAsset file, bool isName)
     {
         string[] data = file.text.Split(new string[] { "\n" }, System.StringSplitOptions.None);
         List<string> newdata = new List<string>();
@@ -30,12 +30,21 @@ public class filesManager : MonoBehaviour
         List<string> listaFinal = new List<string>();
         for (int i = 0; i < newdata.Count; i++)
         {
-            string nameLower = newdata[i].ToLower();
-            if (!string.IsNullOrEmpty(nameLower))
+            if (isName)
             {
-                nameLower = char.ToUpper(nameLower[0]) + nameLower.Substring(1);
+                string nameLower = newdata[i].ToLower();
+                if (!string.IsNullOrEmpty(nameLower))
+                {
+                    nameLower = char.ToUpper(nameLower[0]) + nameLower.Substring(1);
+                }
+                listaFinal.Add(nameLower);
             }
-            listaFinal.Add(nameLower);
+            else
+            {
+                listaFinal.Add(newdata[i]);
+            }
+            
+
         }
         return listaFinal;
     }
@@ -66,6 +75,7 @@ public class filesManager : MonoBehaviour
         else
         {
             Debug.LogWarning("No se encontró el archivo de lista de pedidos.");
+            PlayerPrefs.SetInt("ppap", 0);
             return new List<ClientOrder>();
         }
     }

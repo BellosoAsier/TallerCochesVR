@@ -1,0 +1,9 @@
+Color [color] - Chasis
+Color [color] - Puertas
+Color [color] - Ventanas
+Color [color] y Cambio - Volante
+Color [color] y Cambio - Ruedas
+Color [color] y Cambio - Asientos
+Color [color] y Reparar - Luces
+Repostar gasolina
+Recargar bateria

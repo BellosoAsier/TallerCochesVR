@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Profiling;
 using UnityEngine.UI;
 
 public class clientOrders : MonoBehaviour
@@ -19,6 +20,8 @@ public class clientOrders : MonoBehaviour
     private List<string> listaApellidos = new List<string>();
     [SerializeField] private TextAsset t_presentacionCliente;
     private List<string> listaPresentaciones = new List<string>();
+    //[SerializeField] private TextAsset t_necessaryChanges;
+    //private List<string> listaCambiosNecesarios = new List<string>();
 
     [SerializeField] private List<Sprite> listAvatarsBoys;
     [SerializeField] private List<Sprite> listAvatarsGirls;
@@ -30,32 +33,66 @@ public class clientOrders : MonoBehaviour
     [SerializeField] private TMP_Text textDuration;
     [SerializeField] private TMP_Text textPrice;
 
+    [SerializeField] private List<GameObject> listCarsGameObjects;
+
+    [System.Serializable]
+    public class NecessaryChange
+    {
+        public string name;
+        public List<string> carPart;
+        public string partColor;
+    }
+    [SerializeField] private List<NecessaryChange> listNecessaryChangesCar1;
+    [SerializeField] private List<NecessaryChange> listNecessaryChangesCar2;
+
+    [System.Serializable]
+    public class OrderExtra
+    {
+        public string name;
+        public string statistic;
+        public bool isHigher;
+        public int value;
+    }
+    [SerializeField] private List<OrderExtra> listOrderExtras;
+
     [System.Serializable]
     public class ClientOrder
     {
-        public Sprite clientImg;
+        public GameObject clientCar;
+        public string clientImg;
+        public string clientGender;
         public string clientName;
         public string clientSurname;
         public string clientPresentation;
+        public List<NecessaryChange> clientCarChanges;
+        public List<OrderExtra> clientOrderExtras;
         public int orderPrice;
-        public float orderDuration;
+        public int orderDuration;
     }
 
-    [SerializeField] private List<ClientOrder> listClientOrders;
+    public List<ClientOrder> listClientOrders;
 
+    public ClientOrder currentClientOrder;
     public int pointerClients = 0;
 
     [SerializeField] private GameObject initializeMovementArrows;
+    [SerializeField] private List<string> listNameColors;
+    [SerializeField] private List<string> listNameTints;
+    [SerializeField] private List<string> listNameTypeLight;
+    [SerializeField] private List<TMP_Text> textListNecessaryChanges;
+    [SerializeField] private List<TMP_Text> textListOrderExtras;
+
 
     // Start is called before the first frame update
     void Awake()
     {
         pointerClients = PlayerPrefs.GetInt("ppap",0);
         initializeMovementArrows.SetActive(true);
-        listaNombresH = fm.ReadTXTFile(t_boyNames);
-        listaNombresM = fm.ReadTXTFile(t_girlNames);
-        listaApellidos = fm.ReadTXTFile(t_surnames);
-        listaPresentaciones = fm.ReadTXTFile(t_presentacionCliente);
+        listaNombresH = fm.ReadTXTFile(t_boyNames, true);
+        listaNombresM = fm.ReadTXTFile(t_girlNames, true);
+        listaApellidos = fm.ReadTXTFile(t_surnames, true);
+        listaPresentaciones = fm.ReadTXTFile(t_presentacionCliente, false);
+        //listaCambiosNecesarios = fm.ReadTXTFile(t_necessaryChanges, false);
 
         listClientOrders = fm.LoadOrderListJSON();
 
@@ -63,12 +100,17 @@ public class clientOrders : MonoBehaviour
         {
             listClientOrders.Add(AddNewClientOrder());
         }
-
-        imgAvatar.sprite = listClientOrders[pointerClients].clientImg;
+        string pathAvatar = "Assets/@MyAssets/Avatares/" + listClientOrders[pointerClients].clientGender + "/" + listClientOrders[pointerClients].clientImg + ".png";
+        imgAvatar.sprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(pathAvatar);
         textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
         textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
-        textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
+        textDuration.SetText("Duración: " + secondsToMinutesAndSecondsText(listClientOrders[pointerClients].orderDuration));
 
+        for (int i = 0; i < 4; i++)
+        {
+            textListNecessaryChanges[i].text = "- "+listClientOrders[pointerClients].clientCarChanges[i].name;
+            textListOrderExtras[i].text = listClientOrders[pointerClients].clientOrderExtras[i].name;
+        }
         fm.SaveOrderListJSON(listClientOrders);
 
     }
@@ -76,39 +118,36 @@ public class clientOrders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        imgAvatar.sprite = listClientOrders[pointerClients].clientImg;
+        string pathAvatar = "Assets/@MyAssets/Avatares/" + listClientOrders[pointerClients].clientGender + "/" + listClientOrders[pointerClients].clientImg + ".png";
+        imgAvatar.sprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(pathAvatar);
         textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
         textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
-        textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
+        textDuration.SetText("Duración: " + secondsToMinutesAndSecondsText(listClientOrders[pointerClients].orderDuration));
 
-        if (Input.GetKeyDown(KeyCode.A))
+        for (int i = 0; i < 4; i++)
         {
-            if (pointerClients != 4)
-            {
-                pointerClients++;
-                imgAvatar.sprite = listClientOrders[pointerClients].clientImg;
-                textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
-                textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
-                textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
-            } 
+            textListNecessaryChanges[i].text = "- " + listClientOrders[pointerClients].clientCarChanges[i].name;
+            textListOrderExtras[i].text = listClientOrders[pointerClients].clientOrderExtras[i].name;
         }
 
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            if (pointerClients != 0)
-            {
-                pointerClients--;
-                imgAvatar.sprite = listClientOrders[pointerClients].clientImg;
-                textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
-                textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
-                textDuration.SetText("Duración: " + listClientOrders[pointerClients].orderDuration);
-            }
-        }
-
+        currentClientOrder = listClientOrders[pointerClients];
         PlayerPrefs.SetInt("ppap",pointerClients);
     }
 
-    private string ChoosePresentationPhrase(string name, string surname, string phrase)
+    private void OnApplicationQuit()
+    {
+        fm.SaveOrderListJSON(listClientOrders);
+    }
+
+    private string secondsToMinutesAndSecondsText(int seconds)
+    {
+        int minutos = seconds / 60; // Obtenemos los minutos dividiendo por 60
+        int segundos = seconds % 60; // Obtenemos los segundos restantes con el operador módulo (%)
+
+        return (minutos + " min " + segundos + " s"); 
+    }
+
+    private string choosePresentationPhrase(string name, string surname, string phrase, string car)
     {
         string dayOrAfternoon = (rnd.Next(2) == 0) ? "Buenos días" : "Buenas tardes";
         string newPhrase = phrase;
@@ -122,22 +161,110 @@ public class clientOrders : MonoBehaviour
         newPhrase = newPhrase.Replace("[x1]", dayOrAfternoon);
         newPhrase = newPhrase.Replace("[x2]", nameUpperFirst);
         newPhrase = newPhrase.Replace("[x3]", surnameUpperFirst);
-        newPhrase = newPhrase.Replace("[x4]", "AUDI R8");
+        newPhrase = newPhrase.Replace("[x4]", car);
 
         return newPhrase;
     }
 
-    private ClientOrder AddNewClientOrder()
+    private List<NecessaryChange> chooseNecessaryChanges(List<NecessaryChange> l)
+    {
+        List<NecessaryChange> copyListN = new List<NecessaryChange>();
+        for(int i = 0; i < l.Count; i++)
+        {
+            string chosenColor = listNameColors[rnd.Next(listNameColors.Count)];
+            string chosenTint = listNameTints[rnd.Next(listNameTints.Count)];
+            string chosenTypeLight = listNameTypeLight[rnd.Next(listNameTypeLight.Count)];
+
+            List<string> finalNecessaryChanges = l[i].carPart.OrderBy(item => rnd.Next()).Take(UnityEngine.Random.Range(1, l[i].carPart.Count+1)).ToList();
+
+            string phrase = "[";
+            foreach(string s in finalNecessaryChanges)
+            {
+                phrase += s + ", ";
+            }
+            phrase += "]";
+
+            phrase = phrase.Replace(", ]", "]");
+
+            NecessaryChange nc = new NecessaryChange();
+
+            string nameNecessaryChange = l[i].name;
+
+            if (nameNecessaryChange.Contains("[color]"))
+            {
+                nc.partColor = chosenColor;
+            }
+            else if (nameNecessaryChange.Contains("[tinte]"))
+            {
+                nc.partColor = chosenTint;
+            }
+            else if (nameNecessaryChange.Contains("[tipo_luz]"))
+            {
+                nc.partColor = chosenTypeLight;
+            }
+
+            nameNecessaryChange = nameNecessaryChange.Replace("[color]", chosenColor);
+            nameNecessaryChange = nameNecessaryChange.Replace("[tinte]", chosenTint);
+            nameNecessaryChange = nameNecessaryChange.Replace("[tipo_luz]", chosenTypeLight);
+            nameNecessaryChange = nameNecessaryChange.Replace("[cuales]", phrase);
+            nc.name = nameNecessaryChange;
+
+            List<string> carPartChange = l[i].carPart;
+            nc.carPart = carPartChange;
+
+            nc.carPart = finalNecessaryChanges;
+
+            copyListN.Add(nc);
+        }
+        return copyListN;
+    }
+
+    private List<OrderExtra> chooseOrderExtras(List<OrderExtra> l)
+    {
+        List<OrderExtra> copyListO = new List<OrderExtra>();
+        for (int i = 0; i < l.Count; i++)
+        {
+            int higherOrLower = rnd.Next(2);
+            int value = rnd.Next(10, 101);
+
+            OrderExtra oe = new OrderExtra();
+
+            string nameOrderExtra = l[i].name;
+            nameOrderExtra = nameOrderExtra.Replace("[value]", value + "");
+            nameOrderExtra = nameOrderExtra.Replace("[X]", (higherOrLower == 0) ? ">" : "<");
+            oe.name = nameOrderExtra;
+
+            string statisticOrder = l[i].statistic;
+            oe.statistic = statisticOrder;
+
+            oe.isHigher = (higherOrLower == 0) ? true : false;
+
+            oe.value = value;
+
+            copyListO.Add(oe);
+        }
+        return copyListO;
+    }
+
+    public ClientOrder AddNewClientOrder()
     {
         ClientOrder newOrder = new ClientOrder();
 
         int girlOrBoyChance = rnd.Next(2);
-        bool isBoy = (girlOrBoyChance == 0) ? false : true;
+        int audiOrFordChance = rnd.Next(2);
 
-        newOrder.clientImg = (girlOrBoyChance == 0) ? imgAvatar.sprite = listAvatarsGirls[rnd.Next(0, listAvatarsGirls.Count)] : listAvatarsBoys[rnd.Next(0, listAvatarsBoys.Count)];
+        List<NecessaryChange> finalPersonalListNecCar1 = listNecessaryChangesCar1.OrderBy(item => rnd.Next()).Take(4).ToList();
+        List<NecessaryChange> finalPersonalListNecCar2 = listNecessaryChangesCar2.OrderBy(item => rnd.Next()).Take(4).ToList();
+        List<OrderExtra> finalPersonalExtraList = listOrderExtras.OrderBy(item => rnd.Next()).Take(4).ToList();
+
+        newOrder.clientCar = (audiOrFordChance == 0) ? listCarsGameObjects[0] : listCarsGameObjects[1];
+        newOrder.clientGender = (girlOrBoyChance == 0) ? "Female" : "Male";
+        newOrder.clientImg = (girlOrBoyChance == 0) ? listAvatarsGirls[rnd.Next(0, listAvatarsGirls.Count)].name : listAvatarsBoys[rnd.Next(0, listAvatarsBoys.Count)].name;
         newOrder.clientName = (girlOrBoyChance == 0) ? listaNombresM[rnd.Next(0,30)] : listaNombresH[rnd.Next(0, 30)];
         newOrder.clientSurname = listaApellidos[rnd.Next(0, 30)];
-        newOrder.clientPresentation = ChoosePresentationPhrase(newOrder.clientName, newOrder.clientSurname, listaPresentaciones[rnd.Next(0,listaPresentaciones.Count)]);
+        newOrder.clientPresentation = choosePresentationPhrase(newOrder.clientName, newOrder.clientSurname, listaPresentaciones[rnd.Next(0,listaPresentaciones.Count)], (audiOrFordChance == 0) ? "Audi" : "Ford");
+        newOrder.clientCarChanges = (audiOrFordChance == 0) ? chooseNecessaryChanges(finalPersonalListNecCar1) : chooseNecessaryChanges(finalPersonalListNecCar2);
+        newOrder.clientOrderExtras = chooseOrderExtras(finalPersonalExtraList);
         newOrder.orderPrice = Mathf.RoundToInt(rnd.Next(1000,7001)/250)*250;
         newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(180, 651) / 25) * 25;
 

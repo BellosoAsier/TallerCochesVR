@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class initialwindow : MonoBehaviour
+public class initialWindow : MonoBehaviour
 {
     [SerializeField] private GameObject order;
     [SerializeField] private GameObject purchase;
@@ -15,10 +15,11 @@ public class initialwindow : MonoBehaviour
     }
     public void initialToPurchase()
     {
-
+        purchase.SetActive(true);
+        this.gameObject.SetActive(false);
     }
     public void initialToAssistant()
     {
-
+        //TODO: Implementar el codigo cuando el asistente este hecho.
     }
 }

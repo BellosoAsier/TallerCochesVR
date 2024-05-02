@@ -57,10 +57,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\@MyAssets\Scripts\filesManager.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\initialWindow.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\ObjectQuantity.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\CarScript.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\TMPCurrentTime.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\clientOrders.cs" />
+    <Compile Include="Assets\@MyAssets\AddNewPartTest.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\playerDataSO.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\purchaseScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\initialwindow.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\moveCarOrders.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\carPart.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\carPartStatistics.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\manageCarOrders.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\colorPartStatistic.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\packageScript.cs" />
+    <Compile Include="Assets\@MyAssets\ooop.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\selectItemCatalog.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\@MyAssets\Documentos\saludos-clientes.txt" />
@@ -70,17 +82,22 @@
     <None Include="Assets\@MyAssets\Documentos\surnames-list.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\BrokenVector\LowPolyShaders\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\@MyAssets\Documentos\necessary-changes-car2.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\@MyAssets\Documentos\male-names-list.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\@MyAssets\Documentos\necessary-changes-car1.txt" />
     <None Include="Assets\@MyAssets\Documentos\female-names-list.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
