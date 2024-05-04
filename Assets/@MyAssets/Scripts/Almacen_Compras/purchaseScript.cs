@@ -10,6 +10,8 @@ public class purchaseScript : MonoBehaviour
     [SerializeField] private List<GameObject> totalPurchasableUniqueParts;
     [SerializeField] private GameObject purchasePackage;
 
+    [SerializeField] private gameManagerSO gameDataSO;
+
     [System.Serializable]
     public class PurchaseOrder
     {
@@ -28,7 +30,8 @@ public class purchaseScript : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        totalPurchasableUniqueParts = LoadGameObjectFromFolder("Assets/@MyAssets/Provisional");
+        totalPurchasableUniqueParts = gameDataSO.purchasableUniquePartsGeneralList;
+        //totalPurchasableUniqueParts = LoadGameObjectFromFolder("Assets/@MyAssets/Provisional");
         InitializeDictionary();
     }
 

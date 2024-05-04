@@ -11,9 +11,9 @@ public class ObjectQuantity : MonoBehaviour
     private int result;
     [SerializeField] private purchaseScript ps;
 
-    [SerializeField] private string objectName;
+    [SerializeField] public string objectName;
 
-    [SerializeField] private bool objectActive;
+    [SerializeField] public bool objectActive;
 
     private void Awake()
     {
@@ -21,6 +21,18 @@ public class ObjectQuantity : MonoBehaviour
         if (!objectActive)
         {
             this.gameObject.SetActive(false);
+        }
+    }
+
+    private void Update()
+    {
+        if (!objectActive)
+        {
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            this.gameObject.SetActive(true);
         }
     }
 

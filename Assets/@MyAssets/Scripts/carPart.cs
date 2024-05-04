@@ -12,6 +12,8 @@ public class carPart : MonoBehaviour
     [SerializeField] private bool hasExtraPart;
     [SerializeField] private colorPartStatistic tintOrLight_ps;
 
+    [SerializeField] private GameObject carManager;
+
     public int ownEcoValue;
     public int ownVelocityValue;
     public int ownManejoValue;
@@ -21,6 +23,7 @@ public class carPart : MonoBehaviour
 
     private void Awake()
     {
+        carManager = GameObject.Find("CarManager");
         addColorLightAndTintStatistics();
     }
     
@@ -38,25 +41,21 @@ public class carPart : MonoBehaviour
             case "SideWindow":
             case "RearWindow":
                 Material material = GetComponent<Renderer>().material;
-                string nameMaterial = material.name.Replace(" (Instance)", "");
-                string path = "Assets/@MyAssets/ScriptableObjects/Color Parts/TintsAndLights/" + nameMaterial + ".asset";
-                color_ps = UnityEditor.AssetDatabase.LoadAssetAtPath<colorPartStatistic>(path);
+                color_ps = selectColorPartStatistic(material);
                 break;
             default:
                 for (int i = 0; i < GetComponent<Renderer>().materials.Length; i++)
                 {
                     Material material2 = GetComponent<Renderer>().materials[i];
-                    string nameMaterial2 = material2.name.Replace(" (Instance)", "");
 
                     if (i == 0)
                     {
-                        string path3 = "Assets/@MyAssets/ScriptableObjects/Color Parts/" + nameMaterial2 + "_Color.asset";
-                        color_ps = UnityEditor.AssetDatabase.LoadAssetAtPath<colorPartStatistic>(path3);
+                        color_ps = selectColorPartStatistic(material2);
                     }
-                    if (i == 1)
+
+                    else if (i == 1)
                     {
-                        string path5 = "Assets/@MyAssets/ScriptableObjects/Color Parts/TintsAndLights/" + nameMaterial2 + ".asset";
-                        tintOrLight_ps = UnityEditor.AssetDatabase.LoadAssetAtPath<colorPartStatistic>(path5);
+                        tintOrLight_ps = selectColorPartStatistic(material2);
                     }
                 }
                 break;
@@ -83,5 +82,21 @@ public class carPart : MonoBehaviour
             ownQualityValue = car_ps.qualityValue + color_ps.extraQualityValue;
             ownBeautyValue = car_ps.beautyValue + color_ps.extraBeautyValue;
         }
+    }
+
+    private colorPartStatistic selectColorPartStatistic(Material material)
+    {
+        colorPartStatistic cps = ScriptableObject.CreateInstance<colorPartStatistic>();
+        string nameMaterial = material.name.Replace(" (Instance)", "");
+
+        foreach (ScriptableObject so in carManager.GetComponent<carManager>().colorPartStatisticGeneralList)
+        {
+            if (so.name.Contains(nameMaterial))
+            {
+                cps = (colorPartStatistic) so;
+                break;
+            }
+        }
+        return cps;
     }
 }

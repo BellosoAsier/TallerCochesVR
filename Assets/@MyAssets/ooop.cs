@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class ooop : MonoBehaviour
 {
-    public void jji()
+    public ScriptableObject myScriptableObject;
+
+    void Start()
     {
-        GameObject objetoActual = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
-
-        Debug.Log(objetoActual.name);
-
+        string path = AssetDatabase.GetAssetPath(myScriptableObject);
+        Debug.Log("Ruta del Scriptable Object: " + path);
     }
 }
