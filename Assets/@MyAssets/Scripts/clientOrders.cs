@@ -94,6 +94,11 @@ public class clientOrders : MonoBehaviour
         listaPresentaciones = fm.ReadTXTFile(t_presentacionCliente, false);
         //listaCambiosNecesarios = fm.ReadTXTFile(t_necessaryChanges, false);
 
+        foreach (ClientOrder co in fm.LoadOrderListJSON())
+        {
+            Debug.Log(co.clientCar);
+        }
+
         listClientOrders = fm.LoadOrderListJSON();
 
         while (listClientOrders.Count < 5)
@@ -111,7 +116,7 @@ public class clientOrders : MonoBehaviour
             textListNecessaryChanges[i].text = "- "+listClientOrders[pointerClients].clientCarChanges[i].name;
             textListOrderExtras[i].text = listClientOrders[pointerClients].clientOrderExtras[i].name;
         }
-        fm.SaveOrderListJSON(listClientOrders);
+        //fm.SaveOrderListJSON(listClientOrders);
 
     }
 

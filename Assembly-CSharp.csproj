@@ -64,17 +64,17 @@
     <Compile Include="Assets\@MyAssets\Scripts\TMPCurrentTime.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\selectItemCatalog.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\clientOrders.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\gameManagerSO.cs" />
     <Compile Include="Assets\@MyAssets\AddNewPartTest.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\playerDataSO.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\purchaseScript.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\carManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\carPart.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\carPartStatistics.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\manageCarOrders.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\colorPartStatistic.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\packageScript.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\carManager.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\gameManagerSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\@MyAssets\Documentos\saludos-clientes.txt" />

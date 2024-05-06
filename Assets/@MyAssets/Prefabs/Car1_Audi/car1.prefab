@@ -100,6 +100,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 604ba52766814424aa57b729896eb2d3, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -207,6 +208,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 604ba52766814424aa57b729896eb2d3, type: 2}
   hasExtraPart: 1
   tintOrLight_ps: {fileID: 11400000, guid: 124139490fe05304ebb261f0c8c2cbc0, type: 2}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -314,6 +316,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 604ba52766814424aa57b729896eb2d3, type: 2}
   hasExtraPart: 1
   tintOrLight_ps: {fileID: 11400000, guid: 124139490fe05304ebb261f0c8c2cbc0, type: 2}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -484,6 +487,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 124139490fe05304ebb261f0c8c2cbc0, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -590,6 +594,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 4a1b315cdeaaa0f44b0cd750580f6795, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -760,6 +765,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: d8d144952cbf8fd42b0293d4cf84f1bd, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -930,6 +936,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: d8d144952cbf8fd42b0293d4cf84f1bd, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -1098,6 +1105,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: d8d144952cbf8fd42b0293d4cf84f1bd, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -1204,6 +1212,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 124139490fe05304ebb261f0c8c2cbc0, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -1311,6 +1320,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 604ba52766814424aa57b729896eb2d3, type: 2}
   hasExtraPart: 1
   tintOrLight_ps: {fileID: 11400000, guid: c1c8fc2f6ec71f14c9b02fe9105f743f, type: 2}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -1481,6 +1491,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: d8d144952cbf8fd42b0293d4cf84f1bd, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0
@@ -1619,6 +1630,7 @@ MonoBehaviour:
   color_ps: {fileID: 11400000, guid: 124139490fe05304ebb261f0c8c2cbc0, type: 2}
   hasExtraPart: 0
   tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 11400000, guid: fee0ee8c99eeb6d47a64fff2eaa19621, type: 2}
   ownEcoValue: 0
   ownVelocityValue: 0
   ownManejoValue: 0

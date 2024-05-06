@@ -12,7 +12,7 @@ public class carPart : MonoBehaviour
     [SerializeField] private bool hasExtraPart;
     [SerializeField] private colorPartStatistic tintOrLight_ps;
 
-    [SerializeField] private GameObject carManager;
+    [SerializeField] private gameManagerSO gameDataSO;
 
     public int ownEcoValue;
     public int ownVelocityValue;
@@ -23,7 +23,6 @@ public class carPart : MonoBehaviour
 
     private void Awake()
     {
-        carManager = GameObject.Find("CarManager");
         addColorLightAndTintStatistics();
     }
     
@@ -89,7 +88,7 @@ public class carPart : MonoBehaviour
         colorPartStatistic cps = ScriptableObject.CreateInstance<colorPartStatistic>();
         string nameMaterial = material.name.Replace(" (Instance)", "");
 
-        foreach (ScriptableObject so in carManager.GetComponent<carManager>().colorPartStatisticGeneralList)
+        foreach (ScriptableObject so in gameDataSO.colorPartStatisticGeneralList)
         {
             if (so.name.Contains(nameMaterial))
             {
