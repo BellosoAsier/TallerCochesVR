@@ -15,6 +15,7 @@ public class manageCarOrders : MonoBehaviour
     [SerializeField] private GameObject buttonAccept;
     [SerializeField] private GameObject buttonReject;
     [SerializeField] private GameObject buttonCancelar;
+    [SerializeField] private GameObject buttonComplete;
 
     private clientOrders.ClientOrder cco;
     public List<Material> m1;
@@ -26,16 +27,22 @@ public class manageCarOrders : MonoBehaviour
     [SerializeField] private playerDataSO playerDataSO;
     private GameObject carObject;
 
-    [SerializeField] private List<List<GameObject>> listaObjetosPreviosACambio = new List<List<GameObject>>(4);
+    [SerializeField] private List<List<string>> listaObjetosPreviosACambio = new List<List<string>>(4);
 
-    [SerializeField] private List<TMP_Text> listaNecesariChanges;
+    [SerializeField] private List<TMP_Text> listaTextsNecessaryChanges;
+    [SerializeField] private List<TMP_Text> listaTextsExtraChanges;
 
-    private bool orderAccepterdBool;
+    [SerializeField] private int extraMoneyPerExtraChange;
+
+    private bool orderAccepterdBool = false;
+    private float tiempoInicio;
+
     private void Awake()
     {
+        
         cco = repairOrderWindow.GetComponent<clientOrders>().currentClientOrder;
 
-        for (int i = 0; i < 4; i++) listaObjetosPreviosACambio.Add(new List<GameObject>());
+        for (int i = 0; i < 4; i++) listaObjetosPreviosACambio.Add(new List<string>());
 
         if (repairOrderWindow.GetComponent<clientOrders>().pointerClients == 0)
         {
@@ -54,6 +61,7 @@ public class manageCarOrders : MonoBehaviour
         if (orderAccepterdBool)
         {
             checkCorrectChangesMade();
+            checkExtraChangesCorrect();
         }
     }
 
@@ -90,8 +98,57 @@ public class manageCarOrders : MonoBehaviour
         }
     }
 
+    public void completeTask()
+    {
+        bool everythingOK = true;
+
+        StopCoroutine(mainCoroutine);
+
+        buttonCancelar.SetActive(false);
+        buttonComplete.SetActive(false);
+        l.SetActive(leftWasActive);
+        r.SetActive(rightWasActive);
+        buttonAccept.SetActive(true);
+        buttonReject.SetActive(true);
+        orderAccepterdBool = false;
+
+        float tiempoTranscurrido = Time.time - tiempoInicio;
+
+        foreach (TMP_Text tmpt in listaTextsNecessaryChanges)
+        {
+            if (tmpt.color == Color.green)
+            {
+                tmpt.color = Color.white;
+            }
+            else
+            {
+                everythingOK = !everythingOK;
+            }
+
+        }
+        int multi = 0;
+        foreach (TMP_Text tmpt in listaTextsExtraChanges)
+        {
+            if (tmpt.color == Color.green)
+            {
+                multi++;
+            }
+            tmpt.color = Color.white;
+        }
+
+        if (everythingOK)
+        {
+            playerDataSO.completedOrders++;
+            playerDataSO.currentMoney += (cco.orderPrice + (extraMoneyPerExtraChange*multi));
+            playerDataSO.avgTimePerOrder = (playerDataSO.avgTimePerOrder + tiempoTranscurrido) / playerDataSO.completedOrders;
+        }
+
+        eliminateAndAddNewOrder();
+    }
+
     public void acceptOrder()
     {
+        tiempoInicio = Time.time;
         carObject = Instantiate(cco.clientCar);
         carObject.name = carObject.name.Replace("(Clone)", "");
         carObject.transform.position = new Vector3(16.1690006f, 0, -10.4090004f);
@@ -108,18 +165,16 @@ public class manageCarOrders : MonoBehaviour
                         GameObject hijoTransform = carObject.transform.GetChild(i).GetChild(0).gameObject;
                         if (hijoTransform.name.StartsWith(s))
                         {
-                            listaObjetosPreviosACambio[counter].Add(hijoTransform);
+                            listaObjetosPreviosACambio[counter].Add(hijoTransform.name);
                             //Debug.Log(hijoTransform);
                         }
                     }
                 }
-
             }
             counter++;
         }
-
-        mainCoroutine = StartCoroutine(lockCarOrders(5f));
         orderAccepterdBool = true;
+        mainCoroutine = StartCoroutine(lockCarOrders(cco.orderDuration));
     }
 
     public void rejectOrder()
@@ -135,12 +190,18 @@ public class manageCarOrders : MonoBehaviour
             StopCoroutine(mainCoroutine);
             eliminateAndAddNewOrder();
             buttonCancelar.SetActive(false);
+            buttonComplete.SetActive(false);
             buttonAccept.SetActive(true);
             buttonReject.SetActive(true);
             l.SetActive(leftWasActive);
             r.SetActive(rightWasActive);
-            playerDataSO.canceledOrders++;
-            Debug.Log("Espera cancelada.");
+            playerDataSO.cancelledOrders++;
+            orderAccepterdBool = false;
+            foreach (TMP_Text i in listaTextsNecessaryChanges)
+            {
+                i.color = Color.white;
+            }
+            //Debug.Log("Espera cancelada.");
         }
     }
 
@@ -153,21 +214,11 @@ public class manageCarOrders : MonoBehaviour
         buttonAccept.SetActive(false);
         buttonReject.SetActive(false);
         buttonCancelar.SetActive(true);
+        buttonComplete.SetActive(true);
 
         yield return new WaitForSeconds(time);
 
-        eliminateAndAddNewOrder();
-        buttonCancelar.SetActive(false);
-        l.SetActive(leftWasActive);
-        r.SetActive(rightWasActive);
-        buttonAccept.SetActive(true);
-        buttonReject.SetActive(true);
-        orderAccepterdBool = false;
-
-        foreach(TMP_Text i in listaNecesariChanges)
-        {
-            i.color = Color.white;
-        }
+        completeTask();
     }
 
     private void eliminateAndAddNewOrder()
@@ -193,31 +244,32 @@ public class manageCarOrders : MonoBehaviour
                         {
                             // Inicio del bloque para el bucle foreach interno
                             {
-                                foreach (GameObject l in listaObjetosPreviosACambio[contador])
+                                foreach (string l in listaObjetosPreviosACambio[contador])
                                 {
-                                    if (!l.name.StartsWith(s))
+                                    if (!l.StartsWith(s))
                                     {
                                         // No se hace nada.
                                     }
-                                    else if (l.name.StartsWith(s) && hijoTransform.name != l.name)
+                                    else if (l.StartsWith(s) && hijoTransform.name != l)
                                     {
                                         if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                         {
                                             //BIEN - text[contador] = Color.Green;
-                                            listaNecesariChanges[contador].color = Color.green;
+                                            listaTextsNecessaryChanges[contador].color = Color.green;
                                             break;
                                         }
                                         else
                                         {
                                             //MAL - text[contador] = Color.Red;
-                                            listaNecesariChanges[contador].color = Color.red;
+                                            listaTextsNecessaryChanges[contador].color = Color.red;
                                             break;
                                         }
+                                        
                                     }
-                                    else if(l.name.StartsWith(s) && hijoTransform.name == l.name)
+                                    else if(l.StartsWith(s) && hijoTransform.name == l)
                                     {
                                         //MAL - text[contador] = Color.Red;
-                                        listaNecesariChanges[contador].color = Color.red;
+                                        listaTextsNecessaryChanges[contador].color = Color.red;
                                         break;
                                     }
                                 }
@@ -242,19 +294,19 @@ public class manageCarOrders : MonoBehaviour
                                 if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaNecesariChanges[contador].color = Color.green;
+                                    listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else if (hijoTransform.GetComponent<Renderer>().materials[1].name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaNecesariChanges[contador].color = Color.green;
+                                    listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else
                                 {
                                     //MAL - text[contador] = Color.Red;
-                                    listaNecesariChanges[contador].color = Color.red;
+                                    listaTextsNecessaryChanges[contador].color = Color.red;
                                     break;
                                 }
                             }
@@ -263,13 +315,13 @@ public class manageCarOrders : MonoBehaviour
                                 if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaNecesariChanges[contador].color = Color.green;
+                                    listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else
                                 {
                                     //MAL - text[contador] = Color.Red;
-                                    listaNecesariChanges[contador].color = Color.red;
+                                    listaTextsNecessaryChanges[contador].color = Color.red;
                                     break;
                                 }
                             }
@@ -290,13 +342,13 @@ public class manageCarOrders : MonoBehaviour
                             if (hijoTransform.GetComponent<Renderer>().materials[1].name.Contains(cnc.partColor))
                             {
                                 //BIEN - text[contador] = Color.Green;
-                                listaNecesariChanges[contador].color = Color.green;
+                                listaTextsNecessaryChanges[contador].color = Color.green;
                                 break;
                             }
                             else
                             {
                                 //MAL - text[contador] = Color.Red;
-                                listaNecesariChanges[contador].color = Color.red;
+                                listaTextsNecessaryChanges[contador].color = Color.red;
                                 break;
                             }
                         }
@@ -315,22 +367,69 @@ public class manageCarOrders : MonoBehaviour
                             if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                             {
                                 //BIEN - text[contador] = Color.Green;
-                                listaNecesariChanges[contador].color = Color.green;
+                                listaTextsNecessaryChanges[contador].color = Color.green;
                                 break;
                             }
                             else
                             {
                                 //MAL - text[contador] = Color.Red;
-                                listaNecesariChanges[contador].color = Color.red;
+                                listaTextsNecessaryChanges[contador].color = Color.red;
                                 break;
                             }
                         }
                     }
                 }
             }
+            contador++;
+        }
+    }
 
-
-
+    private void checkExtraChangesCorrect()
+    {
+        int contador = 0;
+        foreach (clientOrders.OrderExtra cooe in cco.clientOrderExtras)
+        {
+            Color color = Color.red;
+            switch (cooe.statistic)
+            {
+                case "EcoValue":
+                    if (((carObject.GetComponent<CarScript>().CarEcoValue > cooe.value) && cooe.isHigher ) || ((carObject.GetComponent<CarScript>().CarEcoValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+                case "Velocity":
+                    if (((carObject.GetComponent<CarScript>().CarVelocityValue > cooe.value) && cooe.isHigher) || ((carObject.GetComponent<CarScript>().CarVelocityValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+                case "Manejo":
+                    if (((carObject.GetComponent<CarScript>().CarManejoValue > cooe.value) && cooe.isHigher) || ((carObject.GetComponent<CarScript>().CarManejoValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+                case "Weight":
+                    if (((carObject.GetComponent<CarScript>().CarWeightValue > cooe.value) && cooe.isHigher) || ((carObject.GetComponent<CarScript>().CarWeightValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+                case "Quality":
+                    if (((carObject.GetComponent<CarScript>().CarQualityValue > cooe.value) && cooe.isHigher) || ((carObject.GetComponent<CarScript>().CarQualityValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+                case "Beauty":
+                    if (((carObject.GetComponent<CarScript>().CarBeautyValue > cooe.value) && cooe.isHigher) || ((carObject.GetComponent<CarScript>().CarBeautyValue < cooe.value) && !cooe.isHigher))
+                    {
+                        color = Color.green;
+                    }
+                    break;
+            }
+            listaTextsExtraChanges[contador].color = color;
             contador++;
         }
     }
@@ -430,13 +529,13 @@ public class manageCarOrders : MonoBehaviour
                             nuevosMateriales[1] = m3[rand3];
                             hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials = nuevosMateriales;
                         }
-                        else if (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials.Length <= 1 && (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material.name.Contains(nc.partColor)))
+                        else if (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials.Length == 1 && (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material.name.Contains(nc.partColor)))
                         {
                             do
                             {
                                 rand3 = rnd.Next(m3.Count);
-                            } while (rand3 == rand2);
-                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + m3[rand2] + ", to:" + m3[rand3]);
+                            } while (rand3 == rand1);
+                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + m3[rand1] + ", to:" + m3[rand3]);
                             hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = m3[rand3];
                         }
                         else

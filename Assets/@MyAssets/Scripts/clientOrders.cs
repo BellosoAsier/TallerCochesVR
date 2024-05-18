@@ -23,8 +23,9 @@ public class clientOrders : MonoBehaviour
     //[SerializeField] private TextAsset t_necessaryChanges;
     //private List<string> listaCambiosNecesarios = new List<string>();
 
-    [SerializeField] private List<Sprite> listAvatarsBoys;
-    [SerializeField] private List<Sprite> listAvatarsGirls;
+    [SerializeField] private gameManagerSO gameDataSO;
+    //[SerializeField] private List<Sprite> listAvatarsBoys;
+    //[SerializeField] private List<Sprite> listAvatarsGirls;
 
     [SerializeField] private filesManager fm;
 
@@ -92,7 +93,6 @@ public class clientOrders : MonoBehaviour
         listaNombresM = fm.ReadTXTFile(t_girlNames, true);
         listaApellidos = fm.ReadTXTFile(t_surnames, true);
         listaPresentaciones = fm.ReadTXTFile(t_presentacionCliente, false);
-        //listaCambiosNecesarios = fm.ReadTXTFile(t_necessaryChanges, false);
 
         foreach (ClientOrder co in fm.LoadOrderListJSON())
         {
@@ -105,8 +105,28 @@ public class clientOrders : MonoBehaviour
         {
             listClientOrders.Add(AddNewClientOrder());
         }
-        string pathAvatar = "Assets/@MyAssets/Avatares/" + listClientOrders[pointerClients].clientGender + "/" + listClientOrders[pointerClients].clientImg + ".png";
-        imgAvatar.sprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(pathAvatar);
+
+        if (listClientOrders[pointerClients].clientGender.Equals("Female"))
+        {
+            foreach (Sprite s in gameDataSO.femaleAvatarImagesGeneralList)
+            {
+                if (s.name == listClientOrders[pointerClients].clientImg)
+                {
+                    imgAvatar.sprite = s;
+                }
+            }
+        }
+        else
+        {
+            foreach (Sprite s in gameDataSO.maleAvatarImagesGeneralList)
+            {
+                if (s.name == listClientOrders[pointerClients].clientImg)
+                {
+                    imgAvatar.sprite = s;
+                }
+            }
+        }
+        
         textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
         textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
         textDuration.SetText("Duración: " + secondsToMinutesAndSecondsText(listClientOrders[pointerClients].orderDuration));
@@ -123,8 +143,26 @@ public class clientOrders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string pathAvatar = "Assets/@MyAssets/Avatares/" + listClientOrders[pointerClients].clientGender + "/" + listClientOrders[pointerClients].clientImg + ".png";
-        imgAvatar.sprite = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(pathAvatar);
+        if (listClientOrders[pointerClients].clientGender.Equals("Female"))
+        {
+            foreach (Sprite s in gameDataSO.femaleAvatarImagesGeneralList)
+            {
+                if (s.name == listClientOrders[pointerClients].clientImg)
+                {
+                    imgAvatar.sprite = s;
+                }
+            }
+        }
+        else
+        {
+            foreach (Sprite s in gameDataSO.maleAvatarImagesGeneralList)
+            {
+                if (s.name == listClientOrders[pointerClients].clientImg)
+                {
+                    imgAvatar.sprite = s;
+                }
+            }
+        }
         textPresentacion.SetText(listClientOrders[pointerClients].clientPresentation);
         textPrice.SetText("Precio: " + listClientOrders[pointerClients].orderPrice);
         textDuration.SetText("Duración: " + secondsToMinutesAndSecondsText(listClientOrders[pointerClients].orderDuration));
@@ -230,7 +268,7 @@ public class clientOrders : MonoBehaviour
         for (int i = 0; i < l.Count; i++)
         {
             int higherOrLower = rnd.Next(2);
-            int value = rnd.Next(10, 101);
+            int value = rnd.Next(180, 280);
 
             OrderExtra oe = new OrderExtra();
 
@@ -264,7 +302,7 @@ public class clientOrders : MonoBehaviour
 
         newOrder.clientCar = (audiOrFordChance == 0) ? listCarsGameObjects[0] : listCarsGameObjects[1];
         newOrder.clientGender = (girlOrBoyChance == 0) ? "Female" : "Male";
-        newOrder.clientImg = (girlOrBoyChance == 0) ? listAvatarsGirls[rnd.Next(0, listAvatarsGirls.Count)].name : listAvatarsBoys[rnd.Next(0, listAvatarsBoys.Count)].name;
+        newOrder.clientImg = (girlOrBoyChance == 0) ? gameDataSO.femaleAvatarImagesGeneralList[rnd.Next(0, gameDataSO.femaleAvatarImagesGeneralList.Count)].name : gameDataSO.maleAvatarImagesGeneralList[rnd.Next(0, gameDataSO.maleAvatarImagesGeneralList.Count)].name;
         newOrder.clientName = (girlOrBoyChance == 0) ? listaNombresM[rnd.Next(0,30)] : listaNombresH[rnd.Next(0, 30)];
         newOrder.clientSurname = listaApellidos[rnd.Next(0, 30)];
         newOrder.clientPresentation = choosePresentationPhrase(newOrder.clientName, newOrder.clientSurname, listaPresentaciones[rnd.Next(0,listaPresentaciones.Count)], (audiOrFordChance == 0) ? "Audi" : "Ford");

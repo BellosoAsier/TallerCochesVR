@@ -9,6 +9,6 @@ public class playerDataSO : ScriptableObject
     [SerializeField] public int currentMoney;
     [SerializeField] public int completedOrders;
     [SerializeField] public int rejectedOrders;
-    [SerializeField] public int canceledOrders;
-    [SerializeField] public int avgTimePerOrder;
+    [SerializeField] public int cancelledOrders;
+    [SerializeField] public float avgTimePerOrder;
 }

@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class ooop : MonoBehaviour
 {
-    public ScriptableObject myScriptableObject;
-
+    [SerializeField] private GameObject instanceIdABuscar;
     void Start()
     {
-        string path = AssetDatabase.GetAssetPath(myScriptableObject);
-        Debug.Log("Ruta del Scriptable Object: " + path);
+        
+        Debug.Log(instanceIdABuscar.GetInstanceID());
     }
 }

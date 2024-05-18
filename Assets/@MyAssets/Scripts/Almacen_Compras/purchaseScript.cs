@@ -40,28 +40,28 @@ public class purchaseScript : MonoBehaviour
     {
     }
 
-    public List<GameObject> LoadGameObjectFromFolder(string folderPath)
-    {
-        List<GameObject> gameObjects = new List<GameObject>();
+    //public List<GameObject> LoadGameObjectFromFolder(string folderPath)
+    //{
+    //    List<GameObject> gameObjects = new List<GameObject>();
 
-        // Obtener todos los paths de archivos en el directorio
-        string[] filePaths = AssetDatabase.FindAssets("", new[] { folderPath });
+    //    // Obtener todos los paths de archivos en el directorio
+    //    string[] filePaths = AssetDatabase.FindAssets("", new[] { folderPath });
 
-        foreach (var filePath in filePaths)
-        {
-            // Convertir el path a una ruta relativa y cargar el GameObject
-            string assetPath = AssetDatabase.GUIDToAssetPath(filePath);
-            GameObject obj = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
+    //    foreach (var filePath in filePaths)
+    //    {
+    //        // Convertir el path a una ruta relativa y cargar el GameObject
+    //        string assetPath = AssetDatabase.GUIDToAssetPath(filePath);
+    //        GameObject obj = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
 
-            // Si el objeto cargado no es nulo, agregarlo a la lista
-            if (obj != null)
-            {
-                gameObjects.Add(obj);
-            }
-        }
+    //        // Si el objeto cargado no es nulo, agregarlo a la lista
+    //        if (obj != null)
+    //        {
+    //            gameObjects.Add(obj);
+    //        }
+    //    }
 
-        return gameObjects;
-    }
+    //    return gameObjects;
+    //}
     private void InitializeDictionary()
     {
         // Itera sobre la lista de GameObjects
