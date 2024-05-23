@@ -8,6 +8,8 @@ public class selectItemCatalog : MonoBehaviour
     [SerializeField] private List<GameObject> listaSlotsPurchase;
     [SerializeField] private List<List<GameObject>> listaCatalogo;
 
+    public static GameObject objetoActual;
+
     [System.Serializable]
     public class KeyValueEntry
     {
@@ -72,7 +74,6 @@ public class selectItemCatalog : MonoBehaviour
 
     public void selectCatalogItemtype()
     {
-        GameObject objetoActual = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
         listaCatalogo = new List<List<GameObject>>();
         foreach (GameObject go in listaSlotsPurchase)
         {

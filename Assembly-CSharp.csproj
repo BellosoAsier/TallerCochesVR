@@ -65,6 +65,7 @@
     <Compile Include="Assets\@MyAssets\Scripts\gameManagerScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\gameManagerSO.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\playerDataSO.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\catalogTypeIndicator.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\carManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\carPart.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\carPartStatistics.cs" />

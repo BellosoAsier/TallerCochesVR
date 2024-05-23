@@ -22,4 +22,11 @@ public class initialWindow : MonoBehaviour
     {
         //TODO: Implementar el codigo cuando el asistente este hecho.
     }
+    public void returnToHome()
+    {
+        order.SetActive(false);
+        purchase.SetActive(false);
+        //assistant.SetActive(false);
+        this.gameObject.SetActive(true);
+    }
 }

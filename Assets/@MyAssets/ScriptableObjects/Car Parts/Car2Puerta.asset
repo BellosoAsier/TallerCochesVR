@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Car2Puerta
   m_EditorClassIdentifier: 
   carPart: 3
+  moneyValue: 900
   ecoValue: 5
   velocityValue: 5
   manejoValue: 10

@@ -8,6 +8,8 @@ public enum CarPartEnum {Rueda, Volante, Chasis, Puerta, Ventana, Asiento, Luces
 public class carPartStatistics : ScriptableObject
 {
     [SerializeField] public CarPartEnum carPart;
+    [SerializeField] public int moneyValue;
+
     [SerializeField] public int ecoValue;
     [SerializeField] public int velocityValue;
     [SerializeField] public int manejoValue;

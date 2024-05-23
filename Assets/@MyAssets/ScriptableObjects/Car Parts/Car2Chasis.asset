@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Car2Chasis
   m_EditorClassIdentifier: 
   carPart: 2
+  moneyValue: 50
   ecoValue: 40
   velocityValue: 10
   manejoValue: 40

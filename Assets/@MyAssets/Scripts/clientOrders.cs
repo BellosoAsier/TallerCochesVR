@@ -309,7 +309,7 @@ public class clientOrders : MonoBehaviour
         newOrder.clientCarChanges = (audiOrFordChance == 0) ? chooseNecessaryChanges(finalPersonalListNecCar1) : chooseNecessaryChanges(finalPersonalListNecCar2);
         newOrder.clientOrderExtras = chooseOrderExtras(finalPersonalExtraList);
         newOrder.orderPrice = Mathf.RoundToInt(rnd.Next(1000,7001)/250)*250;
-        newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(180, 651) / 25) * 25;
+        newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(20, 120) / 25) * 25;
 
         return newOrder;
     }

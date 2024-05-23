@@ -32,10 +32,14 @@ public class manageCarOrders : MonoBehaviour
     [SerializeField] private List<TMP_Text> listaTextsNecessaryChanges;
     [SerializeField] private List<TMP_Text> listaTextsExtraChanges;
 
+    [SerializeField] private List<TMP_Text> listaTextsContadores;
+
     [SerializeField] private int extraMoneyPerExtraChange;
 
     private bool orderAccepterdBool = false;
     private float tiempoInicio;
+
+    [SerializeField] private GameObject carPlacement;
 
     private void Awake()
     {
@@ -151,7 +155,7 @@ public class manageCarOrders : MonoBehaviour
         tiempoInicio = Time.time;
         carObject = Instantiate(cco.clientCar);
         carObject.name = carObject.name.Replace("(Clone)", "");
-        carObject.transform.position = new Vector3(16.1690006f, 0, -10.4090004f);
+        carObject.transform.position = carPlacement.transform.position + new Vector3(0f, 0.14f, 0f);
         customizeOrderCar(carObject);
         int counter = 0;
         foreach (clientOrders.NecessaryChange cnc in cco.clientCarChanges)
@@ -213,12 +217,42 @@ public class manageCarOrders : MonoBehaviour
         r.SetActive(false);
         buttonAccept.SetActive(false);
         buttonReject.SetActive(false);
+
+        yield return new WaitForSeconds(3f);
         buttonCancelar.SetActive(true);
         buttonComplete.SetActive(true);
 
-        yield return new WaitForSeconds(time);
+        float timeRemaining = time;
+
+        while (timeRemaining > 0)
+        {
+            // Decrementa el tiempo restante
+            timeRemaining -= Time.deltaTime;
+            // Asegura que el tiempo restante no sea negativo
+            if (timeRemaining < 0)
+            {
+                timeRemaining = 0;
+            }
+            // Actualiza el texto del TMP_Text
+            UpdateTimerText(timeRemaining);
+            yield return null;
+            
+        }
 
         completeTask();
+    }
+
+    private void UpdateTimerText(float timeRemaining)
+    {
+        // Convierte el tiempo restante a minutos y segundos
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+
+        // Actualiza el texto del TMP_Text con el formato MM:SS
+        foreach (TMP_Text ttp in listaTextsContadores)
+        {
+            ttp.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
     }
 
     private void eliminateAndAddNewOrder()

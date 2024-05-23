@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Car2Rueda
   m_EditorClassIdentifier: 
   carPart: 0
+  moneyValue: 500
   ecoValue: 22
   velocityValue: 22
   manejoValue: 15
