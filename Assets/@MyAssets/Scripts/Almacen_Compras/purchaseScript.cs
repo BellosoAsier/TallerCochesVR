@@ -9,6 +9,7 @@ public class purchaseScript : MonoBehaviour
 {
     [SerializeField] private List<GameObject> totalPurchasableUniqueParts;
     [SerializeField] private GameObject purchasePackage;
+    [SerializeField] private RobotAIBehaviour raib;
 
     [SerializeField] private gameManagerSO gameDataSO;
 
@@ -27,6 +28,8 @@ public class purchaseScript : MonoBehaviour
 
     private Dictionary<string, GameObject> itemDictionary = new Dictionary<string, GameObject>();
 
+    [SerializeField] private Transform positionPackage;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -40,28 +43,6 @@ public class purchaseScript : MonoBehaviour
     {
     }
 
-    //public List<GameObject> LoadGameObjectFromFolder(string folderPath)
-    //{
-    //    List<GameObject> gameObjects = new List<GameObject>();
-
-    //    // Obtener todos los paths de archivos en el directorio
-    //    string[] filePaths = AssetDatabase.FindAssets("", new[] { folderPath });
-
-    //    foreach (var filePath in filePaths)
-    //    {
-    //        // Convertir el path a una ruta relativa y cargar el GameObject
-    //        string assetPath = AssetDatabase.GUIDToAssetPath(filePath);
-    //        GameObject obj = AssetDatabase.LoadAssetAtPath<GameObject>(assetPath);
-
-    //        // Si el objeto cargado no es nulo, agregarlo a la lista
-    //        if (obj != null)
-    //        {
-    //            gameObjects.Add(obj);
-    //        }
-    //    }
-
-    //    return gameObjects;
-    //}
     private void InitializeDictionary()
     {
         // Itera sobre la lista de GameObjects
@@ -75,6 +56,7 @@ public class purchaseScript : MonoBehaviour
     public void allSelectedAndPurchase()
     {
         GameObject newPackage = Instantiate(purchasePackage);
+        newPackage.transform.position = positionPackage.position;
         newPackage.AddComponent<packageScript>();
         foreach (PurchaseOrder order in listaPurchaseOrders)
         {
@@ -115,6 +97,8 @@ public class purchaseScript : MonoBehaviour
                 Debug.LogWarning("El elemento " + order.item + " no se encontró en el diccionario.");
             }
         }
+        raib.assignPackage(newPackage);
+        raib.changeStateRobot(robotState.Recogida);
         listaPurchaseOrders.Clear();
     }
 

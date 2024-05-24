@@ -8,6 +8,7 @@ public class gameManagerScript : MonoBehaviour
     [SerializeField] private playerDataSO user1;
     [SerializeField] private playerDataSO user2;
     [SerializeField] private playerDataSO user3;
+    [SerializeField] public gameManagerSO gm;
     void Start()
     {
         user1.currentMoney = PlayerPrefs.GetInt("currentMoneyUser1", 0);

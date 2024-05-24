@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4448732669893217490}
   - component: {fileID: 4448732669893217491}
   - component: {fileID: 4448732669893217492}
-  - component: {fileID: 9106342408059764132}
   m_Layer: 0
   m_Name: Pintura 6
   m_TagString: Untagged
@@ -98,26 +97,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &9106342408059764132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4448732669893217493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca070edefc25fe640b3cd76e71df3d21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  car_ps: {fileID: 11400000, guid: 3a591d6111473094c8aebfc72d958c4f, type: 2}
-  color_ps: {fileID: 0}
-  hasExtraPart: 0
-  tintOrLight_ps: {fileID: 0}
-  carManager: {fileID: 0}
-  ownEcoValue: 0
-  ownVelocityValue: 0
-  ownManejoValue: 0
-  ownWeightValue: 0
-  ownQualityValue: 0
-  ownBeautyValue: 0

@@ -48,25 +48,21 @@ MonoBehaviour:
   - {fileID: 8073824834607883980, guid: a51645b404a551b40a7b61f9f725203f, type: 3}
   - {fileID: 8073824834607883980, guid: b5e0092d5056f5f4ba2b71c113d8841d, type: 3}
   - {fileID: 8073824834607883980, guid: 51821e5e67bde1b4cb1c25578cfeb944, type: 3}
-  - {fileID: 8073824834607883980, guid: ed232400093fd6a45a374f067b189570, type: 3}
   - {fileID: 4448732669893217493, guid: f644d2a02cde4a343afd3d3222455771, type: 3}
   - {fileID: 4448732669893217493, guid: ac07d0b5c1a4d4f448e29b537d82bbad, type: 3}
   - {fileID: 4448732669893217493, guid: 3ee1450521abbbd4095650c889d56bde, type: 3}
   - {fileID: 4448732669893217493, guid: 8b5a4d954141c6246b90734ee921dbfd, type: 3}
   - {fileID: 4448732669893217493, guid: 30cfc79ebeeb7834d8d8354e8436644b, type: 3}
-  - {fileID: 4448732669893217493, guid: d8f26f9ab63798d42bfcea51a2ed380f, type: 3}
   - {fileID: 3736083033394106642, guid: 0214e27e1915cfd439fd709439879a63, type: 3}
   - {fileID: 3736083033394106642, guid: af4ad534aa7375e4aa7b9d824c0caca7, type: 3}
   - {fileID: 3736083033394106642, guid: 1f1a84f4cdb0b4c43bfd8ba7a4c9e270, type: 3}
   - {fileID: 3736083033394106642, guid: 27bd21251c73c314e8e9c41d867070b7, type: 3}
   - {fileID: 3736083033394106642, guid: b5bcc1e77d6935f429fcd8ee2ecb14fa, type: 3}
-  - {fileID: 3736083033394106642, guid: 5cb81d921ab6cb144b8ae6e7489e404a, type: 3}
   - {fileID: 5672568423904860151, guid: 28a20ce331a644543ba4f4a4d52786da, type: 3}
   - {fileID: 5672568423904860151, guid: 0dca4f5bc9750664c94a84e920d26399, type: 3}
   - {fileID: 5672568423904860151, guid: 8a08dc8e18d06bb4ba56df25c9e7956c, type: 3}
   - {fileID: 5672568423904860151, guid: 74fb83a6d8d0e0146ace89e9bd509bae, type: 3}
   - {fileID: 5672568423904860151, guid: 6b1e544df155bfd4599ed4fb96251202, type: 3}
-  - {fileID: 5672568423904860151, guid: e3bcae05ee5ac1448aa78624d5f25c60, type: 3}
   maleAvatarImagesGeneralList:
   - {fileID: 21300000, guid: 3bb65b559b3b4f047bb6b02189fecfc6, type: 3}
   - {fileID: 21300000, guid: b70b7522798783b4498c21cf7a3cb3a2, type: 3}
@@ -129,3 +125,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3c9571a81446a974d86911a333efd81f, type: 3}
   - {fileID: 21300000, guid: 55e3a4a6d921ca04ea97908e4944c591, type: 3}
   - {fileID: 21300000, guid: 4a9d9293e5059e044b7fb87d25e1f9aa, type: 3}
+  carModelsGeneralList:
+  - {fileID: 4855830000753569145, guid: f20358b064a9a7b46a7fb2ed15c3f107, type: 3}
+  - {fileID: 4165428406757904820, guid: 13ba511e2c46fb644a301fd5760a46ad, type: 3}

@@ -59,7 +59,7 @@ public class clientOrders : MonoBehaviour
     [System.Serializable]
     public class ClientOrder
     {
-        public GameObject clientCar;
+        public string clientCar;
         public string clientImg;
         public string clientGender;
         public string clientName;
@@ -94,10 +94,10 @@ public class clientOrders : MonoBehaviour
         listaApellidos = fm.ReadTXTFile(t_surnames, true);
         listaPresentaciones = fm.ReadTXTFile(t_presentacionCliente, false);
 
-        foreach (ClientOrder co in fm.LoadOrderListJSON())
-        {
-            Debug.Log(co.clientCar);
-        }
+        //foreach (ClientOrder co in fm.LoadOrderListJSON())
+        //{
+        //    Debug.Log(co.clientCar);
+        //}
 
         listClientOrders = fm.LoadOrderListJSON();
 
@@ -300,7 +300,7 @@ public class clientOrders : MonoBehaviour
         List<NecessaryChange> finalPersonalListNecCar2 = listNecessaryChangesCar2.OrderBy(item => rnd.Next()).Take(4).ToList();
         List<OrderExtra> finalPersonalExtraList = listOrderExtras.OrderBy(item => rnd.Next()).Take(4).ToList();
 
-        newOrder.clientCar = (audiOrFordChance == 0) ? listCarsGameObjects[0] : listCarsGameObjects[1];
+        newOrder.clientCar = (audiOrFordChance == 0) ? "car1" : "car2";
         newOrder.clientGender = (girlOrBoyChance == 0) ? "Female" : "Male";
         newOrder.clientImg = (girlOrBoyChance == 0) ? gameDataSO.femaleAvatarImagesGeneralList[rnd.Next(0, gameDataSO.femaleAvatarImagesGeneralList.Count)].name : gameDataSO.maleAvatarImagesGeneralList[rnd.Next(0, gameDataSO.maleAvatarImagesGeneralList.Count)].name;
         newOrder.clientName = (girlOrBoyChance == 0) ? listaNombresM[rnd.Next(0,30)] : listaNombresH[rnd.Next(0, 30)];
@@ -309,7 +309,7 @@ public class clientOrders : MonoBehaviour
         newOrder.clientCarChanges = (audiOrFordChance == 0) ? chooseNecessaryChanges(finalPersonalListNecCar1) : chooseNecessaryChanges(finalPersonalListNecCar2);
         newOrder.clientOrderExtras = chooseOrderExtras(finalPersonalExtraList);
         newOrder.orderPrice = Mathf.RoundToInt(rnd.Next(1000,7001)/250)*250;
-        newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(20, 120) / 25) * 25;
+        newOrder.orderDuration = Mathf.RoundToInt(rnd.Next(180, 651) / 25) * 25;
 
         return newOrder;
     }

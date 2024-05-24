@@ -14,6 +14,8 @@ public class carPart : MonoBehaviour
 
     [SerializeField] private gameManagerSO gameDataSO;
 
+    private GameObject gms;
+
     public int ownEcoValue;
     public int ownVelocityValue;
     public int ownManejoValue;
@@ -23,6 +25,12 @@ public class carPart : MonoBehaviour
 
     private void Awake()
     {
+        gms = GameObject.Find("GameManager");
+        if (gameDataSO == null)
+        {
+            gameDataSO = gms.GetComponent<gameManagerScript>().gm;
+        }
+
         addColorLightAndTintStatistics();
     }
     

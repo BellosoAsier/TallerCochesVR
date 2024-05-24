@@ -24,7 +24,10 @@ public class manageCarOrders : MonoBehaviour
     private System.Random rnd = new System.Random();
 
     private Coroutine mainCoroutine;
+
     [SerializeField] private playerDataSO playerDataSO;
+    [SerializeField] private gameManagerSO gameDataSO;
+
     private GameObject carObject;
 
     [SerializeField] private List<List<string>> listaObjetosPreviosACambio = new List<List<string>>(4);
@@ -153,7 +156,13 @@ public class manageCarOrders : MonoBehaviour
     public void acceptOrder()
     {
         tiempoInicio = Time.time;
-        carObject = Instantiate(cco.clientCar);
+        foreach (GameObject go in gameDataSO.carModelsGeneralList)
+        {
+            if (go.name.Contains(cco.clientCar))
+            {
+                carObject = Instantiate(go);
+            }
+        }
         carObject.name = carObject.name.Replace("(Clone)", "");
         carObject.transform.position = carPlacement.transform.position + new Vector3(0f, 0.14f, 0f);
         customizeOrderCar(carObject);

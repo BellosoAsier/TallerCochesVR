@@ -59,6 +59,7 @@
     <Compile Include="Assets\@MyAssets\Scripts\filesManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\initialWindow.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\ObjectQuantity.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\TMPCurrentTime.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\selectItemCatalog.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\clientOrders.cs" />
@@ -72,8 +73,11 @@
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\colorPartStatistic.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\CarScript.cs" />
     <Compile Include="Assets\@MyAssets\ooop.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\AI\RobotAIBehaviour.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\purchaseScript.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\AI\packagePickupScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\AI\idleScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\manageCarOrders.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\packageScript.cs" />
   </ItemGroup>

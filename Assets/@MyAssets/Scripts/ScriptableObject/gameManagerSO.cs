@@ -10,4 +10,5 @@ public class gameManagerSO : ScriptableObject
     [SerializeField] public List<GameObject> purchasableUniquePartsGeneralList;
     [SerializeField] public List<Sprite> maleAvatarImagesGeneralList;
     [SerializeField] public List<Sprite> femaleAvatarImagesGeneralList;
+    [SerializeField] public List<GameObject> carModelsGeneralList;
 }
