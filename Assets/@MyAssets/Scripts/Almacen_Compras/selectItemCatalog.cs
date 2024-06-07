@@ -41,7 +41,7 @@ public class selectItemCatalog : MonoBehaviour
         {
             foreach(KeyValueEntry kve in hashmap)
             {
-                if (go.name.Contains(kve.key))
+                if (go.name.StartsWith(kve.key))
                 {
                     kve.value.Add(go);
                 }
@@ -81,7 +81,7 @@ public class selectItemCatalog : MonoBehaviour
         }
         foreach (KeyValueEntry kve in hashmap)
         {
-            if (objetoActual.name.Contains(kve.key))
+            if (objetoActual.name.StartsWith(kve.key))
             {
                 buttonComprar.SetActive(true);
                 listaCatalogo = dividirLista(kve.value,6);

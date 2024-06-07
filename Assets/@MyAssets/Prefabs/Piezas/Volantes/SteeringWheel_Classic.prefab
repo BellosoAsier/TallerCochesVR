@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1470773823250605706
+--- !u!1 &5470147114947340259
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1208546731137075997}
-  - component: {fileID: 1599279634325488608}
-  - component: {fileID: 1761948557722941584}
-  - component: {fileID: 6880668038251454700}
+  - component: {fileID: 4128521423260069699}
+  - component: {fileID: 5244707924339966593}
+  - component: {fileID: 435124575946690633}
+  - component: {fileID: -3417948132061800331}
+  - component: {fileID: 35884400773213232}
   m_Layer: 0
-  m_Name: re
+  m_Name: SteeringWheel_Classic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1208546731137075997
+--- !u!4 &4128521423260069699
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470773823250605706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.040762, y: 1.2228123, z: 8.548064}
-  m_LocalScale: {x: 0.16928135, y: 0.16928135, z: 0.16928135}
+  m_GameObject: {fileID: 5470147114947340259}
+  m_LocalRotation: {x: -0.25949338, y: 0, z: 0, w: 0.9657449}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1599279634325488608
+  m_LocalEulerAnglesHint: {x: -30.08, y: 0, z: 0}
+--- !u!33 &5244707924339966593
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470773823250605706}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1761948557722941584
+  m_GameObject: {fileID: 5470147114947340259}
+  m_Mesh: {fileID: 4164511204261677510, guid: 3759c8b80db33c14fabb6cea783c6435, type: 3}
+--- !u!23 &435124575946690633
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470773823250605706}
+  m_GameObject: {fileID: 5470147114947340259}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 9cea83bb2c681b94b8e9e45e29725bf9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,16 +85,40 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6880668038251454700
-BoxCollider:
+--- !u!114 &-3417948132061800331
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470773823250605706}
+  m_GameObject: {fileID: 5470147114947340259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca070edefc25fe640b3cd76e71df3d21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  car_ps: {fileID: 11400000, guid: b849c698f317c1941b7c8c2db7bb68ed, type: 2}
+  color_ps: {fileID: 11400000, guid: 4a1b315cdeaaa0f44b0cd750580f6795, type: 2}
+  hasExtraPart: 0
+  tintOrLight_ps: {fileID: 0}
+  gameDataSO: {fileID: 0}
+  ownEcoValue: 0
+  ownVelocityValue: 0
+  ownManejoValue: 0
+  ownWeightValue: 0
+  ownQualityValue: 0
+  ownBeautyValue: 0
+--- !u!64 &35884400773213232
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5470147114947340259}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4164511204261677510, guid: 3759c8b80db33c14fabb6cea783c6435, type: 3}

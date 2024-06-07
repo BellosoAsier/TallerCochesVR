@@ -16,6 +16,8 @@ public class carPart : MonoBehaviour
 
     private GameObject gms;
 
+    private bool updatePermition = false;
+
     public int ownEcoValue;
     public int ownVelocityValue;
     public int ownManejoValue;
@@ -31,22 +33,38 @@ public class carPart : MonoBehaviour
             gameDataSO = gms.GetComponent<gameManagerScript>().gm;
         }
 
-        addColorLightAndTintStatistics();
+        //addColorLightAndTintStatistics();
+        StartCoroutine(espera());
     }
     
     private void Update()
     {
-        addColorLightAndTintStatistics();
-        calculateCarPartValues();
+        //Debug.Log(this.name + " - " +this.transform.position);
+        if (updatePermition)
+        {
+            addColorLightAndTintStatistics();
+            calculateCarPartValues();
+        }
+        else
+        {
+            //No hace nada
+        }
+
     }
 
+    IEnumerator espera()
+    {
+        yield return new WaitForSeconds(0.5f);
+        updatePermition = true;
+    }
     private void addColorLightAndTintStatistics()
     {
-        switch (this.name)
+        //Debug.Log(transform.parent.name);
+        switch (transform.parent.name)
         {
-            case "Windshield":
-            case "SideWindow":
-            case "RearWindow":
+            case "WindshieldSocket":
+            case "SideWindowSocket":
+            case "RearWindowSocket":
                 Material material = GetComponent<Renderer>().material;
                 color_ps = selectColorPartStatistic(material);
                 break;
@@ -101,6 +119,22 @@ public class carPart : MonoBehaviour
             if (so.name.Contains(nameMaterial))
             {
                 cps = (colorPartStatistic) so;
+                break;
+            }
+        }
+        return cps;
+    }
+
+    private carPartStatistics selectCarPartStatistic(GameObject obj)
+    {
+        carPartStatistics cps = ScriptableObject.CreateInstance<carPartStatistics>();
+        string nameS = obj.name.Replace(" (Instance)", "");
+
+        foreach (ScriptableObject so in gameDataSO.carPartStatisticGeneralList)
+        {
+            if (so.name.Contains(nameS))
+            {
+                cps = (carPartStatistics) so;
                 break;
             }
         }

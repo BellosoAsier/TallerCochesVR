@@ -83,17 +83,17 @@ public class packagePickupScript : MonoBehaviour
         }
         else
         {
-            string[] palabras = ps[0].item.name.Split(' ');
+            string[] palabras = ps[0].item.name.Split('_');
 
             //Debug.Log(palabras);
         
             foreach (containerManager cm in listaContainerManager)
             {
-                if (cm.gameObject.name.Contains(palabras[0]))
+                if (cm.gameObject.name.Contains("Containers"+palabras[0]))
                 {
-                    int numero = int.Parse(palabras[1]);
-                    destinationEntrega = cm.getContainerPosition(numero - 1)[2];
-                    pointContainer = cm.getContainerPosition(numero - 1)[1];
+                    //int numero = int.Parse(palabras[1]);
+                    destinationEntrega = cm.getContainerPosition(palabras[1])[2];
+                    pointContainer = cm.getContainerPosition(palabras[1])[1];
                     robot.SetDestination(destinationEntrega.position);
                 }
             }

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Linq;
 using static purchaseScript;
 
 public class ObjectQuantity : MonoBehaviour
@@ -15,6 +17,10 @@ public class ObjectQuantity : MonoBehaviour
 
     [SerializeField] public bool objectActive;
 
+    [SerializeField] private Image image;
+
+    private gameManagerSO gameDataSO;
+
     private void Awake()
     {
         result = int.Parse(quantity.text);
@@ -22,10 +28,13 @@ public class ObjectQuantity : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+
+        gameDataSO = GameObject.Find("GameManager").GetComponent<gameManagerScript>().gm;
     }
 
     private void Update()
     {
+        image.sprite = gameDataSO.purchaseableObjectImageGeneralList.FirstOrDefault(sprite => sprite.name == objectName);
         if (!objectActive)
         {
             this.gameObject.SetActive(false);
@@ -53,7 +62,6 @@ public class ObjectQuantity : MonoBehaviour
     
     public void AddCarPartPurchase()
     {
-        //string newName = this.name.Replace("Purchase","");
         ps.listaPurchaseOrders.Add(new PurchaseOrder(objectName, result));
         result = 0;
         quantity.text = result + "";

@@ -1,0 +1,1448 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 16180 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/usuario/Documents/GitHub/TallerCochesVR
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+50618
+Successfully changed project path to: C:/Users/usuario/Documents/GitHub/TallerCochesVR
+C:/Users/usuario/Documents/GitHub/TallerCochesVR
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 174.42 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 1.76 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/usuario/Documents/GitHub/TallerCochesVR/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007819 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 94.12 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.800 seconds
+Domain Reload Profiling:
+	ReloadAssembly (800ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (250ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (70ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011813 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 92.63 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1320ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (119ms)
+		EndReloadAssembly (1031ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (217ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (651ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5924 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (1.1 MB). Loaded Objects now: 6359.
+Memory consumption went from 240.5 MB to 239.4 MB.
+Total: 3.788900 ms (FindLiveObjects: 0.371500 ms CreateObjectMapping: 0.322200 ms MarkObjects: 2.665800 ms  DeleteObjects: 0.428600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 47371.887693 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab
+  artifactKey: Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab using Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884c64aa28e105b128bc445ab5041a69') in 0.220267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.984120 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e12b10f923ea7bd5ee09ac3dc737b33') in 0.017098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.288662 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab
+  artifactKey: Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab using Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acb853fcd00d6a38d3a1d987a644c919') in 0.016262 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011782 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.039 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1039ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (828ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (211ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (244ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.70 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 5786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6421.
+Memory consumption went from 247.1 MB to 246.1 MB.
+Total: 4.281800 ms (FindLiveObjects: 0.426800 ms CreateObjectMapping: 0.392600 ms MarkObjects: 3.031400 ms  DeleteObjects: 0.430100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 47.729842 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab
+  artifactKey: Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab using Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5398ec0e79295fd4f4fa1ec4a69a38f') in 0.242370 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.022751 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab
+  artifactKey: Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab using Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '572daf985896a828055a3f8772c22922') in 0.021625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HexaEco.prefab
+  artifactKey: Guid(32f1bf9d714ff624bb125a2c9cff06c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HexaEco.prefab using Guid(32f1bf9d714ff624bb125a2c9cff06c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b0340d7484813339ea90a622fd0772') in 0.010611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab
+  artifactKey: Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab using Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '262af6e8d584ed530eeac83ea1480f97') in 0.015421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab
+  artifactKey: Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab using Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57261b9026fda811c758c579941cb73') in 0.010376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.558771 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Car1Asientos.asset
+  artifactKey: Guid(3a591d6111473094c8aebfc72d958c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Car1Asientos.asset using Guid(3a591d6111473094c8aebfc72d958c4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6688c10c2e9d0db9ba808dff3c9c31a0') in 0.009454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Car2Chasis.asset
+  artifactKey: Guid(b5ed988142f82b0429e63964edc36137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Car2Chasis.asset using Guid(b5ed988142f82b0429e63964edc36137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3fb96695f0a26679aed4de7a8c54cb4') in 0.008027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Car1Ventana.asset
+  artifactKey: Guid(aba3b3ae90b473d4bb93390922ce85c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Car1Ventana.asset using Guid(aba3b3ae90b473d4bb93390922ce85c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1846ff44a6fabbf20dc11cf7addda030') in 0.008557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Car2Rueda.asset
+  artifactKey: Guid(d8967d8217be3cd4c8cc56f7c78c7760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Car2Rueda.asset using Guid(d8967d8217be3cd4c8cc56f7c78c7760) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9eee3f65b0f06ef6af73b43a94b895') in 0.007057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.708457 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Pref
+  artifactKey: Guid(c4ebf80b2283c64428acf0c6a5e0be6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Pref using Guid(c4ebf80b2283c64428acf0c6a5e0be6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb15165f76b2b23a50bd6d67878b941') in 0.002002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 58.552603 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af4fafe22d4f9b204b81c3d3e72c5f0c') in 0.073044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.191380 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d26c915eddfc0862d208868c772b88d') in 0.085984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25fcc6ced78d06c2489d20aaa59811e9') in 0.088595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.450394 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6292fbb6d8cc23458c91716bac9c197b') in 0.085349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051c2289474e08e189a2f3c9f577d0cb') in 0.085160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.062662 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Old
+  artifactKey: Guid(7a5d2f446821c114bbf6d7b039e03aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Old using Guid(7a5d2f446821c114bbf6d7b039e03aa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3ac5fc4d1a6de5059f2496674600c6d') in 0.007666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.703686 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS.asset
+  artifactKey: Guid(72994da2def831a419bd6d06d104fc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS.asset using Guid(72994da2def831a419bd6d06d104fc6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a320949dc60e56c70ae1f72a27c0ab') in 0.007668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.825769 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 1.asset
+  artifactKey: Guid(4ae0ce68e651a054f9ed49068fb3f69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 1.asset using Guid(4ae0ce68e651a054f9ed49068fb3f69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd3fc3d249d1d5b75a6e50433eb6e9c') in 0.007738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.354347 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 2.asset
+  artifactKey: Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 2.asset using Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879215a9937ecabb881cfd452c2d601c') in 0.007367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.372997 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 3.asset
+  artifactKey: Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 3.asset using Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a9565f9532c5b4b6ecdcea5da18518') in 0.007388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.203154 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 4.asset
+  artifactKey: Guid(438f0a7b96edae34dbe3c3b2116454b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 4.asset using Guid(438f0a7b96edae34dbe3c3b2116454b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46ba39ef37e34eba5b7d2f6888a3683') in 0.007433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.233049 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 5.asset
+  artifactKey: Guid(4826453b3ebf4ef48b82647aca2861a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 5.asset using Guid(4826453b3ebf4ef48b82647aca2861a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd989fe46f13eacc69453954090971d') in 0.007707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.175604 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 6.asset
+  artifactKey: Guid(edbd33a0745c1974dbcb7cbf5853d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 6.asset using Guid(edbd33a0745c1974dbcb7cbf5853d8f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efe71352a63dee9d679edb03b5e265eb') in 0.007312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.299852 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 7.asset
+  artifactKey: Guid(b1a7e73e1bbd9b5499a6e28d6f31bf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 7.asset using Guid(b1a7e73e1bbd9b5499a6e28d6f31bf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd2c72c3cfce50e6e10a1b75ff8da6f') in 0.007581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.202614 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 8.asset
+  artifactKey: Guid(40f2133a9d790984aac9ad715141fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 8.asset using Guid(40f2133a9d790984aac9ad715141fced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7393c3f950839582e602d84dea8798b6') in 0.007759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.168858 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 9.asset
+  artifactKey: Guid(aeabaad0a9fc3e6418ae27de5884c9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 9.asset using Guid(aeabaad0a9fc3e6418ae27de5884c9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9de395bdd8d7b150f6b5d8c77d68eea4') in 0.007785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.159121 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 10.asset
+  artifactKey: Guid(d4a77763d985b4643abd575d694bba25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 10.asset using Guid(d4a77763d985b4643abd575d694bba25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1d75a14226c71b8d1f1e449fc48467') in 0.007353 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.133934 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 11.asset
+  artifactKey: Guid(412078dc400d8b34c9c3d51743d54157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS 11.asset using Guid(412078dc400d8b34c9c3d51743d54157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c961e7569ac45139dc1c75e2d0f66f3c') in 0.008166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.302992 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_Original.asset
+  artifactKey: Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_Original.asset using Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843fa5cdefd4507901180778575a932d') in 0.002524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.506132 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyle.asset
+  artifactKey: Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyle.asset using Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889e7a553985374dcedad5e1b1f9ea74') in 0.002322 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.822436 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a.asset
+  artifactKey: Guid(4826453b3ebf4ef48b82647aca2861a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a.asset using Guid(4826453b3ebf4ef48b82647aca2861a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b065e08ba59ad2afe51b7597866e4092') in 0.007343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.427717 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(59f7da60ddf1dc64d9efd256e44b4c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(59f7da60ddf1dc64d9efd256e44b4c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199723560817c4a0b8aef31d93ded0ae') in 0.007306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.940094 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyle 1.asset
+  artifactKey: Guid(7d6afa3964134764c8e6bfec8372d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyle 1.asset using Guid(7d6afa3964134764c8e6bfec8372d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f1e9f4e1b9c5ff88d6dcb9dd814d477') in 0.007201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.975146 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a.asset
+  artifactKey: Guid(7d6afa3964134764c8e6bfec8372d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a.asset using Guid(7d6afa3964134764c8e6bfec8372d2a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40340f3042c946f201d93fc2f7300310') in 0.002798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.887854 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(5e211c8b860e9e447aaa9e3366f99b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(5e211c8b860e9e447aaa9e3366f99b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe08d037023d42f99771ab01cdab1b46') in 0.002476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.146498 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(423187d9974bd494eb6b626789d1dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(423187d9974bd494eb6b626789d1dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a34eabc41617ba9ff434f9a99b5453') in 0.002689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.530888 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Body_Car1OriginalCPS.asset
+  artifactKey: Guid(423187d9974bd494eb6b626789d1dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Body_Car1OriginalCPS.asset using Guid(423187d9974bd494eb6b626789d1dce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee0830227c3082afd1ea0a4fd0aff45') in 0.008070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.120351 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS.asset
+  artifactKey: Guid(4ae0ce68e651a054f9ed49068fb3f69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_BabyComfortCPS.asset using Guid(4ae0ce68e651a054f9ed49068fb3f69e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80435419d672a67e66939317c83df9b2') in 0.002439 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.043080 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_OriginalCPS.asset
+  artifactKey: Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_OriginalCPS.asset using Guid(788c60b0615fdb24bb21ed5b4a85002e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbbbf9bc00d0829f537b189a97f1240') in 0.007111 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.276976 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyleCPS.asset
+  artifactKey: Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Seat_RacingStyleCPS.asset using Guid(7d30614acb31baa44a06094ab4f667f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3200e7e7b56423c283345b0536977b') in 0.007564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.621219 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(dd209d9fbf89ad84c9a774cf71579326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(dd209d9fbf89ad84c9a774cf71579326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fdef69f25c4082b23fdd4d5296ae92') in 0.002529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.775212 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Body_Car2OriginalCPS.asset
+  artifactKey: Guid(dd209d9fbf89ad84c9a774cf71579326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Body_Car2OriginalCPS.asset using Guid(dd209d9fbf89ad84c9a774cf71579326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb494304cbc749ba229a4fe278c32e15') in 0.006291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.297912 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(59908ac81b751534c8228dd9c36920de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(59908ac81b751534c8228dd9c36920de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b37c55943a89199de1504fbe6f7b9f2') in 0.002499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.708460 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/DoorL_Car1OriginalCPS.asset
+  artifactKey: Guid(59908ac81b751534c8228dd9c36920de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/DoorL_Car1OriginalCPS.asset using Guid(59908ac81b751534c8228dd9c36920de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f2d7d297bd2374c058eb61365ca548f') in 0.007367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.712718 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(6e2ee0e54d4909249a4db8fe9efb509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(6e2ee0e54d4909249a4db8fe9efb509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6684f37ed7e2a8ae1851d7669dfe1124') in 0.002407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.323296 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/DoorR_Car1OriginalCPS.asset
+  artifactKey: Guid(6e2ee0e54d4909249a4db8fe9efb509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/DoorR_Car1OriginalCPS.asset using Guid(6e2ee0e54d4909249a4db8fe9efb509f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08d1f3049657ce0efcae60ea18690abb') in 0.007135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.590772 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(7907d3f4f6ed17741bd567cbe4c0708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(7907d3f4f6ed17741bd567cbe4c0708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd98945d14d08ba9d9715ced7e2c25f3') in 0.002436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 50.637558 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/DoorL_Car2OriginalCPS.asset
+  artifactKey: Guid(7907d3f4f6ed17741bd567cbe4c0708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/DoorL_Car2OriginalCPS.asset using Guid(7907d3f4f6ed17741bd567cbe4c0708c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5df70e69645fd8f1a2e334cfd07370') in 0.007321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.740012 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(7bb9600578963ca44a4039a308b92c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(7bb9600578963ca44a4039a308b92c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec1b5ff92a6b3f0ddd0391534ed73b1') in 0.002460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.048599 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/DoorR_Car2OriginalCPS.asset
+  artifactKey: Guid(7bb9600578963ca44a4039a308b92c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/DoorR_Car2OriginalCPS.asset using Guid(7bb9600578963ca44a4039a308b92c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f5e0adbdb3f20aeca2557225f70350') in 0.007325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.854034 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79004e26c0a3e0540e9d8310339fe63a') in 0.002403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.149512 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_Classic.asset
+  artifactKey: Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_Classic.asset using Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02ee1aea3b9ee3d2ac28985ce5febc3') in 0.002504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.053397 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(bc590c7ecfecb2849adc0b64bcf9b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(bc590c7ecfecb2849adc0b64bcf9b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf1dc3a2cc20a7d53b24c2566d70355') in 0.002503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.926579 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_HexaEcoCPS.asset
+  artifactKey: Guid(bc590c7ecfecb2849adc0b64bcf9b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_HexaEcoCPS.asset using Guid(bc590c7ecfecb2849adc0b64bcf9b7e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b1797d6c07c03af016c829509f3ef9') in 0.007407 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.857909 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_ClassicCPS.asset
+  artifactKey: Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_ClassicCPS.asset using Guid(f5b2a30c4a24cd842b025d2ee6d7ad9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e62e8964417dba17c353be51a92aac') in 0.007685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.691714 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(2874ce7fc69e8154e86ff978dafc08be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(2874ce7fc69e8154e86ff978dafc08be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24528133de683f2bf79b77b99e5d686') in 0.002452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.194851 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_HyperPowerCPS.asset
+  artifactKey: Guid(2874ce7fc69e8154e86ff978dafc08be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_HyperPowerCPS.asset using Guid(2874ce7fc69e8154e86ff978dafc08be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a9da2554f7a1cb85a618d4a13ec16a1') in 0.007318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.228389 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(adaef5e73685e2748a8f77277c9f9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(adaef5e73685e2748a8f77277c9f9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1f4f302c79d9a7225169b0837fd0ff') in 0.002298 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.464994 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_OriginalCPS.asset
+  artifactKey: Guid(adaef5e73685e2748a8f77277c9f9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_OriginalCPS.asset using Guid(adaef5e73685e2748a8f77277c9f9a5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e190b1e5dedaaef1e0e81da9a0ff7f15') in 0.007515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.096727 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac2069f91711afa70928c9577637a1e') in 0.002371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.742050 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_TriangularCPS.asset
+  artifactKey: Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_TriangularCPS.asset using Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74ae92c36a697f422ed6b35574dd1c83') in 0.007286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.227216 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_TriangularComfortCPS.asset
+  artifactKey: Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_TriangularComfortCPS.asset using Guid(aa0a5bca3664f214c825f374f1117a1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54a38fc1df18a7a5e0522e2ce9cf979') in 0.010375 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.134402 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(fb07306f2eff8b84095e2abf8ec67bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(fb07306f2eff8b84095e2abf8ec67bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39bdd4204155c6fc25bce4a914087f0') in 0.002564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.682541 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_WindBlowCPS.asset
+  artifactKey: Guid(fb07306f2eff8b84095e2abf8ec67bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_WindBlowCPS.asset using Guid(fb07306f2eff8b84095e2abf8ec67bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd564edeb294b8c4082c4ee3022af671c') in 0.007145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.955650 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset
+  artifactKey: Guid(3b67ba020350ee442a00bd47dcf3227b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/a 1.asset using Guid(3b67ba020350ee442a00bd47dcf3227b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc907ce133d1a826510f46130c6099b1') in 0.002458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.298760 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS.asset
+  artifactKey: Guid(3b67ba020350ee442a00bd47dcf3227b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS.asset using Guid(3b67ba020350ee442a00bd47dcf3227b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af023bc57bf80c15291b5c8c5b9241ef') in 0.007544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.164154 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset
+  artifactKey: Guid(23e923f9b246e384293082c94fe0ac3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset using Guid(23e923f9b246e384293082c94fe0ac3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfe0aafd3561ee770715b3bc316913be') in 0.007914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.802781 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car2OriginalCPS.asset
+  artifactKey: Guid(23e923f9b246e384293082c94fe0ac3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car2OriginalCPS.asset using Guid(23e923f9b246e384293082c94fe0ac3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335b5c81e908f5f13764f776af7f26c8') in 0.007501 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.924222 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset
+  artifactKey: Guid(390aa2fa8f98b76438a6fb96a0e4aa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset using Guid(390aa2fa8f98b76438a6fb96a0e4aa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e3be4b9ad60670818b14744196e52db') in 0.002455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.537096 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SideWindow_Car1OriginalCPS.asset
+  artifactKey: Guid(390aa2fa8f98b76438a6fb96a0e4aa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SideWindow_Car1OriginalCPS.asset using Guid(390aa2fa8f98b76438a6fb96a0e4aa8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b4d540b96b5553c332b2236339d795') in 0.007730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.210975 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset
+  artifactKey: Guid(4d2d4a72c98c59e4fa3334c1e4b2d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/RearWindow_Car1OriginalCPS 1.asset using Guid(4d2d4a72c98c59e4fa3334c1e4b2d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbe80f2d2f85f19c74cf96432bd27d04') in 0.002391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.706349 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car1OriginalCPS.asset
+  artifactKey: Guid(4d2d4a72c98c59e4fa3334c1e4b2d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car1OriginalCPS.asset using Guid(4d2d4a72c98c59e4fa3334c1e4b2d413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8a7f73144ddd0957bd5d84f15abe0d') in 0.007287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.474950 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car1OriginalCPS 1.asset
+  artifactKey: Guid(2bdf295dffbe0674eb938a463ccf4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car1OriginalCPS 1.asset using Guid(2bdf295dffbe0674eb938a463ccf4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6ed7cbf3effa39dfcb618ecfc5eda07') in 0.007444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.869073 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car2OriginalCPS.asset
+  artifactKey: Guid(2bdf295dffbe0674eb938a463ccf4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Windshield_Car2OriginalCPS.asset using Guid(2bdf295dffbe0674eb938a463ccf4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdf83a3810d9f15a896c76b7042d3460') in 0.007549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.967199 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_ClassicCPS 1.asset
+  artifactKey: Guid(b849c698f317c1941b7c8c2db7bb68ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/Wheel_ClassicCPS 1.asset using Guid(b849c698f317c1941b7c8c2db7bb68ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00203811d666f630722d52e07eedd827') in 0.007497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.932399 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS.asset
+  artifactKey: Guid(b849c698f317c1941b7c8c2db7bb68ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS.asset using Guid(b849c698f317c1941b7c8c2db7bb68ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d93e88cf1d0f048f04d656c8c5b340') in 0.007828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.263915 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 1.asset
+  artifactKey: Guid(0cbf2f7e11bd0954e9374c5b838675ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 1.asset using Guid(0cbf2f7e11bd0954e9374c5b838675ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a27e39a193ae93fd214bec5521ce6d5') in 0.007333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.678369 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 2.asset
+  artifactKey: Guid(42d476929f50d3142a45ac167b86f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 2.asset using Guid(42d476929f50d3142a45ac167b86f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3821098ba24088e3cc5ca1455421aa55') in 0.007617 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.548400 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 3.asset
+  artifactKey: Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_ClassicCPS 3.asset using Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db7f7e0b71ea7bb0aa0b126f74b58440') in 0.007713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.736226 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_Original.asset
+  artifactKey: Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_Original.asset using Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '925597641dc366dab53bf26bc52644c8') in 0.002505 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.598468 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_OriginalCPS.asset
+  artifactKey: Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_OriginalCPS.asset using Guid(7f8500b6fe55baf41a89dd11c2e63198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59bad6033a9196669f792f9908bfc7e') in 0.007594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.374314 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_RacingStyleCPS.asset
+  artifactKey: Guid(42d476929f50d3142a45ac167b86f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_RacingStyleCPS.asset using Guid(42d476929f50d3142a45ac167b86f64b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd39abd7f1460eca05f5a6688e74e18e') in 0.007583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.628272 seconds.
+  path: Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_SpeedControlCPS.asset
+  artifactKey: Guid(0cbf2f7e11bd0954e9374c5b838675ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/ScriptableObjects/Car Parts/SteeringWheel_SpeedControlCPS.asset using Guid(0cbf2f7e11bd0954e9374c5b838675ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '735c1524b2d12363594e318a5c548a96') in 0.007913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1380.750641 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab
+  artifactKey: Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab using Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9d20453c98128cd921e8bce959fafa') in 0.026458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.129603 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_Original.prefab
+  artifactKey: Guid(8fd03aee8193d89409e9d00c731df2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_Original.prefab using Guid(8fd03aee8193d89409e9d00c731df2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c0948b4b055376eac81429eb0c3075') in 0.029433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.566679 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_RacingStyle.prefab
+  artifactKey: Guid(294b122113b2a6a47bd88c76ad15a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_RacingStyle.prefab using Guid(294b122113b2a6a47bd88c76ad15a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a46c0b79976f0ab9ee9a50e7de40247') in 0.035619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.098456 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13286c32c63a17234b293f9089260354') in 0.087995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.098984 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd394bdb9c85ae7318d05e3f8d65d40') in 0.077973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.608066 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab
+  artifactKey: Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab using Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4493a9e0764f9be508baa04ea9278467') in 0.090266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.962419 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f3db68c0a4899adea3d0b5339ae3c5') in 0.085927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e83bd746b0384df8ce6ccb2e72a03d') in 0.082053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.874471 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b6fbf7f89066d216bd42f5d2e08102') in 0.087219 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6305bae7a2baf2f8b3e40d478617cee9') in 0.078590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.590274 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726e67f1badd574a8b73b85c0df1b897') in 0.082065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d33ad4573420f08a2269bd73f4f59a9') in 0.076745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.637068 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49aed2de70698c86dce3d8090d4a3b8d') in 0.078432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8641a987bb4133b91fa03cb870418ea1') in 0.076739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.572271 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '211367e7526a8d62083ca41634af3bca') in 0.080608 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42647e91f20aba97032151fb40b37cdc') in 0.096249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.686888 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab
+  artifactKey: Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab using Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0b3e3b7ec2f297eff3b25e803e5374') in 0.075280 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.265132 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab
+  artifactKey: Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab using Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af004f33da68ca3dbfd9f3fab2f731f2') in 0.079053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.561786 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HexaEco.prefab
+  artifactKey: Guid(32f1bf9d714ff624bb125a2c9cff06c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HexaEco.prefab using Guid(32f1bf9d714ff624bb125a2c9cff06c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c555486cd326e5aa00bd5a3ab8da68') in 0.026460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.425341 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab
+  artifactKey: Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab using Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd989e58c687546b67ffb0438fa4835a1') in 0.022848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.475518 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Original.prefab
+  artifactKey: Guid(b16f2f189a8b24b419a2e1214d6417f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Original.prefab using Guid(b16f2f189a8b24b419a2e1214d6417f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49e02722cedcf0cfc2140ae7726d3ac4') in 0.037688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.187726 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab
+  artifactKey: Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab using Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509bdce9a769addd90c558e8f2552a36') in 0.032102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.909472 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab
+  artifactKey: Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab using Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fcaec8e4fabcd40c5fe5e209f629ac') in 0.024045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.297827 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48bd88fa261079a7fc5037a8084dd66') in 0.275629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07ff8c452f1106e0f6d7cf46406ffb09') in 0.080549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b404e647c86478bfdc957f6812e72ea6') in 0.074059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.208582 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1fa641df57225da3fb981318db0c99') in 0.086911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea5027de1500247185e9c0523be6ddc') in 0.078919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.413448 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9231b1d095dcdf5bd7cc56aadf6a7a7') in 0.085214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce875cab69259f7adcd3a7af97390e0') in 0.078497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.269626 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddcd11dddba4c79052b5ffd46fac211f') in 0.087474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25d5e2e60f71ad87bdb89cf871fd20f') in 0.079270 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.407944 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855695f68012500702d734bf5bd6b776') in 0.092363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5500f8a194aa46d5bae8b6bd8a084054') in 0.091231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.186272 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc9c2825d4109bc6576a2df9244242e') in 0.084900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '721cdacbee1aead0448051e8c9a230cb') in 0.079980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.354916 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8bee657392544d76b24152e4cde6fa') in 0.088367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fee7af4f75198f5025e7edf87a1d6fb1') in 0.081533 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.391107 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab
+  artifactKey: Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab using Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbca76c4d35d88f22607f873b19d8464') in 0.025902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.109287 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab
+  artifactKey: Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab using Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ffc80d75cc6159bd28536cf4afeaf05') in 0.024896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.030407 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c40f511ca369d9aed0be5f52820ebd3') in 0.022667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.566709 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6b63d4430ae4a1eba0d48144718742') in 0.009461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.794783 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f6cd2b96f8095ae3238705be05ee268') in 0.009797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.138736 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab
+  artifactKey: Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Original.prefab using Guid(b58805dfd3859cc4686de1378ece8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b01c6585f2a6e2e36e5086530b06d7') in 0.010472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.095153 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab
+  artifactKey: Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab using Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635fe6c7e07254f9e4d0f3262f3c008f') in 0.019133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.237268 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab
+  artifactKey: Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab using Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e0376650c4d21b93782f870b2f14bd') in 0.010201 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.280768 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab
+  artifactKey: Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab using Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a8d2d457306e920d112f0f192cfc2e') in 0.013843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.529656 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b75736f0291bdd3a94437babc1512aef') in 0.010094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.931453 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab
+  artifactKey: Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab using Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '591825febc5fc227d0568cc96c695ba3') in 0.010096 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010963 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.212 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1214ms)
+		BeginReloadAssembly (232ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (889ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (453ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (258ms)
+				ProcessInitializeOnLoadMethodAttributes (85ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.38 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 5786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.0 MB). Loaded Objects now: 6466.
+Memory consumption went from 247.4 MB to 246.4 MB.
+Total: 4.498400 ms (FindLiveObjects: 0.403600 ms CreateObjectMapping: 0.323300 ms MarkObjects: 3.333000 ms  DeleteObjects: 0.437600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011682 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1029ms)
+		BeginReloadAssembly (130ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (217ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (403ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (228ms)
+				ProcessInitializeOnLoadMethodAttributes (69ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.26 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 5787 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6470.
+Memory consumption went from 247.4 MB to 246.4 MB.
+Total: 3.319900 ms (FindLiveObjects: 0.400000 ms CreateObjectMapping: 0.126000 ms MarkObjects: 2.388100 ms  DeleteObjects: 0.405100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 150.776588 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab
+  artifactKey: Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab using Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fec2cd165d7bb3d3c168943108f2de0') in 0.164716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab
+  artifactKey: Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab using Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965c0e75048bf57c01ec743af69f8687') in 0.018190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.559248 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab
+  artifactKey: Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_Classic.prefab using Guid(656fbcba584a53d498680e290c53f6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3a4f0ea09de1ea4b9a0fd4bc2e4214') in 0.011409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.276726 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab
+  artifactKey: Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_SpeedControl.prefab using Guid(73fc1db45c7cf3f499d150b1c916d5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82368813d7f0cb56aa01373ad6d29783') in 0.011478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4ed595dec042e20b961224ba4c954cd') in 0.012301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.661476 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85000e8da10dd3488b4d6cd44ddd1174') in 0.087327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f1b82e643855100c8481d1c6557275') in 0.083841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.274346 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807c8b616a704dd2759fd61875a19dd1') in 0.094863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '544cb4ceb0b5db16e86e2ee14ded83f0') in 0.090225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.577302 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97580dd2b120b96cbe935ed1c4fef7a0') in 0.092078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab
+  artifactKey: Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car2Original.prefab using Guid(f62698a456b477147b106916b4954a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45de4e0a2eb9c3ab261efacc11e42122') in 0.083696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.350322 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab
+  artifactKey: Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_Classic.prefab using Guid(749e0718750e5f5469e0bfc5095503e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb6397b7677a8806f5aa2b99517140b') in 0.082108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.763110 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab
+  artifactKey: Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_TriangularComfort.prefab using Guid(f8b8c61153204b345828ccb7fd63e4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2e68bd78214ee041b864766afb326e') in 0.011840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab
+  artifactKey: Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_HyperPower.prefab using Guid(7d94b032dc071f5469aaef260bfd98ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53827e255ecb18ec6975d65eaf0417c9') in 0.023400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab
+  artifactKey: Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Wheel_WindBlow.prefab using Guid(9ef811acfeaed3749a2666dbf1b96cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf2fc2839760f27d3c5a22ce9b51bd5') in 0.012101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.082533 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a60bb4225b4ba33beb54737eb8159b05') in 0.090573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.081712 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c716ebb40a09d2ab4bec4f39d950a4c8') in 0.108873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ecf6db264ae608d16cba68d8379525a') in 0.080825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.766508 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c8cd1ed5e8e04447a37779f716ffc6') in 0.091309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8928c5044142170835c5bd656ca91f0b') in 0.077484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.360746 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3702d4a1b2e64dabcdb98cb757048c48') in 0.095907 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.512150 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9e939f6607bcc0a69ee51798ec9aa9') in 0.108323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.315745 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5b8e5ce9ee9d92eb88dda82e229fd8') in 0.092657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.438456 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5f79cc56688085897794ade14ac68c') in 0.086446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.541748 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab
+  artifactKey: Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab using Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2fdacd009841eee54add7119b8e7f75') in 0.085039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.485911 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab
+  artifactKey: Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab using Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6795d138880915597ad8e93f1a6907e') in 0.082204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.572093 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab
+  artifactKey: Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab using Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '792dad10ff4a3cb61918e35b1247f7a7') in 0.017632 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.315309 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab
+  artifactKey: Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab using Guid(dabb1e249825a4c44a2a34d37ba521ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ace70972992c881ed3a65f7582fb0ea0') in 0.010530 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011959 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.096 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1097ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (883ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (458ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.37 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6515.
+Memory consumption went from 247.5 MB to 246.4 MB.
+Total: 3.740900 ms (FindLiveObjects: 0.438400 ms CreateObjectMapping: 0.295400 ms MarkObjects: 2.581400 ms  DeleteObjects: 0.424800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

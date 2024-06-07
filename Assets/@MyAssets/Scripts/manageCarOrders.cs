@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEditor;
@@ -18,9 +19,9 @@ public class manageCarOrders : MonoBehaviour
     [SerializeField] private GameObject buttonComplete;
 
     private clientOrders.ClientOrder cco;
-    public List<Material> m1;
-    public List<Material> m2;
-    public List<Material> m3;
+    //public List<Material> m1;
+    //public List<Material> m2;
+    //public List<Material> m3;
     private System.Random rnd = new System.Random();
 
     private Coroutine mainCoroutine;
@@ -44,6 +45,8 @@ public class manageCarOrders : MonoBehaviour
 
     [SerializeField] private GameObject carPlacement;
 
+    private List<List<bool>> xlist;
+
     private void Awake()
     {
         
@@ -55,6 +58,7 @@ public class manageCarOrders : MonoBehaviour
         {
             l.SetActive(false);
         }
+
         if (repairOrderWindow.GetComponent<clientOrders>().pointerClients == 4)
         {
             r.SetActive(false);
@@ -67,8 +71,32 @@ public class manageCarOrders : MonoBehaviour
 
         if (orderAccepterdBool)
         {
-            checkCorrectChangesMade();
+            xlist = checkCorrectChangesMade();
             checkExtraChangesCorrect();
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            //foreach (List<string> s in listaObjetosPreviosACambio)
+            //{
+            //    foreach (string i in s)
+            //    {
+            //        Debug.Log(i);
+            //    }
+            //    Debug.Log("---------");
+            ////}
+            //Debug.Log("-------------INICIO--------------");
+
+            //foreach (List<bool> s in xlist)
+            //{
+            //    foreach (bool i in s)
+            //    {
+            //        Debug.Log(i);
+            //    }
+            //    Debug.Log("---------");
+            //}
+
+            //Debug.Log("-------------FIN--------------");
         }
     }
 
@@ -129,7 +157,8 @@ public class manageCarOrders : MonoBehaviour
             }
             else
             {
-                everythingOK = !everythingOK;
+                tmpt.color = Color.white;
+                everythingOK = false;
             }
 
         }
@@ -150,6 +179,7 @@ public class manageCarOrders : MonoBehaviour
             playerDataSO.avgTimePerOrder = (playerDataSO.avgTimePerOrder + tiempoTranscurrido) / playerDataSO.completedOrders;
         }
 
+        UpdateTimerText(0f);
         eliminateAndAddNewOrder();
     }
 
@@ -165,6 +195,17 @@ public class manageCarOrders : MonoBehaviour
         }
         carObject.name = carObject.name.Replace("(Clone)", "");
         carObject.transform.position = carPlacement.transform.position + new Vector3(0f, 0.14f, 0f);
+        changeCarPartsBeforeCustomize(carObject);
+
+        StartCoroutine(waitForCarPartChanges());
+        
+        orderAccepterdBool = true;
+        mainCoroutine = StartCoroutine(lockCarOrders(cco.orderDuration));
+    }
+
+    IEnumerator waitForCarPartChanges()
+    {
+        yield return new WaitForSeconds(0.3f);
         customizeOrderCar(carObject);
         int counter = 0;
         foreach (clientOrders.NecessaryChange cnc in cco.clientCarChanges)
@@ -186,8 +227,6 @@ public class manageCarOrders : MonoBehaviour
             }
             counter++;
         }
-        orderAccepterdBool = true;
-        mainCoroutine = StartCoroutine(lockCarOrders(cco.orderDuration));
     }
 
     public void rejectOrder()
@@ -214,6 +253,11 @@ public class manageCarOrders : MonoBehaviour
             {
                 i.color = Color.white;
             }
+            foreach (TMP_Text h in listaTextsExtraChanges)
+            {
+                h.color = Color.white;
+            }
+            UpdateTimerText(0f);
             //Debug.Log("Espera cancelada.");
         }
     }
@@ -270,13 +314,21 @@ public class manageCarOrders : MonoBehaviour
         repairOrderWindow.GetComponent<clientOrders>().listClientOrders.Add(repairOrderWindow.GetComponent<clientOrders>().AddNewClientOrder());
     }
 
-    private void checkCorrectChangesMade()
+    private List<List<bool>> checkCorrectChangesMade()
     {
         int contador = 0;
+        List<List<bool>> everyChangeCorrectForGreenLight = new List<List<bool>>(4);
+        for (int i = 0; i < 4; i++) everyChangeCorrectForGreenLight.Add(new List<bool>());
+
         foreach(clientOrders.NecessaryChange cnc in cco.clientCarChanges)
         {
+            for (int j= 0; j<cnc.carPart.Count;j++)
+            {
+                everyChangeCorrectForGreenLight[contador].Add(false);
+            }
             if (cnc.name.Contains("Cambio"))
             {
+                int indexForChange = 0;
                 foreach (string s in cnc.carPart)
                 {
                     for (int i = 0; i < carObject.transform.childCount; i++)
@@ -298,13 +350,15 @@ public class manageCarOrders : MonoBehaviour
                                         if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                         {
                                             //BIEN - text[contador] = Color.Green;
-                                            listaTextsNecessaryChanges[contador].color = Color.green;
+                                            everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                            //listaTextsNecessaryChanges[contador].color = Color.green;
                                             break;
                                         }
                                         else
                                         {
                                             //MAL - text[contador] = Color.Red;
-                                            listaTextsNecessaryChanges[contador].color = Color.red;
+                                            everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                            //listaTextsNecessaryChanges[contador].color = Color.red;
                                             break;
                                         }
                                         
@@ -312,7 +366,8 @@ public class manageCarOrders : MonoBehaviour
                                     else if(l.StartsWith(s) && hijoTransform.name == l)
                                     {
                                         //MAL - text[contador] = Color.Red;
-                                        listaTextsNecessaryChanges[contador].color = Color.red;
+                                        everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                        //listaTextsNecessaryChanges[contador].color = Color.red;
                                         break;
                                     }
                                 }
@@ -320,10 +375,12 @@ public class manageCarOrders : MonoBehaviour
                             // Fin del bloque para el bucle foreach interno
                         }
                     }
+                    indexForChange++;
                 }
             }
             else if(cnc.name.Contains("Tinte"))
             {
+                int indexForChange = 0;
                 foreach (string s in cnc.carPart)
                 {
                     for (int i = 0; i < carObject.transform.childCount; i++)
@@ -337,19 +394,22 @@ public class manageCarOrders : MonoBehaviour
                                 if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaTextsNecessaryChanges[contador].color = Color.green;
+                                    everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                    //listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else if (hijoTransform.GetComponent<Renderer>().materials[1].name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaTextsNecessaryChanges[contador].color = Color.green;
+                                    everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                    //listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else
                                 {
                                     //MAL - text[contador] = Color.Red;
-                                    listaTextsNecessaryChanges[contador].color = Color.red;
+                                    everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                    //listaTextsNecessaryChanges[contador].color = Color.red;
                                     break;
                                 }
                             }
@@ -358,23 +418,27 @@ public class manageCarOrders : MonoBehaviour
                                 if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                                 {
                                     //BIEN - text[contador] = Color.Green;
-                                    listaTextsNecessaryChanges[contador].color = Color.green;
+                                    everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                    //listaTextsNecessaryChanges[contador].color = Color.green;
                                     break;
                                 }
                                 else
                                 {
                                     //MAL - text[contador] = Color.Red;
-                                    listaTextsNecessaryChanges[contador].color = Color.red;
+                                    everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                    //listaTextsNecessaryChanges[contador].color = Color.red;
                                     break;
                                 }
                             }
                             
                         }
                     }
+                    indexForChange++;
                 }
             }
             else if (cnc.name.Contains("Luz"))
             {
+                int indexForChange = 0;
                 foreach (string s in cnc.carPart)
                 {
                     for (int i = 0; i < carObject.transform.childCount; i++)
@@ -385,21 +449,25 @@ public class manageCarOrders : MonoBehaviour
                             if (hijoTransform.GetComponent<Renderer>().materials[1].name.Contains(cnc.partColor))
                             {
                                 //BIEN - text[contador] = Color.Green;
-                                listaTextsNecessaryChanges[contador].color = Color.green;
+                                everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                //listaTextsNecessaryChanges[contador].color = Color.green;
                                 break;
                             }
                             else
                             {
                                 //MAL - text[contador] = Color.Red;
-                                listaTextsNecessaryChanges[contador].color = Color.red;
+                                everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                //listaTextsNecessaryChanges[contador].color = Color.red;
                                 break;
                             }
                         }
                     }
+                    indexForChange++;
                 }
             }
             else if (cnc.name.Contains("Color"))
             {
+                int indexForChange = 0;
                 foreach (string s in cnc.carPart)
                 {
                     for (int i = 0; i < carObject.transform.childCount; i++)
@@ -410,22 +478,38 @@ public class manageCarOrders : MonoBehaviour
                             if (hijoTransform.GetComponent<Renderer>().material.name.Contains(cnc.partColor))
                             {
                                 //BIEN - text[contador] = Color.Green;
-                                listaTextsNecessaryChanges[contador].color = Color.green;
+                                everyChangeCorrectForGreenLight[contador][indexForChange] = true;
+                                //listaTextsNecessaryChanges[contador].color = Color.green;
                                 break;
                             }
                             else
                             {
                                 //MAL - text[contador] = Color.Red;
-                                listaTextsNecessaryChanges[contador].color = Color.red;
+                                everyChangeCorrectForGreenLight[contador][indexForChange] = false;
+                                //listaTextsNecessaryChanges[contador].color = Color.red;
                                 break;
                             }
                         }
                     }
+                    indexForChange++;
                 }
             }
+
+            if(everyChangeCorrectForGreenLight[contador].Any(b => b == false))
+            {
+                listaTextsNecessaryChanges[contador].color = Color.red;
+            }
+            else
+            {
+                listaTextsNecessaryChanges[contador].color = Color.green;
+            }
+
             contador++;
         }
+
+        return everyChangeCorrectForGreenLight;
     }
+    
 
     private void checkExtraChangesCorrect()
     {
@@ -476,7 +560,112 @@ public class manageCarOrders : MonoBehaviour
             contador++;
         }
     }
+    private void changeCarPartsBeforeCustomize(GameObject clientCarToCustomize)
+    {
+        foreach (Transform hijoTransform in clientCarToCustomize.transform)
+        {
+            switch (hijoTransform.gameObject.name)
+            {
+                case "WheelBLSocket":
+                    GameObject o1 = replaceCarPartsOnCustomize("Wheel", hijoTransform);
+                    o1.name = o1.name.Replace("Wheel", "WheelBL");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        if (o1.name.Contains("Classic"))
+                        {
+                            o1.transform.localScale = new Vector3(1f, 1f, 1f);
+                        }
+                        else
+                        {
+                            o1.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+                        }
+                    }
+                    break;
+                case "WheelFLSocket":
+                    GameObject o2 = replaceCarPartsOnCustomize("Wheel", hijoTransform);
+                    o2.name = o2.name.Replace("Wheel", "WheelFL");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        if (o2.name.Contains("Classic"))
+                        {
+                            o2.transform.localScale = new Vector3(1f, 1f, 1f);
+                        }
+                        else
+                        {
+                            o2.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+                        }
+                    }
+                    break;
+                case "WheelBRSocket":
+                    GameObject o3 = replaceCarPartsOnCustomize("Wheel", hijoTransform);
+                    o3.name = o3.name.Replace("Wheel", "WheelBR");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        if (o3.name.Contains("Classic"))
+                        {
+                            o3.transform.localScale = new Vector3(1f, 1f, 1f);
+                        }
+                        else
+                        {
+                            o3.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+                        }
+                    }
+                    o3.transform.Rotate(0, 180, 0);
+                    break;
+                case "WheelFRSocket":
+                    GameObject o4 = replaceCarPartsOnCustomize("Wheel", hijoTransform);
+                    o4.name = o4.name.Replace("Wheel", "WheelFR");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        if (o4.name.Contains("Classic"))
+                        {
+                            o4.transform.localScale = new Vector3(1f, 1f, 1f);
+                        }
+                        else
+                        {
+                            o4.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+                        }
+                    }
+                    o4.transform.Rotate(0, 180, 0);
+                    break;
+                case "SeatLeftSocket":
+                    GameObject o5 = replaceCarPartsOnCustomize("Seat", hijoTransform);
+                    o5.name = o5.name.Replace("Seat", "SeatLeft");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        o5.transform.localScale = new Vector3(0.85f, 0.85f, 0.85f);
+                    }
+                    break;
+                case "SeatRightSocket":
+                    GameObject o6 = replaceCarPartsOnCustomize("Seat", hijoTransform);
+                    o6.name = o6.name.Replace("Seat", "SeatRight");
+                    if (clientCarToCustomize.name.Contains("car2"))
+                    {
+                        o6.transform.localScale = new Vector3(-0.85f, 0.85f, 0.85f);
+                    }
+                    else
+                    {
+                        o6.transform.localScale = new Vector3(-1f, 1f, 1f);
+                    }
+                    break;
+                case "SteeringWheelSocket":
+                    GameObject o7 = replaceCarPartsOnCustomize("SteeringWheel", hijoTransform);
+                    break;
+            }
+        }
+    }
 
+    private GameObject replaceCarPartsOnCustomize(string startwithstring, Transform htransform)
+    {
+        List<GameObject> filteredGameObjects = gameDataSO.purchasableUniquePartsGeneralList.Where(go => go.name.StartsWith(startwithstring)).ToList();
+        int rand = rnd.Next(filteredGameObjects.Count);
+        Destroy(htransform.GetChild(0).gameObject);
+        GameObject newChild = Instantiate(filteredGameObjects[rand]);
+        newChild.name = newChild.name.Replace("(Clone)", "");
+        newChild.transform.parent = htransform;
+        newChild.transform.localPosition = Vector3.zero;
+        return newChild;
+    }
     private void customizeOrderCar(GameObject clientCarToCustomize)
     {
         foreach (Transform hijoTransform in clientCarToCustomize.transform)
@@ -486,36 +675,36 @@ public class manageCarOrders : MonoBehaviour
             int rand1 = 0;
             int rand2 = 0;
 
-            switch (hijoTransform.GetChild(0).gameObject.name)
+            switch (hijoTransform.gameObject.name)
             {
-                case "Windshield":
-                case "SideWindow":
-                case "RearWindow":
-                    rand1 = rnd.Next(m3.Count);
-                    hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = m3[rand1];
+                case "WindshieldSocket":
+                case "SideWindowSocket":
+                case "RearWindowSocket":
+                    rand1 = rnd.Next(gameDataSO.tintsMaterialGeneralList.Count);
+                    hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = gameDataSO.tintsMaterialGeneralList[rand1];
                     break;
                 default:
                     for (int i = 0; i < hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials.Length; i++)
                     {
                         if (i==0)
                         {
-                            rand1 = rnd.Next(m1.Count);
-                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = m1[rand1];
+                            rand1 = rnd.Next(gameDataSO.colorMaterialGeneralList.Count);
+                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = gameDataSO.colorMaterialGeneralList[rand1];
                         }
                         if (i == 1)
                         {
                             if (hijoTransform.GetChild(0).gameObject.name.Contains("Body"))
                             {
-                                rand2 = rnd.Next(m2.Count);
+                                rand2 = rnd.Next(gameDataSO.lightsMaterialGeneralList.Count);
                                 Material[] nuevosMateriales = hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials;
-                                nuevosMateriales[1] = m2[rand2];
+                                nuevosMateriales[1] = gameDataSO.lightsMaterialGeneralList[rand2];
                                 hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials = nuevosMateriales;
                             }
                             else
                             {
-                                rand2 = rnd.Next(m3.Count);
+                                rand2 = rnd.Next(gameDataSO.tintsMaterialGeneralList.Count);
                                 Material[] nuevosMateriales = hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials;
-                                nuevosMateriales[1] = m3[rand2];
+                                nuevosMateriales[1] = gameDataSO.tintsMaterialGeneralList[rand2];
                                 hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials = nuevosMateriales;
                             }
                         }
@@ -526,18 +715,19 @@ public class manageCarOrders : MonoBehaviour
             foreach (clientOrders.NecessaryChange nc in cco.clientCarChanges)
             {
                 int rand3 = 0;
-                if (nc.carPart.Contains(hijoTransform.GetChild(0).gameObject.name))
+                string[] carPartString = hijoTransform.GetChild(0).gameObject.name.Split("_");
+                if (nc.carPart.Contains(carPartString[0]))
                 {
-                    if (m1.Find(material => material.name == nc.partColor) != null)
+                    if (gameDataSO.colorMaterialGeneralList.Find(material => material.name == nc.partColor) != null)
                     {
                         if(hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material.name.Contains(nc.partColor))
                         {
                             do
                             {
-                                rand3 = rnd.Next(m1.Count);
+                                rand3 = rnd.Next(gameDataSO.colorMaterialGeneralList.Count);
                             } while (rand3 == rand1);
-                            Debug.Log("Change: "+ hijoTransform.GetChild(0).gameObject.name + ", from:" + m1[rand1] + ", to:" + m1[rand3]);
-                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = m1[rand3];
+                            Debug.Log("Change: "+ hijoTransform.GetChild(0).gameObject.name + ", from:" + gameDataSO.colorMaterialGeneralList[rand1] + ", to:" + gameDataSO.colorMaterialGeneralList[rand3]);
+                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = gameDataSO.colorMaterialGeneralList[rand3];
                         }
                         else
                         {
@@ -545,13 +735,13 @@ public class manageCarOrders : MonoBehaviour
                         }
                         
                     }
-                    else if (m2.Find(material => material.name == nc.partColor) != null)
+                    else if (gameDataSO.lightsMaterialGeneralList.Find(material => material.name == nc.partColor) != null)
                     {
                         if (!hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials[1].name.Contains("LuzNula"))
                         {
-                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + m2[rand2] + ", to:" + m2[2]);
+                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + gameDataSO.lightsMaterialGeneralList[rand2] + ", to:" + gameDataSO.lightsMaterialGeneralList[2]);
                             Material[] nuevosMateriales = hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials;
-                            nuevosMateriales[1] = m2[2]; // Al tratarse de una tarea de arreglar las luces, las luces deben estar fundidas con su correspondiente material.
+                            nuevosMateriales[1] = gameDataSO.lightsMaterialGeneralList[2]; // Al tratarse de una tarea de arreglar las luces, las luces deben estar fundidas con su correspondiente material.
                             hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials = nuevosMateriales;
                         }
                         else
@@ -559,27 +749,27 @@ public class manageCarOrders : MonoBehaviour
                             Debug.Log("No changes: " + hijoTransform.GetChild(0).gameObject.name);
                         }
                     }
-                    else if (m3.Find(material => material.name == nc.partColor) != null)
+                    else if (gameDataSO.tintsMaterialGeneralList.Find(material => material.name == nc.partColor) != null)
                     {
                         if (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials.Length > 1 && (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials[1].name.Contains(nc.partColor)))
                         {
                             do
                             {
-                                rand3 = rnd.Next(m3.Count);
+                                rand3 = rnd.Next(gameDataSO.tintsMaterialGeneralList.Count);
                             } while (rand3 == rand2);
-                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + m3[rand2] + ", to:" + m3[rand3]);
+                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + gameDataSO.tintsMaterialGeneralList[rand2] + ", to:" + gameDataSO.tintsMaterialGeneralList[rand3]);
                             Material[] nuevosMateriales = hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials;
-                            nuevosMateriales[1] = m3[rand3];
+                            nuevosMateriales[1] = gameDataSO.tintsMaterialGeneralList[rand3];
                             hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials = nuevosMateriales;
                         }
                         else if (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().materials.Length == 1 && (hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material.name.Contains(nc.partColor)))
                         {
                             do
                             {
-                                rand3 = rnd.Next(m3.Count);
+                                rand3 = rnd.Next(gameDataSO.tintsMaterialGeneralList.Count);
                             } while (rand3 == rand1);
-                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + m3[rand1] + ", to:" + m3[rand3]);
-                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = m3[rand3];
+                            Debug.Log("Change: " + hijoTransform.GetChild(0).gameObject.name + ", from:" + gameDataSO.tintsMaterialGeneralList[rand1] + ", to:" + gameDataSO.tintsMaterialGeneralList[rand3]);
+                            hijoTransform.GetChild(0).gameObject.GetComponent<Renderer>().material = gameDataSO.tintsMaterialGeneralList[rand3];
                         }
                         else
                         {
