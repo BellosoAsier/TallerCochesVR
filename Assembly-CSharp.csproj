@@ -80,6 +80,8 @@
     <Compile Include="Assets\@MyAssets\Scripts\AI\idleScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\manageCarOrders.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\packageScript.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerTypeManager.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\AI\almacenarScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\@MyAssets\Documentos\saludos-clientes.txt" />

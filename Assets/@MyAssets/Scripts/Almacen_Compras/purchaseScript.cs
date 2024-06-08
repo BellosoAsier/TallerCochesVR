@@ -1,17 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using static packageScript;
 
 public class purchaseScript : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> totalPurchasableUniqueParts;
+    [SerializeField] private List<GameObject> totalPurchasableUniqueParts = new List<GameObject>();
     [SerializeField] private GameObject purchasePackage;
     [SerializeField] private RobotAIBehaviour raib;
 
     [SerializeField] private gameManagerSO gameDataSO;
+
+    [SerializeField] private GameObject mainPage;
+    [SerializeField] private GameObject confButton;
+    [SerializeField] private GameObject cancButton;
+
+    [SerializeField] private TMP_Text confirmacionText;
+
+    [SerializeField] private int totalAmount = 0;
 
     [System.Serializable]
     public class PurchaseOrder
@@ -33,7 +42,11 @@ public class purchaseScript : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        totalPurchasableUniqueParts = gameDataSO.purchasableUniquePartsGeneralList;
+        foreach (gameManagerSO.UniqueObject gmsouo in gameDataSO.purchasableUniquePartsObjectGeneralList)
+        {
+            totalPurchasableUniqueParts.Add(gmsouo.item);
+        }
+        //totalPurchasableUniqueParts = gameDataSO.purchasableUniquePartsGeneralList;
         //totalPurchasableUniqueParts = LoadGameObjectFromFolder("Assets/@MyAssets/Provisional");
         InitializeDictionary();
     }
@@ -51,6 +64,32 @@ public class purchaseScript : MonoBehaviour
             // Añade el nombre del objeto y su GameObject al diccionario
             itemDictionary.Add(obj.name, obj);
         }
+    }
+
+    public void continueToPurchase()
+    {
+        mainPage.SetActive(false);
+        confButton.SetActive(true);
+    }
+
+    public void continueToCancelOrder()
+    {
+        mainPage.SetActive(false);
+        cancButton.SetActive(true);
+    }
+
+    public void cancelOrder()
+    {
+        listaPurchaseOrders.Clear();
+        returnBack();
+        totalAmount = 0;
+    }
+
+    public void returnBack()
+    {
+        mainPage.SetActive(true);
+        cancButton.SetActive(false);
+        confButton.SetActive(false);
     }
 
     public void allSelectedAndPurchase()
@@ -99,8 +138,12 @@ public class purchaseScript : MonoBehaviour
         }
         raib.assignPackage(newPackage);
         raib.changeStateRobot(robotState.Recogida);
-        listaPurchaseOrders.Clear();
+        cancelOrder();
     }
 
-    
+    public void addTotalAmount(int x)
+    {
+        totalAmount += x;
+        confirmacionText.text = totalAmount + "$";
+    }
 }

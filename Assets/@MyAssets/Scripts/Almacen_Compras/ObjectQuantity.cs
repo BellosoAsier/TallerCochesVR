@@ -19,7 +19,13 @@ public class ObjectQuantity : MonoBehaviour
 
     [SerializeField] private Image image;
 
+    [SerializeField] private TMP_Text text_Value;
+
+    [SerializeField] private TMP_Text item_Name;
+
     private gameManagerSO gameDataSO;
+
+    private int valueOfItem;
 
     private void Awake()
     {
@@ -34,7 +40,18 @@ public class ObjectQuantity : MonoBehaviour
 
     private void Update()
     {
-        image.sprite = gameDataSO.purchaseableObjectImageGeneralList.FirstOrDefault(sprite => sprite.name == objectName);
+        foreach (gameManagerSO.UniqueObject gmsouo in gameDataSO.purchasableUniquePartsObjectGeneralList)
+        {
+            if (gmsouo.item.name.Equals(objectName))
+            {
+                item_Name.text = objectName;
+                valueOfItem = gmsouo.value;
+                text_Value.text = valueOfItem + "$"; 
+                image.sprite = gmsouo.sprite;
+            }
+        }
+        //item_Name.text = objectName;
+        //image.sprite = gameDataSO.purchaseableObjectImageGeneralList.FirstOrDefault(sprite => sprite.name == objectName);
         if (!objectActive)
         {
             this.gameObject.SetActive(false);
@@ -63,6 +80,7 @@ public class ObjectQuantity : MonoBehaviour
     public void AddCarPartPurchase()
     {
         ps.listaPurchaseOrders.Add(new PurchaseOrder(objectName, result));
+        ps.addTotalAmount(valueOfItem*result);
         result = 0;
         quantity.text = result + "";
     }

@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum robotState {Idle, Recogida}
+public enum robotState {Idle, Recogida, Almacenar}
 public class RobotAIBehaviour : MonoBehaviour
 {
     private robotState estadoRobot;
     
     [SerializeField] private packagePickupScript pps;
     [SerializeField] private idleScript ids;
+    [SerializeField] private almacenarScript ast;
     void Start()
     {
         estadoRobot = robotState.Idle;
@@ -27,6 +28,9 @@ public class RobotAIBehaviour : MonoBehaviour
             case robotState.Recogida:
                 pps.runPickup();
                 break;
+            case robotState.Almacenar:
+                ast.runAlmacenarScript();
+                break;
         }
     }
 
@@ -43,11 +47,15 @@ public class RobotAIBehaviour : MonoBehaviour
             case robotState.Recogida:
                 pps.initilizeMethod(this);
                 break;
+            case robotState.Almacenar:
+                ast.initilizeMethod(this);
+                break;
         }
     }
 
     public void assignPackage(GameObject p)
     {
         pps.package = p;
+        ast.package = p;
     }
 }

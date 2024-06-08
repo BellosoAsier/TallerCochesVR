@@ -15,7 +15,7 @@ C:/Users/usuario/Documents/GitHub/TallerCochesVR
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-65245
+50618
 Successfully changed project path to: C:/Users/usuario/Documents/GitHub/TallerCochesVR
 C:/Users/usuario/Documents/GitHub/TallerCochesVR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ C:/Users/usuario/Documents/GitHub/TallerCochesVR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 114.89 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.73 ms.
+Refreshing native plugins compatible for Editor in 98.51 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.71 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/usuario/Documents/GitHub/TallerCochesVR/Assets
@@ -63,54 +63,54 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008320 seconds.
+Registered in 0.008133 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 102.29 ms, found 11 plugins.
+Refreshing native plugins compatible for Editor in 91.78 ms, found 11 plugins.
 Preloading 1 native plugins for Editor in 0.15 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.583 seconds
+- Completed reload, in  0.532 seconds
 Domain Reload Profiling:
-	ReloadAssembly (584ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (532ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (424ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (384ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (85ms)
+			SetupTypeCache (77ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (273ms)
+			SetupLoadedEditorAssemblies (247ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (50ms)
+				InitializePlatformSupportModulesInManaged (49ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (103ms)
+				RefreshPlugins (92ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (82ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (72ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013028 seconds.
+Registered in 0.011387 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 105.63 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 93.49 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Package Manager log level set to [2]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
@@ -128,43 +128,43 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.384 seconds
+- Completed reload, in  1.249 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1385ms)
-		BeginReloadAssembly (210ms)
+	ReloadAssembly (1250ms)
+		BeginReloadAssembly (204ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (129ms)
-		EndReloadAssembly (1065ms)
-			LoadAssemblies (87ms)
+			CreateAndSetChildDomain (133ms)
+		EndReloadAssembly (953ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
+			SetupTypeCache (217ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (625ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (566ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (106ms)
-				BeforeProcessingInitializeOnLoad (112ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (82ms)
+				RefreshPlugins (94ms)
+				BeforeProcessingInitializeOnLoad (109ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Unloading 5924 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 67 unused Assets / (1.1 MB). Loaded Objects now: 6359.
 Memory consumption went from 240.4 MB to 239.3 MB.
-Total: 4.943200 ms (FindLiveObjects: 0.420500 ms CreateObjectMapping: 0.357500 ms MarkObjects: 3.619300 ms  DeleteObjects: 0.544900 ms)
+Total: 3.924200 ms (FindLiveObjects: 0.474500 ms CreateObjectMapping: 0.181100 ms MarkObjects: 2.841000 ms  DeleteObjects: 0.426800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -178,7 +178,587 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 657939.008586 seconds.
-  path: Assets/@MyAssets/ScriptableObjects/GameManager.asset
-  artifactKey: Guid(fee0ee8c99eeb6d47a64fff2eaa19621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/ScriptableObjects/GameManager.asset using Guid(fee0ee8c99eeb6d47a64fff2eaa19621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c631dd97ce80ab7528ccdc0aef9dc668') in 0.084951 seconds 
+  Time since last request: 33025.567926 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas
+  artifactKey: Guid(c746ec7023cc49f41949905cf67edf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas using Guid(c746ec7023cc49f41949905cf67edf35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f7261cfbd338d52aa4fd22a59d54ee3') in 0.015827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.018786 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_2.fbx
+  artifactKey: Guid(efd2f878ab7e1904c9a84b2a2914e106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_2.fbx using Guid(efd2f878ab7e1904c9a84b2a2914e106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08df34ef3e9457444e97ae16de29fd88') in 0.288109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_Base.fbx
+  artifactKey: Guid(b7cd387647a900e4ebfb684a131bc90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_Base.fbx using Guid(b7cd387647a900e4ebfb684a131bc90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f295c0ece4c8d23f7ab09c0a309d8b5') in 0.029668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.514381 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_2.fbx
+  artifactKey: Guid(ac3efe24ac7f38d4c8b0eebad4333e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_2.fbx using Guid(ac3efe24ac7f38d4c8b0eebad4333e93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b983828a50094a9a4e956aa27d29d59a') in 0.035256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_3.fbx
+  artifactKey: Guid(ce0a775e3c0b48a479256830ae803138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_3.fbx using Guid(ce0a775e3c0b48a479256830ae803138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f350bd67581c74c61e026addd48050') in 0.024100 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.565109 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_2.fbx
+  artifactKey: Guid(3759c8b80db33c14fabb6cea783c6435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_2.fbx using Guid(3759c8b80db33c14fabb6cea783c6435) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a79c4a56b4d9980085e1661bfe9b4cf') in 0.035974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_3.fbx
+  artifactKey: Guid(1b86d831bae8bf349b67d3a254a1929f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_3.fbx using Guid(1b86d831bae8bf349b67d3a254a1929f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339cf53361bd6282a02faf260663a850') in 0.037683 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011557 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1005ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (801ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (243ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.61 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5786 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6457.
+Memory consumption went from 247.4 MB to 246.4 MB.
+Total: 3.770300 ms (FindLiveObjects: 0.367900 ms CreateObjectMapping: 0.185300 ms MarkObjects: 2.794400 ms  DeleteObjects: 0.421800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011942 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1005ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (812ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (75ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.65 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 5787 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6461.
+Memory consumption went from 247.5 MB to 246.5 MB.
+Total: 5.108900 ms (FindLiveObjects: 0.419400 ms CreateObjectMapping: 0.399300 ms MarkObjects: 3.797500 ms  DeleteObjects: 0.491600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3753.980936 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento2.prefab
+  artifactKey: Guid(294b122113b2a6a47bd88c76ad15a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento2.prefab using Guid(294b122113b2a6a47bd88c76ad15a83e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafb59646e19c8d9a45ae4f4507b8b70') in 0.432811 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3578.347024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ec8cb60ee19b155c0115bc5c34cb9c') in 0.203668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.221920 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b7c386e49693db16cbf299d19ba8e36') in 0.095343 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.008521 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89522d9dd3876b0274369b18e8ed9b3') in 0.086275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.306695 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb08ef471ab0792303fa1a86840c001') in 0.074095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.711307 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd402ef6eec74f72952aa96b6789bd9cd') in 0.084453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.616155 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13944833304f1d0d4310f558c38df38e') in 0.084513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd51432b5e66fc52010f15d28869bd772') in 0.075688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.137063 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73eb5cde2da678f095e93289d1752f10') in 0.075396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.530838 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f294305b5d1db85692e3d1fc29340012') in 0.076052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.025388 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d212589f1a0b1dca17f107c9534055') in 0.074437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d07d74c034a7820f474069394a4c71') in 0.067305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.860170 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa50dfe20f0ea75a2cd7804b3ce1daf1') in 0.086404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.199268 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1de0d3865b26b335d9dbe0dc81a3b5') in 0.074125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dde158f35240cdcf67a635b4ac49bcc') in 0.068690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 757.679567 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2952dcb8e0fd0db4603eb0950c85c4b2') in 0.078214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.070450 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba6a2132ff50680f3207490a5b92593') in 0.079259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.660632 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06f6e231022cf32f64e1fae6b1a4c91e') in 0.073511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 45.972831 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c46861bda57da26b786a3af9a9ee5596') in 0.075234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.583334 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71a972ab98f98308bdb112f5706ebbd') in 0.075625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.927684 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87364a088dc3316a9209aaa6017dad91') in 0.078053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.524120 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cdaae1e5315dc0f9221a9f779546f3') in 0.083172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.806240 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcea0108791567549797d6c690c30b2a') in 0.076361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 154.822310 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_Original.prefab
+  artifactKey: Guid(8fd03aee8193d89409e9d00c731df2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_Original.prefab using Guid(8fd03aee8193d89409e9d00c731df2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4021215e08d0fe9d98de622f2b1a790f') in 0.029070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 143.005566 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab
+  artifactKey: Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/SteeringWheel_RacingStyle.prefab using Guid(9f4264154f0043c48bc88df24b54fcb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd24633756dc2c49a6e2fcd2b2180e93') in 0.027740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.458978 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06940caa2724800741bd6ab84bbc43a1') in 0.078977 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.405765 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29537d1c64c44cb0a75d94897fb80176') in 0.076598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.342155 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab
+  artifactKey: Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car1Original.prefab using Guid(02b66ebf88c918b419a731d4b000fc54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ea94200367a10602e84b2d6c9330f5') in 0.078469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.237103 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab
+  artifactKey: Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab using Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c61766a48790b5d3d7227d55128c742') in 0.079657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.806032 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab
+  artifactKey: Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Chasis/Body_Car2Original.prefab using Guid(92c55f0a29f853843963593148d0e703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd609646dd13a524f002deb7503c103dd') in 0.077798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.653079 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c5e9fbe9aae04155f15992c01fc1ec5') in 0.074261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.902408 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526ac60cb86cf34338a82e33c211774b') in 0.078392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.969483 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbd54087272803c7d0064020329fe29') in 0.079314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc78f207918cb467eff5d1da9e4b41c4') in 0.081848 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.185616 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9568baf07bc166588772209b2009274c') in 0.073123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd40344926c249d35ed617ff3d3ec23fd') in 0.074905 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.866308 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab
+  artifactKey: Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car1Original.prefab using Guid(cce41fbb41482184085f71b24207f649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '158efef2d007335bb446e7b2f18b7268') in 0.079318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409ab2ef6fab0d599e8a111e3001f1e3') in 0.077326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.014635 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c2f0ca7fa4a5494c2f867797ac9f3e') in 0.090752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a510288ffda16eb326cc3420b2ac92') in 0.078348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.406074 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8db3ef42d355a99c0b5a60ccc61a73d') in 0.081936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f646e7fa1409e597b8c8ff8454897046') in 0.076770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.077469 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41f016563b7a7eae9ff0cec55b121548') in 0.079074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab
+  artifactKey: Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car2Original.prefab using Guid(3fd66c953c34aae45aaa5648ae69e419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b05effbb04203dd86af78461b66936') in 0.078207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.459666 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '460cef60362e49bfab61df8be58fe917') in 0.080536 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5733784eca06545443f8349049ab689b') in 0.078312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.089695 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7671617bb36660253eab026431cd3f') in 0.079651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8b439fa500a4f79bfba2c1175a36b42') in 0.081190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.430684 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab
+  artifactKey: Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorL_Car2Original.prefab using Guid(ce31bfa6e500c694d93d75b259d6f53a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7113792a687cf0284ef15a4e4007fedd') in 0.080001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab
+  artifactKey: Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Puertas/DoorR_Car1Original.prefab using Guid(79d302d34ec103c43a68879b7bf90758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc48133fc561e5b6b00fa9e8403c143') in 0.084899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 154.038934 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2c28eaa6ff700236bc573d085a2b48') in 0.082490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.838503 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa517dbead53d167845e17c3dad354f') in 0.081988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4536fdf58f455775da87fa6b8fc637b6') in 0.076670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.120997 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aec2016f86204d8a2b13e368152106c') in 0.087193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567ef4482df0eadfd34a55f8f67989df') in 0.078599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.378361 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c82665ecd53e555986a097dbe947c7d') in 0.075882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab
+  artifactKey: Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/SideWindow_Car1Original.prefab using Guid(5c1250e45c4c7414e8267e02e73f230a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084c490f012754ffafd17b1d2a5dea6a') in 0.076237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.724608 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab
+  artifactKey: Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car1Original.prefab using Guid(0b24a18750147b343b5403fabd77fb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b15061cf6790015e5e7d7f96b51860a') in 0.090415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6c9241e90c7948af0671cedd75cc578') in 0.081114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.530286 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18646a520a301cfeb1d788091dd18fd8') in 0.086117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9dfe39610cdcf746719c8f647dec7c4') in 0.072325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.417386 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b2198a0dbfa68ea18fe9b0bda0c797') in 0.085423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9386d58f93eb5da3e93bd7517ea5b3') in 0.074510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.973374 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79360a16f410d390d75be0f91e8aac4d') in 0.083914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab
+  artifactKey: Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/Windshield_Car1Original.prefab using Guid(3ba2da46444dcc74a8fc2e1051a8caa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1518a408a2ff21acafecd773e5b336a5') in 0.073433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.549981 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab
+  artifactKey: Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Ventanas/RearWindow_Car2Original.prefab using Guid(3fe7086e67ff69243841da7a6463e697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871c9b133c5d0aa5f25c8876a0dab729') in 0.084296 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

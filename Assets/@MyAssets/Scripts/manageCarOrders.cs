@@ -47,6 +47,8 @@ public class manageCarOrders : MonoBehaviour
 
     private List<List<bool>> xlist;
 
+    private List<GameObject> totalPurchasableUniqueParts = new List<GameObject>();
+
     private void Awake()
     {
         
@@ -657,7 +659,11 @@ public class manageCarOrders : MonoBehaviour
 
     private GameObject replaceCarPartsOnCustomize(string startwithstring, Transform htransform)
     {
-        List<GameObject> filteredGameObjects = gameDataSO.purchasableUniquePartsGeneralList.Where(go => go.name.StartsWith(startwithstring)).ToList();
+        foreach (gameManagerSO.UniqueObject gmsouo in gameDataSO.purchasableUniquePartsObjectGeneralList)
+        {
+            totalPurchasableUniqueParts.Add(gmsouo.item);
+        }
+        List<GameObject> filteredGameObjects = totalPurchasableUniqueParts.Where(go => go.name.StartsWith(startwithstring)).ToList();
         int rand = rnd.Next(filteredGameObjects.Count);
         Destroy(htransform.GetChild(0).gameObject);
         GameObject newChild = Instantiate(filteredGameObjects[rand]);

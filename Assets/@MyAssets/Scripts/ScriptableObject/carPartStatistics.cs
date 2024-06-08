@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum CarPartEnum {Rueda, Volante, Chasis, Puerta, Ventana, Asiento, Luces}
+public enum CarPartEnum {Wheel, SteeringWheel, Body, Door, Window, Seat}
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/CreateCarPart", order = 1)]
 public class carPartStatistics : ScriptableObject

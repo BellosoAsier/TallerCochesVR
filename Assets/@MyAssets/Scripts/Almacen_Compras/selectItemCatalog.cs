@@ -26,16 +26,21 @@ public class selectItemCatalog : MonoBehaviour
     [SerializeField] private GameObject buttonLeft;
     [SerializeField] private GameObject buttonRight;
     [SerializeField] private GameObject buttonComprar;
+    [SerializeField] private GameObject buttonCancelar;
 
     [SerializeField] private gameManagerSO gameDataSO;
-    private List<GameObject> totalPurchasableUniqueParts;
+    private List<GameObject> totalPurchasableUniqueParts = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
         listaCatalogo = new List<List<GameObject>>();
         updateBool = false;
         pageCount = 0;
-        totalPurchasableUniqueParts = gameDataSO.purchasableUniquePartsGeneralList;
+        foreach(gameManagerSO.UniqueObject gmsouo in gameDataSO.purchasableUniquePartsObjectGeneralList)
+        {
+            totalPurchasableUniqueParts.Add(gmsouo.item);
+        }
+        //totalPurchasableUniqueParts = gameDataSO.purchasableUniquePartsGeneralList;
 
         foreach (GameObject go in totalPurchasableUniqueParts)
         {
@@ -56,7 +61,7 @@ public class selectItemCatalog : MonoBehaviour
         {
             updateBool = !updateBool;
 
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 4; i++)
             {
                 try
                 {
@@ -84,7 +89,8 @@ public class selectItemCatalog : MonoBehaviour
             if (objetoActual.name.StartsWith(kve.key))
             {
                 buttonComprar.SetActive(true);
-                listaCatalogo = dividirLista(kve.value,6);
+                buttonCancelar.SetActive(true);
+                listaCatalogo = dividirLista(kve.value,4);
                 pageCount = listaCatalogo.Count-1;
                 pagePointer = 0;
                 updateBool = true;

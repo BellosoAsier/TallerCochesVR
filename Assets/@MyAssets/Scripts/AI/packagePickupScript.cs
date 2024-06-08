@@ -8,10 +8,10 @@ public class packagePickupScript : MonoBehaviour
     private NavMeshAgent robot;
     [SerializeField] private GameObject x;
     public GameObject package;
-    [SerializeField] private List<containerManager> listaContainerManager;
+    [SerializeField] private List<containerTypeManager> listaContainerManager;
     private bool hasPackage = false;
-    private Transform destinationEntrega;
-    private Transform pointContainer;
+    public Transform destinationEntrega;
+    public Transform chosenContainer;
     private List<packageScript.PurchasePackageItem> ps;
     private RobotAIBehaviour raib;
     private Quaternion originalRotation;
@@ -53,19 +53,19 @@ public class packagePickupScript : MonoBehaviour
             {
                 if (Vector3.Distance(robot.transform.position, destinationEntrega.transform.position) < 1)
                 {
-                    for (int i = 0; i < ps[0].quantity; i++)
-                    {
-                        GameObject o = Instantiate(ps[0].item);
-                        o.transform.position = pointContainer.position;
-                        o.AddComponent<Rigidbody>();
-                    }
-                    ps.RemoveAt(0);
-                    destinationEntrega = null;
+                    raib.changeStateRobot(robotState.Almacenar);
+                    //for (int i = 0; i < ps[0].quantity; i++)
+                    //{
+                    //    chosenContainer.GetComponent<containerManager>().numberOfItems++;
+                    //}
+                    //ps.RemoveAt(0);
+                    //destinationEntrega = null;
                 }
             }
         }
 
     }
+
     public void initilizeMethod(RobotAIBehaviour rr)
     {
         raib = rr;
@@ -87,13 +87,13 @@ public class packagePickupScript : MonoBehaviour
 
             //Debug.Log(palabras);
         
-            foreach (containerManager cm in listaContainerManager)
+            foreach (containerTypeManager cm in listaContainerManager)
             {
                 if (cm.gameObject.name.Contains("Containers"+palabras[0]))
                 {
                     //int numero = int.Parse(palabras[1]);
-                    destinationEntrega = cm.getContainerPosition(palabras[1])[2];
-                    pointContainer = cm.getContainerPosition(palabras[1])[1];
+                    destinationEntrega = cm.getContainerPosition(palabras[1])[1];
+                    chosenContainer = cm.getContainerPosition(palabras[1])[0];
                     robot.SetDestination(destinationEntrega.position);
                 }
             }
