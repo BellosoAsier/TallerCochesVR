@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using static clientOrders;
+using static containerManager;
 
 public class filesManager : MonoBehaviour
 {
@@ -16,6 +17,17 @@ public class filesManager : MonoBehaviour
         public SerializableOrderList(List<ClientOrder> orderList)
         {
             OrderList = orderList;
+        }
+    }
+
+    [System.Serializable]
+    public class SerializableAlmacenList
+    {
+        public List<AlmacenItem> AlmacenList;
+
+        public SerializableAlmacenList(List<AlmacenItem> aList)
+        {
+            AlmacenList = aList;
         }
     }
     public List<string> ReadTXTFile(TextAsset file, bool isName)
@@ -80,5 +92,29 @@ public class filesManager : MonoBehaviour
         }
     }
 
+    public void SaveAlmacenItemsList(List<AlmacenItem> aList)
+    {
+        string json = JsonUtility.ToJson(new SerializableAlmacenList(aList));
+        string path = Path.Combine(Application.persistentDataPath + "/almacenItemsList.json");
+        File.WriteAllText(path, json);
+
+        Debug.Log(path);
+    }
+
+    public List<AlmacenItem> LoadAlmacenItemsListJSON()
+    {
+        string path = Path.Combine(Application.persistentDataPath + "/almacenItemsList.json");
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SerializableAlmacenList serializedList = JsonUtility.FromJson<SerializableAlmacenList>(json);
+            return serializedList.AlmacenList;
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró el archivo de lista de items de almacen.");
+            return new List<AlmacenItem>();
+        }
+    }
 
 }

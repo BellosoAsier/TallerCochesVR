@@ -139,42 +139,151 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 870db4b06a4b9684eb51a1e2726cb67b, type: 2}
   - {fileID: 2100000, guid: 2bb9921321e33144ab0d07e25a96eddc, type: 2}
   purchasableUniquePartsObjectGeneralList:
-  - item: {fileID: 4551701104905001171, guid: dabb1e249825a4c44a2a34d37ba521ee, type: 3}
+  - name: Asiento - BabyComfort
+    item: {fileID: 3674082917655619146, guid: 199372d1a9eabdf4b9b86b00ae156ddc, type: 3}
     value: 400
     sprite: {fileID: 21300000, guid: 246ab4978066f79499b530f1e1c03cf7, type: 3}
-  - item: {fileID: 5460186351376832245, guid: 8fd03aee8193d89409e9d00c731df2c3, type: 3}
+  - name: Asiento - Original
+    item: {fileID: 7588225288587952312, guid: 0e9a7c434184d004eaf80434801cb456, type: 3}
     value: 300
     sprite: {fileID: 21300000, guid: 0123654bb39e10e48b30bfb040d5d2c6, type: 3}
-  - item: {fileID: 870104679521420864, guid: 294b122113b2a6a47bd88c76ad15a83e, type: 3}
+  - name: Asiento - RacingStyle
+    item: {fileID: 309481552421708720, guid: 52af5e2ec65f67d4890351eef7625012, type: 3}
     value: 550
     sprite: {fileID: 21300000, guid: 3ecca2c69a153354d8dd67b84a0fd216, type: 3}
-  - item: {fileID: 437203957983699339, guid: 749e0718750e5f5469e0bfc5095503e9, type: 3}
+  - name: Rueda - Classic
+    item: {fileID: 437203957983699339, guid: 749e0718750e5f5469e0bfc5095503e9, type: 3}
     value: 75
     sprite: {fileID: 21300000, guid: 2c5c90bcedc72fa4aa710274c9c3c8c7, type: 3}
-  - item: {fileID: 117795403306223640, guid: 32f1bf9d714ff624bb125a2c9cff06c4, type: 3}
+  - name: Rueda - HexaEco
+    item: {fileID: 117795403306223640, guid: 32f1bf9d714ff624bb125a2c9cff06c4, type: 3}
     value: 125
     sprite: {fileID: 21300000, guid: b303d0349ff3b5d4ba7941122a943c9a, type: 3}
-  - item: {fileID: 6735077280937915288, guid: 7d94b032dc071f5469aaef260bfd98ae, type: 3}
+  - name: Rueda - HyperPower
+    item: {fileID: 6735077280937915288, guid: 7d94b032dc071f5469aaef260bfd98ae, type: 3}
     value: 200
     sprite: {fileID: 21300000, guid: 50f097cb07f16ce45928dcd77bfdd4d4, type: 3}
-  - item: {fileID: 8827607880926770714, guid: b16f2f189a8b24b419a2e1214d6417f4, type: 3}
+  - name: Rueda - Original
+    item: {fileID: 8827607880926770714, guid: b16f2f189a8b24b419a2e1214d6417f4, type: 3}
     value: 100
     sprite: {fileID: 21300000, guid: 286739007a21e234eaed9b4fecb218ae, type: 3}
-  - item: {fileID: 3270492871499458620, guid: f8b8c61153204b345828ccb7fd63e4a5, type: 3}
+  - name: Rueda - TriangularComfort
+    item: {fileID: 3270492871499458620, guid: f8b8c61153204b345828ccb7fd63e4a5, type: 3}
     value: 150
     sprite: {fileID: 21300000, guid: 481bc3b7eaba3a74b82568560cdfe872, type: 3}
-  - item: {fileID: 513797913708732892, guid: 9ef811acfeaed3749a2666dbf1b96cb8, type: 3}
+  - name: Rueda - WindBlow
+    item: {fileID: 513797913708732892, guid: 9ef811acfeaed3749a2666dbf1b96cb8, type: 3}
     value: 175
     sprite: {fileID: 21300000, guid: 6a2999ea9ad389649bf67dea7ca511a8, type: 3}
-  - item: {fileID: 5470147114947340259, guid: 656fbcba584a53d498680e290c53f6a9, type: 3}
+  - name: Volante - Classic
+    item: {fileID: 5470147114947340259, guid: 656fbcba584a53d498680e290c53f6a9, type: 3}
     value: 150
     sprite: {fileID: 21300000, guid: c9903e849a0eec04ea6df63974805b2a, type: 3}
-  - item: {fileID: 846473127972883136, guid: b58805dfd3859cc4686de1378ece8605, type: 3}
+  - name: Volante - Original
+    item: {fileID: 846473127972883136, guid: b58805dfd3859cc4686de1378ece8605, type: 3}
     value: 200
     sprite: {fileID: 21300000, guid: 8cbdd938bda32c44cb791b15656e4089, type: 3}
-  - item: {fileID: 3123505992112877071, guid: 9f4264154f0043c48bc88df24b54fcb6, type: 3}
+  - name: Volante - RacingStyle
+    item: {fileID: 3123505992112877071, guid: 9f4264154f0043c48bc88df24b54fcb6, type: 3}
     value: 300
     sprite: {fileID: 21300000, guid: b88cfc423d181894fad0bbab5428f56a, type: 3}
-  - item: {fileID: 3529474476434304105, guid: 73fc1db45c7cf3f499d150b1c916d5f9, type: 3}
+  - name: Volante - SpeedControl
+    item: {fileID: 3529474476434304105, guid: 73fc1db45c7cf3f499d150b1c916d5f9, type: 3}
     value: 250
     sprite: {fileID: 21300000, guid: 241c08955ea2e0a4daf6a8b035dbca02, type: 3}
+  - name: Chasis - Car1
+    item: {fileID: 695817004700986076, guid: 02b66ebf88c918b419a731d4b000fc54, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: bdc9c22e99020ee4c9adddbbc96a6bb3, type: 3}
+  - name: Chasis - Car2
+    item: {fileID: 8583283426102269947, guid: 92c55f0a29f853843963593148d0e703, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: e5c793ca8c725324eab92c6b61a66c5d, type: 3}
+  - name: PuertaIzq - Car1
+    item: {fileID: 7780697814154742985, guid: cce41fbb41482184085f71b24207f649, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 6d020aa2eea5b3743995c85bbb46cfec, type: 3}
+  - name: PuertaIzq - Car2
+    item: {fileID: 1559056318413228919, guid: ce31bfa6e500c694d93d75b259d6f53a, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: f8bfd976b9609304a84ff438843ffc34, type: 3}
+  - name: PuertaDer - Car1
+    item: {fileID: 5512825950309892445, guid: 79d302d34ec103c43a68879b7bf90758, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 9ba8ecf5516584f44b6a05b6e035b4a9, type: 3}
+  - name: PuertaDer - Car1
+    item: {fileID: 2700415235982560528, guid: 3fd66c953c34aae45aaa5648ae69e419, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: ff4ded6d8edf45646b2d657a180e6ea4, type: 3}
+  - name: VentanaTrasera - Car1
+    item: {fileID: 3471445722560385304, guid: 0b24a18750147b343b5403fabd77fb13, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: c61b23631f61f524fb44c86d248fb4fa, type: 3}
+  - name: VentanaTrasera - Car2
+    item: {fileID: 7239554236287933250, guid: 3fe7086e67ff69243841da7a6463e697, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 76e6090042717f340b15fb527fb0965c, type: 3}
+  - name: VentanaLateral - Car1
+    item: {fileID: 7775944649825454856, guid: 5c1250e45c4c7414e8267e02e73f230a, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 89d17a48b393d4242b4b86e7c7ba0afb, type: 3}
+  - name: VentanaDelantera - Car1
+    item: {fileID: 6952529504242995523, guid: 3ba2da46444dcc74a8fc2e1051a8caa9, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 50e1b9df1f438ce439c671f0b35b0a6f, type: 3}
+  - name: VentanaDelantera - Car2
+    item: {fileID: 8451549148839248198, guid: f62698a456b477147b106916b4954a25, type: 3}
+    value: 0
+    sprite: {fileID: 21300000, guid: 2c237ed50332b5947b4af8c319349dd6, type: 3}
+  - name: Pintura_ColorAmarillo
+    item: {fileID: 3674689415058439983, guid: f7b55f650f1f1044c940ad5ce5e45fc3, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: d903c6a3f98a90246b76a1ad9ebe4c79, type: 3}
+  - name: Pintura_ColorAzul
+    item: {fileID: 3674689415058439983, guid: 47f3db3377a9a8348b14d3e4fbf26125, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 95d1fe303f54ed5488840882b0b1398c, type: 3}
+  - name: Pintura_ColorBlanco
+    item: {fileID: 3674689415058439983, guid: 125bd06b6899ddc4095372fc5485b32d, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 8deffae1a0efafa4ab97de9395e7ee3b, type: 3}
+  - name: Pintura_TinteFuerte
+    item: {fileID: 3674689415058439983, guid: e064ff082346ec748849c123441915ee, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 0e38d0b1549f8ee41b5a3714250ac77b, type: 3}
+  - name: Pintura_TinteBajo
+    item: {fileID: 3674689415058439983, guid: 1170c95d09d60fa43bb1fec800e64870, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: c821aa2b21946954f98b55046e21dce8, type: 3}
+  - name: Pintura_ColorMarron
+    item: {fileID: 3674689415058439983, guid: 878ead16c4a4908428c8b9a15f929a45, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 446528ace8625b346bcbfbc337f0362a, type: 3}
+  - name: Pintura_TinteMedio
+    item: {fileID: 3674689415058439983, guid: 6d4ec2ab4559fdb4b81efb371692d69e, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: bde0955353f442245811dc7f15f2a403, type: 3}
+  - name: Pintura_ColorMorado
+    item: {fileID: 3674689415058439983, guid: d25dd4902e2848f4cb33e731350664e6, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: a578e93891b482a4d8e03d08488c971e, type: 3}
+  - name: Pintura_ColorNaranja
+    item: {fileID: 3674689415058439983, guid: ad26aa8b6dfd1d0458c6cb77ca41df11, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: f3ad5f935c121be4b96da43720099c60, type: 3}
+  - name: Pintura_ColorNegro
+    item: {fileID: 3674689415058439983, guid: 5986d378f7dd97e4bafd69cacecdfe17, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 3038df5564280ad43ad4e4bdd1902b19, type: 3}
+  - name: Pintura_ColorRojo
+    item: {fileID: 3674689415058439983, guid: ae066bad42676684196dca5793182397, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 84a51e735919cb342ac067816bac3773, type: 3}
+  - name: Pintura_ColorRosa
+    item: {fileID: 3674689415058439983, guid: a30b20b82797cb442aa341c63a47f618, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 6ed0897ddfbf5d84fb572b10b7fd0be0, type: 3}
+  - name: Pintura_ColorVerde
+    item: {fileID: 3674689415058439983, guid: 708ba2eebe3a9fc479e7a97ff4862bc5, type: 3}
+    value: 50
+    sprite: {fileID: 21300000, guid: 05e8e44f09b50454eadaee32b2026e3e, type: 3}

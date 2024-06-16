@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fed836491a04d7f46bf38c7214959af9, type: 3}
   m_Name: Negro_Color
   m_EditorClassIdentifier: 
-  extraEcoValue: 5
+  extraEcoValue: -5
   extraVelocityValue: 5
   extraManejoValue: 0
   extraWeightValue: 5

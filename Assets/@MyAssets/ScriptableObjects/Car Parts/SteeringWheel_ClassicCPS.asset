@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: SteeringWheel_ClassicCPS
   m_EditorClassIdentifier: 
   carPart: 1
-  moneyValue: 0
-  ecoValue: 0
-  velocityValue: 0
-  manejoValue: 0
-  weightValue: 0
-  qualityValue: 0
-  beautyValue: 0
+  ecoValue: 5
+  velocityValue: 10
+  manejoValue: 5
+  weightValue: 5
+  qualityValue: 10
+  beautyValue: 10

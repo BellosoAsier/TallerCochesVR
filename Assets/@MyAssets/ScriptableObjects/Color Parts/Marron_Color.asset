@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   extraEcoValue: 5
   extraVelocityValue: 5
-  extraManejoValue: 5
+  extraManejoValue: -5
   extraWeightValue: 0
   extraQualityValue: 0
   extraBeautyValue: 0

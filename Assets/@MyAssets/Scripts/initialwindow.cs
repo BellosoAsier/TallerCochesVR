@@ -4,29 +4,30 @@ using UnityEngine;
 
 public class initialWindow : MonoBehaviour
 {
-    [SerializeField] private GameObject order;
-    [SerializeField] private GameObject purchase;
-    [SerializeField] private GameObject assistant;
+    [SerializeField] private GameObject b1;
+    [SerializeField] private GameObject b2;
+    [SerializeField] private GameObject b3;
 
     public void initialToOrder()
     {
-        order.SetActive(true);
+        b1.SetActive(true);
         this.gameObject.SetActive(false);
     }
     public void initialToPurchase()
     {
-        purchase.SetActive(true);
+        b2.SetActive(true);
         this.gameObject.SetActive(false);
     }
     public void initialToAssistant()
     {
-        //TODO: Implementar el codigo cuando el asistente este hecho.
+        b3.SetActive(true);
+        this.gameObject.SetActive(false);
     }
     public void returnToHome()
     {
-        order.SetActive(false);
-        purchase.SetActive(false);
-        //assistant.SetActive(false);
+        b1.SetActive(false);
+        b2.SetActive(false);
+        b3.SetActive(false);
         this.gameObject.SetActive(true);
     }
 }

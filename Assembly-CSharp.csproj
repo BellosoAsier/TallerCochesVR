@@ -59,6 +59,8 @@
     <Compile Include="Assets\@MyAssets\Scripts\filesManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\initialWindow.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\ObjectQuantity.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\XR\changeParentOnGrab.cs" />
+    <Compile Include="Assets\ppopo.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\TMPCurrentTime.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\selectItemCatalog.cs" />
@@ -66,22 +68,30 @@
     <Compile Include="Assets\@MyAssets\Scripts\gameManagerScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\gameManagerSO.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\playerDataSO.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\showCarStatistics.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Menu\menuScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\catalogTypeIndicator.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\switchRayAndDirect.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\carManager.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\saveWindowScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\carPart.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\profileStatisticsScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\carPartStatistics.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\AI\almacenarScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\colorPartStatistic.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\XR\checkIfEmptySocket.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\XR\carPartChangesPossibleID.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\XR\changeCarParts.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\CarScript.cs" />
-    <Compile Include="Assets\@MyAssets\ooop.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerTypeManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\RobotAIBehaviour.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\purchaseScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\packagePickupScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\catalogVisualizeScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\idleScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\manageCarOrders.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\packageScript.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerTypeManager.cs" />
-    <Compile Include="Assets\@MyAssets\Scripts\AI\almacenarScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\@MyAssets\Documentos\saludos-clientes.txt" />

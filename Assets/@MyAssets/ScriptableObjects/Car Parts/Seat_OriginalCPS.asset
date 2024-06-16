@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Seat_OriginalCPS
   m_EditorClassIdentifier: 
   carPart: 5
-  moneyValue: 0
-  ecoValue: 0
+  ecoValue: 25
   velocityValue: 0
-  manejoValue: 0
+  manejoValue: 10
   weightValue: 0
-  qualityValue: 0
-  beautyValue: 0
+  qualityValue: 10
+  beautyValue: 5

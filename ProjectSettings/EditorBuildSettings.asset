@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/@MyAssets/Scenes/MenuSuperTaller.unity
+    guid: c244c041020eb814c813aa7f20d79c33
+  - enabled: 1
+    path: Assets/@MyAssets/Scenes/SuperTaller.unity
+    guid: 1c9c83f564538dd49ac0614cb5d27d32
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 0b5319432cb1cd746a587cf65f15f6ba,
       type: 2}

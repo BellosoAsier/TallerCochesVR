@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player1
   m_EditorClassIdentifier: 
   namePlayer: Assaz
-  currentMoney: 10000
+  currentMoney: 40000
   completedOrders: 0
   rejectedOrders: 0
   cancelledOrders: 0

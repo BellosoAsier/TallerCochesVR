@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5529022760284533668}
   - component: {fileID: 3763445976153354517}
   - component: {fileID: 4976979677288949750}
-  m_Layer: 0
+  - component: {fileID: 1666472463621371943}
+  m_Layer: 6
   m_Name: Windshield_Car1Original
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +117,22 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6952529504242995523}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7426923360611945911, guid: e77e013c8f307be4ca407ef61a4a5f7a, type: 3}
+--- !u!114 &1666472463621371943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6952529504242995523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62c8c7f75228784e8ad08fd35e63c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleChanges: 01000000

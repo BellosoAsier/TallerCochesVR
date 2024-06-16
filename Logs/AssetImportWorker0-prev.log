@@ -15,7 +15,7 @@ C:/Users/usuario/Documents/GitHub/TallerCochesVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50618
+52711
 Successfully changed project path to: C:/Users/usuario/Documents/GitHub/TallerCochesVR
 C:/Users/usuario/Documents/GitHub/TallerCochesVR
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,8 +47,8 @@ C:/Users/usuario/Documents/GitHub/TallerCochesVR
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 99.57 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.75 ms.
+Refreshing native plugins compatible for Editor in 109.13 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.76 ms.
 Initialize engine version: 2021.3.9f1 (ad3870b89536)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/usuario/Documents/GitHub/TallerCochesVR/Assets
@@ -63,54 +63,54 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56656
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56344
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007667 seconds.
+Registered in 0.009080 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 98.36 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
+Refreshing native plugins compatible for Editor in 95.83 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.536 seconds
+- Completed reload, in  0.542 seconds
 Domain Reload Profiling:
-	ReloadAssembly (537ms)
-		BeginReloadAssembly (60ms)
+	ReloadAssembly (543ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (386ms)
-			LoadAssemblies (58ms)
+		EndReloadAssembly (392ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (76ms)
+			SetupTypeCache (79ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (18ms)
 			SetupLoadedEditorAssemblies (249ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (45ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
+				RefreshPlugins (96ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (70ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012099 seconds.
+Registered in 0.011241 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 95.61 ms, found 11 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 99.67 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
 Package Manager log level set to [2]
 System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
   at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
@@ -128,29 +128,29 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.248 seconds
+- Completed reload, in  1.235 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1248ms)
-		BeginReloadAssembly (202ms)
+	ReloadAssembly (1236ms)
+		BeginReloadAssembly (188ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (131ms)
-		EndReloadAssembly (953ms)
-			LoadAssemblies (81ms)
+			CreateAndSetChildDomain (117ms)
+		EndReloadAssembly (957ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (218ms)
+			SetupTypeCache (208ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (567ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (583ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (96ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (288ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -158,13 +158,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.33 ms, found 11 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 11 plugins.
 Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 5924 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 67 unused Assets / (1.1 MB). Loaded Objects now: 6359.
-Memory consumption went from 240.4 MB to 239.3 MB.
-Total: 3.670500 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.146900 ms MarkObjects: 2.710100 ms  DeleteObjects: 0.426800 ms)
+Unloading 5936 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (1.1 MB). Loaded Objects now: 6372.
+Memory consumption went from 240.9 MB to 239.8 MB.
+Total: 4.510000 ms (FindLiveObjects: 0.532500 ms CreateObjectMapping: 0.481200 ms MarkObjects: 3.055500 ms  DeleteObjects: 0.439600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -178,77 +178,337 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 33052.527168 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Asientos
-  artifactKey: Guid(db5e21b9f37572f41af978b8d0ac238d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos using Guid(db5e21b9f37572f41af978b8d0ac238d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafa283015426e24e2d4284ef42e3670') in 0.015111 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.059675 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_1.fbx
-  artifactKey: Guid(881c1850d6808cd4293e0bca6cbb8421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_1.fbx using Guid(881c1850d6808cd4293e0bca6cbb8421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a8c4b6904ff999d0613eb6293f85d1') in 0.288910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_3.fbx
-  artifactKey: Guid(f0e4d7a93b3ea0944903f3e9c799dca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asiento_3.fbx using Guid(f0e4d7a93b3ea0944903f3e9c799dca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7676128ce633618304b528474e38691') in 0.028601 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.726436 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Asientos.ma
-  artifactKey: Guid(671caa0ec61d9c64c96af1f7b9c5694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Asientos.ma using Guid(671caa0ec61d9c64c96af1f7b9c5694c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e85341b9145d6b891479ae58fd545c8c') in 0.004996 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.705385 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas
-  artifactKey: Guid(5aa7a673afc1c054aa322559d43547a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas using Guid(5aa7a673afc1c054aa322559d43547a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787d5cea445e478a8af257febab62c01') in 0.007551 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.054229 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_1.fbx
-  artifactKey: Guid(c727ac27548002641a50c37e86eed406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_1.fbx using Guid(c727ac27548002641a50c37e86eed406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7ff1d7efef730115e5c373459163b91') in 0.027855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_base.fbx
-  artifactKey: Guid(66394fe55c452344f8443d4520fc56a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_base.fbx using Guid(66394fe55c452344f8443d4520fc56a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88c243d4f67e35b702ba1bc921c0be8') in 0.027028 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_4.fbx
-  artifactKey: Guid(b568635cd6942f940882426018a7b324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/Rueda_4.fbx using Guid(b568635cd6942f940882426018a7b324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7567547eeee7a6c181e02da23cf98f') in 0.022015 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.609906 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Ruedas/ruedas.ma
-  artifactKey: Guid(1d73facd7a2da514b88921dbb90bb9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Ruedas/ruedas.ma using Guid(1d73facd7a2da514b88921dbb90bb9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4cd833f08734c03613e8efb702eabcf') in 0.007743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.719044 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Volantes
-  artifactKey: Guid(b549dbd095dcd2546bab7e7c386b3758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes using Guid(b549dbd095dcd2546bab7e7c386b3758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c89066bf7233e38d1a2c9de9bf64fd') in 0.006819 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.179787 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_1.fbx
-  artifactKey: Guid(2da8abd13c2dd9e4b9de0095e98d9fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_1.fbx using Guid(2da8abd13c2dd9e4b9de0095e98d9fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad8d3bdcf4136482ef3d44cdcf47be6') in 0.027037 seconds 
+  Time since last request: 156770.678979 seconds.
+  path: Assets/@MyAssets/Scripts/AI/packagePickupScript.cs
+  artifactKey: Guid(71515851af3b4c647966423f16fb18da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Scripts/AI/packagePickupScript.cs using Guid(71515851af3b4c647966423f16fb18da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3dd78e214dbb95f593b721ca8d08b4') in 0.054314 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
-  path: Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_Base.fbx
-  artifactKey: Guid(9e31486594193a949b820dcae4b226fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/@MyAssets/Prefabs/Piezas/Volantes/Volante_Base.fbx using Guid(9e31486594193a949b820dcae4b226fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df9a298720393c3648288d8a90edd772') in 0.041314 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  path: Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs
+  artifactKey: Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs using Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08679e5f53e540c14bc0c9421a87df62') in 0.009410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 142.386016 seconds.
+  path: Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs
+  artifactKey: Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs using Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6201296c3163144df3ba94a84b5d0d3f') in 0.001985 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010211 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.024 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1024ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (820ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (228ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.90 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 5791 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6376.
+Memory consumption went from 240.7 MB to 239.6 MB.
+Total: 3.880900 ms (FindLiveObjects: 0.406500 ms CreateObjectMapping: 0.401300 ms MarkObjects: 2.665000 ms  DeleteObjects: 0.407300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1310.929779 seconds.
+  path: Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs
+  artifactKey: Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Scripts/AI/RobotAIBehaviour.cs using Guid(062c6a0cac2dec14692274c422168ed5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff001d8caee13ce84d907aba7919dde1') in 0.012195 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009963 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.000 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1000ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (86ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (228ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (411ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.33 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 5791 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6380.
+Memory consumption went from 240.7 MB to 239.6 MB.
+Total: 3.824200 ms (FindLiveObjects: 0.380100 ms CreateObjectMapping: 0.331400 ms MarkObjects: 2.698200 ms  DeleteObjects: 0.413600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3142.309423 seconds.
+  path: Assets/@MyAssets/Prefabs/RobotFreddy.prefab
+  artifactKey: Guid(c10bee3c8093c8f42856de97e7a8289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/RobotFreddy.prefab using Guid(c10bee3c8093c8f42856de97e7a8289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7447e90acb27b3bcfce1f3717a2c8f6f') in 0.520573 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010058 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.144 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1145ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (908ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (262ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (441ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (76ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.22 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 5798 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6442.
+Memory consumption went from 248.0 MB to 246.9 MB.
+Total: 5.287600 ms (FindLiveObjects: 0.629400 ms CreateObjectMapping: 0.419700 ms MarkObjects: 3.795100 ms  DeleteObjects: 0.442400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010634 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:271 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\usuario\Documents\GitHub\TallerCochesVR\Library\PackageCache\com.unity.xr.oculus@3.0.2\Runtime\OculusLoader.cs:256 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <9aad1b3a47484d63ba2b3985692d80e9>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <0d6ce211ebbc47e1a35a84c3672ff58f>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.009 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1009ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (814ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (426ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (240ms)
+				ProcessInitializeOnLoadMethodAttributes (78ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 5.82 ms, found 11 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 5799 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.1 MB). Loaded Objects now: 6446.
+Memory consumption went from 247.9 MB to 246.8 MB.
+Total: 4.894400 ms (FindLiveObjects: 0.477500 ms CreateObjectMapping: 0.454200 ms MarkObjects: 3.460100 ms  DeleteObjects: 0.501900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 975.358304 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab
+  artifactKey: Guid(199372d1a9eabdf4b9b86b00ae156ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_BabyComfort.prefab using Guid(199372d1a9eabdf4b9b86b00ae156ddc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '556a2ad55ab899d764b173ac5d7bc5f4') in 0.178295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_RacingStyle.prefab
+  artifactKey: Guid(52af5e2ec65f67d4890351eef7625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Prefabs/Piezas/Asientos/Seat_RacingStyle.prefab using Guid(52af5e2ec65f67d4890351eef7625012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b8109cf20a87c620309c11b321dbff1') in 0.022719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2961.530436 seconds.
+  path: Assets/@MyAssets/Scenes/MenuSuperTaller.unity
+  artifactKey: Guid(c244c041020eb814c813aa7f20d79c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/@MyAssets/Scenes/MenuSuperTaller.unity using Guid(c244c041020eb814c813aa7f20d79c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3568b0a37d9c2ff7c035e6f08de63c4') in 0.007974 seconds 

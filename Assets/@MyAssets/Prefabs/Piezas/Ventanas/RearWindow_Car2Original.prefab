@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 3204427318184733346}
   - component: {fileID: 6576913416119793552}
   - component: {fileID: 4838297452592203101}
-  m_Layer: 0
+  - component: {fileID: -222946724282152351}
+  m_Layer: 6
   m_Name: RearWindow_Car2Original
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,9 +117,22 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7239554236287933250}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3210412789638599145, guid: 20146e4d6e6a6a444ba7cb2260565d1a, type: 3}
+--- !u!114 &-222946724282152351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239554236287933250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62c8c7f75228784e8ad08fd35e63c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleChanges: 01000000

@@ -15,6 +15,6 @@ MonoBehaviour:
   extraEcoValue: 0
   extraVelocityValue: 5
   extraManejoValue: 5
-  extraWeightValue: 5
+  extraWeightValue: -5
   extraQualityValue: 0
   extraBeautyValue: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Azul_Color
   m_EditorClassIdentifier: 
   extraEcoValue: 0
-  extraVelocityValue: 5
+  extraVelocityValue: -5
   extraManejoValue: 0
   extraWeightValue: 5
   extraQualityValue: 5

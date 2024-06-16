@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Wheel_WindBlowCPS
   m_EditorClassIdentifier: 
   carPart: 0
-  moneyValue: 0
-  ecoValue: 0
-  velocityValue: 0
-  manejoValue: 0
+  ecoValue: -10
+  velocityValue: 10
+  manejoValue: 5
   weightValue: 0
-  qualityValue: 0
-  beautyValue: 0
+  qualityValue: 20
+  beautyValue: 5

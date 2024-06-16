@@ -21,10 +21,8 @@ public class RobotAIBehaviour : MonoBehaviour
         switch (estadoRobot)
         {
             case robotState.Idle:
-                //Script IDLE
                 ids.runIdle();
                 break;
-
             case robotState.Recogida:
                 pps.runPickup();
                 break;
@@ -40,10 +38,8 @@ public class RobotAIBehaviour : MonoBehaviour
         switch (estadoRobot)
         {
             case robotState.Idle:
-                //Script IDLE
                 ids.initilizeMethod(this);
                 break;
-
             case robotState.Recogida:
                 pps.initilizeMethod(this);
                 break;

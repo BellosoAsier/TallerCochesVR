@@ -8,11 +8,13 @@ public class gameManagerSO : ScriptableObject
     [System.Serializable]
     public class UniqueObject
     {
+        public string name;
         public GameObject item;
         public int value;
         public Sprite sprite;
-        public UniqueObject(GameObject item, int value, Sprite sprite)
+        public UniqueObject(string name, GameObject item, int value, Sprite sprite)
         {
+            this.name = name;
             this.item = item;
             this.value = value;
             this.sprite = sprite;

@@ -16,5 +16,5 @@ MonoBehaviour:
   extraVelocityValue: 0
   extraManejoValue: 0
   extraWeightValue: 0
-  extraQualityValue: 5
+  extraQualityValue: -5
   extraBeautyValue: 5

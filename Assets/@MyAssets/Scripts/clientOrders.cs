@@ -87,6 +87,7 @@ public class clientOrders : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        PlayerPrefs.SetInt("ppap", 0);
         pointerClients = PlayerPrefs.GetInt("ppap",0);
         initializeMovementArrows.SetActive(true);
         listaNombresH = fm.ReadTXTFile(t_boyNames, true);
@@ -177,10 +178,10 @@ public class clientOrders : MonoBehaviour
         PlayerPrefs.SetInt("ppap",pointerClients);
     }
 
-    private void OnApplicationQuit()
-    {
-        fm.SaveOrderListJSON(listClientOrders);
-    }
+    //private void OnApplicationQuit()
+    //{
+    //    fm.SaveOrderListJSON(listClientOrders);
+    //}
 
     private string secondsToMinutesAndSecondsText(int seconds)
     {

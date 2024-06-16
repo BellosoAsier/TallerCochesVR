@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Wheel_HexaEcoCPS
   m_EditorClassIdentifier: 
   carPart: 0
-  moneyValue: 0
-  ecoValue: 0
-  velocityValue: 0
+  ecoValue: 20
+  velocityValue: 5
   manejoValue: 0
-  weightValue: 0
+  weightValue: 5
   qualityValue: 0
-  beautyValue: 0
+  beautyValue: 10

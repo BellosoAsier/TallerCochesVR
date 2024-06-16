@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Car1Ventana
   m_EditorClassIdentifier: 
   carPart: 4
-  moneyValue: 800
   ecoValue: 10
   velocityValue: 6
   manejoValue: 10

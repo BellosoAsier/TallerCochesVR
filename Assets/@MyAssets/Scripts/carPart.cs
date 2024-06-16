@@ -60,11 +60,12 @@ public class carPart : MonoBehaviour
     private void addColorLightAndTintStatistics()
     {
         //Debug.Log(transform.parent.name);
-        switch (transform.parent.name)
+        string[] preWord = transform.name.Split("_");
+        switch (preWord[0])
         {
-            case "WindshieldSocket":
-            case "SideWindowSocket":
-            case "RearWindowSocket":
+            case "Windshield":
+            case "SideWindow":
+            case "RearWindow":
                 Material material = GetComponent<Renderer>().material;
                 color_ps = selectColorPartStatistic(material);
                 break;
@@ -140,4 +141,16 @@ public class carPart : MonoBehaviour
         }
         return cps;
     }
+
+    public carPartStatistics GetCarPartStatistics()
+    {
+        return car_ps;
+    }
+
+    public colorPartStatistic GetCarColorStatistics()
+    {
+        return color_ps;
+    }
+
+
 }

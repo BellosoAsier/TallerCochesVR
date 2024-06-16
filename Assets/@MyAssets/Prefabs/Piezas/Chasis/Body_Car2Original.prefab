@@ -12,10 +12,14 @@ GameObject:
   - component: {fileID: 3400443784405146737}
   - component: {fileID: 6656562772298319029}
   - component: {fileID: 5387399403501543296}
-  - component: {fileID: 2029702629833919735}
-  m_Layer: 0
+  - component: {fileID: 8945298998803516132}
+  - component: {fileID: 6956872511629775919}
+  - component: {fileID: 1028124843354384753}
+  - component: {fileID: 4160644604616810286}
+  - component: {fileID: 2105593252712953434}
+  m_Layer: 6
   m_Name: Body_Car2Original
-  m_TagString: Untagged
+  m_TagString: Coche
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,17 +113,68 @@ MonoBehaviour:
   ownWeightValue: 0
   ownQualityValue: 0
   ownBeautyValue: 0
---- !u!64 &2029702629833919735
-MeshCollider:
+--- !u!65 &8945298998803516132
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8583283426102269947}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2959467708922500008, guid: 20146e4d6e6a6a444ba7cb2260565d1a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 1.9903166, y: 0.5261885, z: 0.57727337}
+  m_Center: {x: 0, y: 0.6454764, z: -2.0644774}
+--- !u!65 &6956872511629775919
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583283426102269947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7801414, y: 0.19019198, z: 1.338937}
+  m_Center: {x: 0.023265958, y: 0.78796303, z: 1.334036}
+--- !u!65 &1028124843354384753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583283426102269947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12667322, y: 0.24877143, z: 1.6206996}
+  m_Center: {x: 0.85, y: 0.84458053, z: -1.5427643}
+--- !u!65 &4160644604616810286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583283426102269947}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12667322, y: 0.24877143, z: 1.6206996}
+  m_Center: {x: -0.76, y: 0.84458053, z: -1.5427643}
+--- !u!114 &2105593252712953434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583283426102269947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62c8c7f75228784e8ad08fd35e63c1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  possibleChanges: 00000000
