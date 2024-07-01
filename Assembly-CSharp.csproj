@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\@MyAssets\Scripts\filesManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\initialWindow.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\OnButtonPress.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\ObjectQuantity.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\XR\changeParentOnGrab.cs" />
     <Compile Include="Assets\ppopo.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="Assets\@MyAssets\Scripts\profileStatisticsScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\carPartStatistics.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\almacenarScript.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\kktua.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\ScriptableObject\colorPartStatistic.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\XR\checkIfEmptySocket.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\XR\carPartChangesPossibleID.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\@MyAssets\Scripts\CarScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\containerTypeManager.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\RobotAIBehaviour.cs" />
+    <Compile Include="Assets\@MyAssets\Scripts\returnPage.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\Almacen_Compras\purchaseScript.cs" />
     <Compile Include="Assets\@MyAssets\Scripts\AI\packagePickupScript.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />

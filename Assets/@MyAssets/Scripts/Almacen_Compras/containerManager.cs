@@ -121,7 +121,7 @@ public class containerManager : MonoBehaviour
             if (!(item.name.StartsWith("Paint")))
             {
                 item.transform.position = transform.GetChild(0).GetChild(0).position;
-                item.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                item.transform.localScale = Vector3.one;
             }
             numberOfItems--;
         }

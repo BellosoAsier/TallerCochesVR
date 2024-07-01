@@ -318,211 +318,237 @@ extern void initialWindow_initialToAssistant_m082030EF6EE3A4240F9E5873E758A3E4BE
 extern void initialWindow_returnToHome_m965CA55C0FF3DF7DE43EDD01E6F333418207EC56 (void);
 // 0x00000099 System.Void initialWindow::.ctor()
 extern void initialWindow__ctor_m92E9DEC301D661700971607795B9B417C088545C (void);
-// 0x0000009A System.Void manageCarOrders::Awake()
+// 0x0000009A System.Void kktua::changejej()
+extern void kktua_changejej_mB326F746B709BFC7ABEA60EAA135C92EDC6318B1 (void);
+// 0x0000009B System.Void kktua::.ctor()
+extern void kktua__ctor_mC225FD5BBC07503B7B7829360E6158DD6519F740 (void);
+// 0x0000009C System.Void manageCarOrders::Awake()
 extern void manageCarOrders_Awake_mCECE180FC9DF9D957A283827F1C995C725C9E153 (void);
-// 0x0000009B System.Void manageCarOrders::Update()
+// 0x0000009D System.Void manageCarOrders::Update()
 extern void manageCarOrders_Update_mDBAA9D58F0D7A982594B241EA9EDBE3F112B4DE9 (void);
-// 0x0000009C System.Void manageCarOrders::moveRight()
+// 0x0000009E System.Void manageCarOrders::moveRight()
 extern void manageCarOrders_moveRight_m1FCC2BC7734B26681A16F09980ABBE2C043B9092 (void);
-// 0x0000009D System.Void manageCarOrders::moveLeft()
+// 0x0000009F System.Void manageCarOrders::moveLeft()
 extern void manageCarOrders_moveLeft_m7FF334078F9C29E25AC89DC543150100C6EDEF19 (void);
-// 0x0000009E System.Void manageCarOrders::completeTask()
+// 0x000000A0 System.Void manageCarOrders::completeTask()
 extern void manageCarOrders_completeTask_mCBCA0BA3CA4E83DE51AAB05C388E2CF946827CEB (void);
-// 0x0000009F System.Void manageCarOrders::acceptOrder()
+// 0x000000A1 System.Void manageCarOrders::DestroyRecursively(UnityEngine.GameObject)
+extern void manageCarOrders_DestroyRecursively_m8E0BD0A51C36F82DC47CAC584C2D278ED0936294 (void);
+// 0x000000A2 System.Void manageCarOrders::acceptOrder()
 extern void manageCarOrders_acceptOrder_mEBC9FC9A6739CC116F660A708E8AB71F32E92D5A (void);
-// 0x000000A0 System.Collections.IEnumerator manageCarOrders::waitForCarPartChanges()
+// 0x000000A3 System.Collections.IEnumerator manageCarOrders::waitForCarPartChanges()
 extern void manageCarOrders_waitForCarPartChanges_mE26DCC895622C8BB2E5417F428CBFA1DF0AD4459 (void);
-// 0x000000A1 System.Void manageCarOrders::rejectOrder()
+// 0x000000A4 System.Void manageCarOrders::rejectOrder()
 extern void manageCarOrders_rejectOrder_mBB5E652AF0D2F95F7FA830FF01EFA8995625A8B6 (void);
-// 0x000000A2 System.Void manageCarOrders::cancelarOrder()
+// 0x000000A5 System.Void manageCarOrders::cancelarOrder()
 extern void manageCarOrders_cancelarOrder_m1A08139863593FC0CF31627121870032C03CCCBE (void);
-// 0x000000A3 System.Collections.IEnumerator manageCarOrders::waitSecondsAfterCancelOrFinish()
+// 0x000000A6 System.Collections.IEnumerator manageCarOrders::waitSecondsAfterCancelOrFinish()
 extern void manageCarOrders_waitSecondsAfterCancelOrFinish_m284D912F71E6E364979DA01CF4C576764CC5CA84 (void);
-// 0x000000A4 System.Collections.IEnumerator manageCarOrders::lockCarOrders(System.Single)
+// 0x000000A7 System.Collections.IEnumerator manageCarOrders::lockCarOrders(System.Single)
 extern void manageCarOrders_lockCarOrders_m505B52CFF8934E87E9EA411AEA85DC3E38911298 (void);
-// 0x000000A5 System.Void manageCarOrders::UpdateTimerText(System.Single)
+// 0x000000A8 System.Void manageCarOrders::UpdateTimerText(System.Single)
 extern void manageCarOrders_UpdateTimerText_mFD1C9D27C71BCB8B06F12B0BACE6101E834A7DDB (void);
-// 0x000000A6 System.Void manageCarOrders::eliminateAndAddNewOrder()
+// 0x000000A9 System.Void manageCarOrders::eliminateAndAddNewOrder()
 extern void manageCarOrders_eliminateAndAddNewOrder_m905497D938E9A866811FC61E0F52089DBD60F68A (void);
-// 0x000000A7 System.Collections.Generic.List`1<System.Collections.Generic.List`1<System.Boolean>> manageCarOrders::checkCorrectChangesMade()
+// 0x000000AA System.Collections.Generic.List`1<System.Collections.Generic.List`1<System.Boolean>> manageCarOrders::checkCorrectChangesMade()
 extern void manageCarOrders_checkCorrectChangesMade_m87B3EB5C60F5352828CF692010524EBF932A201F (void);
-// 0x000000A8 System.Void manageCarOrders::checkExtraChangesCorrect()
+// 0x000000AB System.Void manageCarOrders::checkExtraChangesCorrect()
 extern void manageCarOrders_checkExtraChangesCorrect_m76E4CC8E5847F1D4A775509E23824B4695E2D97C (void);
-// 0x000000A9 System.Void manageCarOrders::changeCarPartsBeforeCustomize(UnityEngine.GameObject)
+// 0x000000AC System.Void manageCarOrders::changeCarPartsBeforeCustomize(UnityEngine.GameObject)
 extern void manageCarOrders_changeCarPartsBeforeCustomize_mC2492A41139587775273DED9093844B4D72B70E6 (void);
-// 0x000000AA UnityEngine.GameObject manageCarOrders::replaceCarPartsOnCustomize(System.String,UnityEngine.Transform)
+// 0x000000AD UnityEngine.GameObject manageCarOrders::replaceCarPartsOnCustomize(System.String,UnityEngine.Transform)
 extern void manageCarOrders_replaceCarPartsOnCustomize_m45496A5FC43E19B7D2E17746DAAC85B453B4F571 (void);
-// 0x000000AB System.Void manageCarOrders::customizeOrderCar(UnityEngine.GameObject)
+// 0x000000AE System.Void manageCarOrders::customizeOrderCar(UnityEngine.GameObject)
 extern void manageCarOrders_customizeOrderCar_m8119FAD3EF38C74ADE3E082133CA201360F25296 (void);
-// 0x000000AC System.Void manageCarOrders::.ctor()
+// 0x000000AF System.Void manageCarOrders::.ctor()
 extern void manageCarOrders__ctor_m4B62728C9B5D0C49BE8638980664BC09643DAA5C (void);
-// 0x000000AD System.Void manageCarOrders/<waitForCarPartChanges>d__32::.ctor(System.Int32)
-extern void U3CwaitForCarPartChangesU3Ed__32__ctor_m4DDC312FF815B91F5A49403C7B76A6140575968D (void);
-// 0x000000AE System.Void manageCarOrders/<waitForCarPartChanges>d__32::System.IDisposable.Dispose()
-extern void U3CwaitForCarPartChangesU3Ed__32_System_IDisposable_Dispose_m70821CD839944DA5E07664638AA69E1082DBBFC7 (void);
-// 0x000000AF System.Boolean manageCarOrders/<waitForCarPartChanges>d__32::MoveNext()
-extern void U3CwaitForCarPartChangesU3Ed__32_MoveNext_m520A51759F8CAF697ED5B16EA51D19CF5ECC8917 (void);
-// 0x000000B0 System.Object manageCarOrders/<waitForCarPartChanges>d__32::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CwaitForCarPartChangesU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4987ADE61D3B4833ADBDE619067F69F5FB6C84D1 (void);
-// 0x000000B1 System.Void manageCarOrders/<waitForCarPartChanges>d__32::System.Collections.IEnumerator.Reset()
-extern void U3CwaitForCarPartChangesU3Ed__32_System_Collections_IEnumerator_Reset_m499B5FDA4D7925AED606DFA13C0433B53469C66A (void);
-// 0x000000B2 System.Object manageCarOrders/<waitForCarPartChanges>d__32::System.Collections.IEnumerator.get_Current()
-extern void U3CwaitForCarPartChangesU3Ed__32_System_Collections_IEnumerator_get_Current_mB7B10F8E54720D7A70DCF37792653EAA8B9DD090 (void);
-// 0x000000B3 System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::.ctor(System.Int32)
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35__ctor_m29A1BB84632DE2AF28F4788895727A1F98971BE2 (void);
-// 0x000000B4 System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::System.IDisposable.Dispose()
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_IDisposable_Dispose_m196B6AB36BB3E10C714A80AD06CF8BEE37A5FBCC (void);
-// 0x000000B5 System.Boolean manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::MoveNext()
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35_MoveNext_m4143A8A54CF94E62ABB7747FA3C0C541A17D8E89 (void);
-// 0x000000B6 System.Object manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8CC4FB2108E90A281075BC7495E6ED7973B85FF5 (void);
-// 0x000000B7 System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::System.Collections.IEnumerator.Reset()
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_IEnumerator_Reset_m1EAB22CBEECFFCC1E3F20429D046DCF2CC265237 (void);
-// 0x000000B8 System.Object manageCarOrders/<waitSecondsAfterCancelOrFinish>d__35::System.Collections.IEnumerator.get_Current()
-extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_IEnumerator_get_Current_m185ECF1D3C8F8713737EA1A808383B8BE25B05D3 (void);
-// 0x000000B9 System.Void manageCarOrders/<lockCarOrders>d__36::.ctor(System.Int32)
-extern void U3ClockCarOrdersU3Ed__36__ctor_m43DD643D367D318D279B7B3FE8864D36CF61732F (void);
-// 0x000000BA System.Void manageCarOrders/<lockCarOrders>d__36::System.IDisposable.Dispose()
-extern void U3ClockCarOrdersU3Ed__36_System_IDisposable_Dispose_m850C372EDAE64DC2D3283FF98593A71E92AAEFC0 (void);
-// 0x000000BB System.Boolean manageCarOrders/<lockCarOrders>d__36::MoveNext()
-extern void U3ClockCarOrdersU3Ed__36_MoveNext_m6B2E38B83BD5BC0B56D98A2DEA0D0BEA9B814A03 (void);
-// 0x000000BC System.Object manageCarOrders/<lockCarOrders>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3ClockCarOrdersU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA9A38E8D29054C9D1DCC2E3FF7C1185004D9175D (void);
-// 0x000000BD System.Void manageCarOrders/<lockCarOrders>d__36::System.Collections.IEnumerator.Reset()
-extern void U3ClockCarOrdersU3Ed__36_System_Collections_IEnumerator_Reset_m500CC20EB892B7DDCA62A55B8CA76518487F3907 (void);
-// 0x000000BE System.Object manageCarOrders/<lockCarOrders>d__36::System.Collections.IEnumerator.get_Current()
-extern void U3ClockCarOrdersU3Ed__36_System_Collections_IEnumerator_get_Current_m806052C4BED383EAA0C300F3757332A2F659C3C5 (void);
-// 0x000000BF System.Void manageCarOrders/<>c::.cctor()
+// 0x000000B0 System.Void manageCarOrders/<waitForCarPartChanges>d__33::.ctor(System.Int32)
+extern void U3CwaitForCarPartChangesU3Ed__33__ctor_mE84C3139613F901764FE5530CEFFCA490A17D818 (void);
+// 0x000000B1 System.Void manageCarOrders/<waitForCarPartChanges>d__33::System.IDisposable.Dispose()
+extern void U3CwaitForCarPartChangesU3Ed__33_System_IDisposable_Dispose_m75AF16120729AEC9CA9DFC301DBFB3A32154A1E1 (void);
+// 0x000000B2 System.Boolean manageCarOrders/<waitForCarPartChanges>d__33::MoveNext()
+extern void U3CwaitForCarPartChangesU3Ed__33_MoveNext_mF384977007CD827113B8F462765CB5F71FC14686 (void);
+// 0x000000B3 System.Object manageCarOrders/<waitForCarPartChanges>d__33::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CwaitForCarPartChangesU3Ed__33_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m93BF9B2CA28D7535F0A832B2B11C4D0C8535378A (void);
+// 0x000000B4 System.Void manageCarOrders/<waitForCarPartChanges>d__33::System.Collections.IEnumerator.Reset()
+extern void U3CwaitForCarPartChangesU3Ed__33_System_Collections_IEnumerator_Reset_m2EF2C842347F48A4BF22BB768FAD61083FD810FE (void);
+// 0x000000B5 System.Object manageCarOrders/<waitForCarPartChanges>d__33::System.Collections.IEnumerator.get_Current()
+extern void U3CwaitForCarPartChangesU3Ed__33_System_Collections_IEnumerator_get_Current_m4B2E1348394FCC95FAA703AB6181CD290ACA8677 (void);
+// 0x000000B6 System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::.ctor(System.Int32)
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36__ctor_m35B16497AA966DDA0A1F75CE40C2A82E2BD496BC (void);
+// 0x000000B7 System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::System.IDisposable.Dispose()
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_IDisposable_Dispose_m78304D366370AB23593577FDF5914D0BD79492DE (void);
+// 0x000000B8 System.Boolean manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::MoveNext()
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36_MoveNext_m3EB34F803814C3DEEBD91EA7C76101B067D8CE89 (void);
+// 0x000000B9 System.Object manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m49347AAAB4DC9588CFF976A3B07CF57D37FE5CA6 (void);
+// 0x000000BA System.Void manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::System.Collections.IEnumerator.Reset()
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_IEnumerator_Reset_mDF3203866E45A48047A54DE69D25B7CB45BBAB11 (void);
+// 0x000000BB System.Object manageCarOrders/<waitSecondsAfterCancelOrFinish>d__36::System.Collections.IEnumerator.get_Current()
+extern void U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_IEnumerator_get_Current_mF63DFD5AB932B0E9D4EB2626F04162FF643A3A1D (void);
+// 0x000000BC System.Void manageCarOrders/<lockCarOrders>d__37::.ctor(System.Int32)
+extern void U3ClockCarOrdersU3Ed__37__ctor_mC3F776CD655448F5545D9D7F7B92E455968A53C4 (void);
+// 0x000000BD System.Void manageCarOrders/<lockCarOrders>d__37::System.IDisposable.Dispose()
+extern void U3ClockCarOrdersU3Ed__37_System_IDisposable_Dispose_m6C8111740CF3E76B7AA3D8C08AE520EB37C2F996 (void);
+// 0x000000BE System.Boolean manageCarOrders/<lockCarOrders>d__37::MoveNext()
+extern void U3ClockCarOrdersU3Ed__37_MoveNext_m1F0E814E2FF7248724631A5A504709B16F96CA5B (void);
+// 0x000000BF System.Object manageCarOrders/<lockCarOrders>d__37::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3ClockCarOrdersU3Ed__37_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m38917903587736DFB325060B342BA7C20825A9DA (void);
+// 0x000000C0 System.Void manageCarOrders/<lockCarOrders>d__37::System.Collections.IEnumerator.Reset()
+extern void U3ClockCarOrdersU3Ed__37_System_Collections_IEnumerator_Reset_mE9F8D1AD23FA3158172FE378CEEAEFECEFD0CE2D (void);
+// 0x000000C1 System.Object manageCarOrders/<lockCarOrders>d__37::System.Collections.IEnumerator.get_Current()
+extern void U3ClockCarOrdersU3Ed__37_System_Collections_IEnumerator_get_Current_m849BA36DA7185B2E8A973C5AB6077B9880A3E7AB (void);
+// 0x000000C2 System.Void manageCarOrders/<>c::.cctor()
 extern void U3CU3Ec__cctor_mB24E0C38E6118070108A7DCCCAE773510D79A1CD (void);
-// 0x000000C0 System.Void manageCarOrders/<>c::.ctor()
+// 0x000000C3 System.Void manageCarOrders/<>c::.ctor()
 extern void U3CU3Ec__ctor_mF00114DE697DB26243B86769E9B1C14063D84E2A (void);
-// 0x000000C1 System.Boolean manageCarOrders/<>c::<checkCorrectChangesMade>b__39_0(System.Boolean)
-extern void U3CU3Ec_U3CcheckCorrectChangesMadeU3Eb__39_0_m01B71F6E718F8096A55CC000E6955A8DDD794529 (void);
-// 0x000000C2 System.Void manageCarOrders/<>c__DisplayClass42_0::.ctor()
-extern void U3CU3Ec__DisplayClass42_0__ctor_m6F81B268642DFFE487C2E9CDBD50FBF809B97444 (void);
-// 0x000000C3 System.Boolean manageCarOrders/<>c__DisplayClass42_0::<replaceCarPartsOnCustomize>b__0(UnityEngine.GameObject)
-extern void U3CU3Ec__DisplayClass42_0_U3CreplaceCarPartsOnCustomizeU3Eb__0_m8972882635ED3E531532FE65CBF325AF8F58304E (void);
-// 0x000000C4 System.Void manageCarOrders/<>c__DisplayClass43_0::.ctor()
+// 0x000000C4 System.Boolean manageCarOrders/<>c::<checkCorrectChangesMade>b__40_0(System.Boolean)
+extern void U3CU3Ec_U3CcheckCorrectChangesMadeU3Eb__40_0_m9007EC4F964FEA57C6782C9E1041F3891982533C (void);
+// 0x000000C5 System.Void manageCarOrders/<>c__DisplayClass43_0::.ctor()
 extern void U3CU3Ec__DisplayClass43_0__ctor_m1CB1DCF11B5A741C2FDF7C0A610422722DB45FA7 (void);
-// 0x000000C5 System.Boolean manageCarOrders/<>c__DisplayClass43_0::<customizeOrderCar>b__0(UnityEngine.Material)
-extern void U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__0_m02F0E0A04C0A6F568962078C4F29E8BD27EFD46C (void);
-// 0x000000C6 System.Boolean manageCarOrders/<>c__DisplayClass43_0::<customizeOrderCar>b__1(UnityEngine.Material)
-extern void U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__1_m4DE4B5134F426196A4F4F2A38ADD04FAE958A1B3 (void);
-// 0x000000C7 System.Boolean manageCarOrders/<>c__DisplayClass43_0::<customizeOrderCar>b__2(UnityEngine.Material)
-extern void U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__2_m06025AF4753BF4F4B0F724C1138B8E6576ED0A45 (void);
-// 0x000000C8 System.Void menuScript::Awake()
+// 0x000000C6 System.Boolean manageCarOrders/<>c__DisplayClass43_0::<replaceCarPartsOnCustomize>b__0(UnityEngine.GameObject)
+extern void U3CU3Ec__DisplayClass43_0_U3CreplaceCarPartsOnCustomizeU3Eb__0_m90C4DD8B21414104939D9B140CFC35949E51C5B3 (void);
+// 0x000000C7 System.Void manageCarOrders/<>c__DisplayClass44_0::.ctor()
+extern void U3CU3Ec__DisplayClass44_0__ctor_m50683FD9766D305CAC5ACCACACFA651DFE3AE760 (void);
+// 0x000000C8 System.Boolean manageCarOrders/<>c__DisplayClass44_0::<customizeOrderCar>b__0(UnityEngine.Material)
+extern void U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__0_mFB9BD21F70D26AB4F3A81D3E32D1E66EF3ED8BCC (void);
+// 0x000000C9 System.Boolean manageCarOrders/<>c__DisplayClass44_0::<customizeOrderCar>b__1(UnityEngine.Material)
+extern void U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__1_m83868905CBC6657C37B52254A83EFBAEC23299D5 (void);
+// 0x000000CA System.Boolean manageCarOrders/<>c__DisplayClass44_0::<customizeOrderCar>b__2(UnityEngine.Material)
+extern void U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__2_mCED0A3B306D35B56D52DF1CA8783F77CB9F526C8 (void);
+// 0x000000CB System.Void menuScript::Awake()
 extern void menuScript_Awake_mE5C40D9EE70C7DE7617E10240B9E689FB2C20825 (void);
-// 0x000000C9 System.Void menuScript::Update()
+// 0x000000CC System.Void menuScript::Update()
 extern void menuScript_Update_mE5AB679C5962B39E9DEFDFAEDE674A4B718C6E52 (void);
-// 0x000000CA System.Void menuScript::hoverEnter()
+// 0x000000CD System.Void menuScript::hoverEnter()
 extern void menuScript_hoverEnter_mC855B18811447C60EB72837A255990CE20180F34 (void);
-// 0x000000CB System.Void menuScript::hoverExit()
+// 0x000000CE System.Void menuScript::hoverExit()
 extern void menuScript_hoverExit_mD6EBAA60925E0A2DE97BC97C4CD24FBAA4E1624C (void);
-// 0x000000CC System.Void menuScript::jugar()
+// 0x000000CF System.Void menuScript::jugar()
 extern void menuScript_jugar_mF0A206ADC8D69DCC757F542C5132E6F79AA0344D (void);
-// 0x000000CD System.Collections.IEnumerator menuScript::waitMenu()
+// 0x000000D0 System.Collections.IEnumerator menuScript::waitMenu()
 extern void menuScript_waitMenu_mD4CBAA2F59D27F9C49EBD618C55DB5F1B97A7782 (void);
-// 0x000000CE System.Void menuScript::nueva()
+// 0x000000D1 System.Void menuScript::nueva()
 extern void menuScript_nueva_m7EF17C1A0D0F531375C3C13643DAC76BD0E11B40 (void);
-// 0x000000CF System.Void menuScript::continuar()
+// 0x000000D2 System.Void menuScript::continuar()
 extern void menuScript_continuar_m176CCC61C2DABA39C92D4D2E48AED1B65A8A4704 (void);
-// 0x000000D0 System.Void menuScript::borrarData()
+// 0x000000D3 System.Void menuScript::borrarData()
 extern void menuScript_borrarData_m06FA81C79A8593E8F998F17A32EAF428A9EEC20D (void);
-// 0x000000D1 System.Void menuScript::DeleteAlmacenItemsList(System.String)
+// 0x000000D4 System.Void menuScript::DeleteAlmacenItemsList(System.String)
 extern void menuScript_DeleteAlmacenItemsList_mB673FE4DC0288AE1D82B798C4B4BCC067AF35070 (void);
-// 0x000000D2 System.Void menuScript::salir()
+// 0x000000D5 System.Void menuScript::salir()
 extern void menuScript_salir_mA14F2AD09BB2365FEBD15B2815B133087B16638D (void);
-// 0x000000D3 System.Void menuScript::initializeStatistics(playerDataSO)
+// 0x000000D6 System.Void menuScript::initializeStatistics(playerDataSO)
 extern void menuScript_initializeStatistics_m52AD580DBF9526A03A107D654A3209701B008A31 (void);
-// 0x000000D4 System.Void menuScript::.ctor()
+// 0x000000D7 System.Void menuScript::.ctor()
 extern void menuScript__ctor_mBB2B4B3274E9AFA6F5FE1C33C19AB7646BCAC87F (void);
-// 0x000000D5 System.Void menuScript/<waitMenu>d__11::.ctor(System.Int32)
+// 0x000000D8 System.Void menuScript/<waitMenu>d__11::.ctor(System.Int32)
 extern void U3CwaitMenuU3Ed__11__ctor_m3EAA2840AE0DD1590CAD8DD6E7C635F7A0B8C3DA (void);
-// 0x000000D6 System.Void menuScript/<waitMenu>d__11::System.IDisposable.Dispose()
+// 0x000000D9 System.Void menuScript/<waitMenu>d__11::System.IDisposable.Dispose()
 extern void U3CwaitMenuU3Ed__11_System_IDisposable_Dispose_m77664FFDDD8AE305FEABA446A74059CA8667CDAF (void);
-// 0x000000D7 System.Boolean menuScript/<waitMenu>d__11::MoveNext()
+// 0x000000DA System.Boolean menuScript/<waitMenu>d__11::MoveNext()
 extern void U3CwaitMenuU3Ed__11_MoveNext_mF58CAD223F0A88AE8AFB17C5FE40EE1225356D26 (void);
-// 0x000000D8 System.Object menuScript/<waitMenu>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000000DB System.Object menuScript/<waitMenu>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CwaitMenuU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5C5CDA9DF637AEDE0471ECA9370700C7CD249781 (void);
-// 0x000000D9 System.Void menuScript/<waitMenu>d__11::System.Collections.IEnumerator.Reset()
+// 0x000000DC System.Void menuScript/<waitMenu>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CwaitMenuU3Ed__11_System_Collections_IEnumerator_Reset_m07EBEFEFDA42C1D92F47AD50847F1DCDE1D1D395 (void);
-// 0x000000DA System.Object menuScript/<waitMenu>d__11::System.Collections.IEnumerator.get_Current()
+// 0x000000DD System.Object menuScript/<waitMenu>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CwaitMenuU3Ed__11_System_Collections_IEnumerator_get_Current_mE42FD697E76191708BB67465E1C74CB4930CEE31 (void);
-// 0x000000DB System.Void profileStatisticsScript::Update()
+// 0x000000DE System.Void OnButtonPress::Awake()
+extern void OnButtonPress_Awake_mF1EB4A4A6038E058DCB2EC03E965AA1DBD5392E0 (void);
+// 0x000000DF System.Void OnButtonPress::Pressed(UnityEngine.InputSystem.InputAction/CallbackContext)
+extern void OnButtonPress_Pressed_mEC23E35145372BAB3E6656D8CBCC3148D78C45AC (void);
+// 0x000000E0 System.Void OnButtonPress::OnDestroy()
+extern void OnButtonPress_OnDestroy_m8E7032823BACBF74071767249612B77A5252AA41 (void);
+// 0x000000E1 System.Void OnButtonPress::OnEnable()
+extern void OnButtonPress_OnEnable_mD7AAA4E95ACC643948920DA6851CF841392FFCB1 (void);
+// 0x000000E2 System.Void OnButtonPress::OnDisable()
+extern void OnButtonPress_OnDisable_mCFAE890BD3795A46B7522988F8D07E3E3B45E892 (void);
+// 0x000000E3 System.Void OnButtonPress::.ctor()
+extern void OnButtonPress__ctor_mE8866AA42FCF98C3479955EC6E2854A3A2CE3BDE (void);
+// 0x000000E4 System.Void profileStatisticsScript::Update()
 extern void profileStatisticsScript_Update_mAB73DFC93340A00C7C543637C85F384C2A866700 (void);
-// 0x000000DC System.Void profileStatisticsScript::.ctor()
+// 0x000000E5 System.Void profileStatisticsScript::.ctor()
 extern void profileStatisticsScript__ctor_mCC438A2C27436428FA1DE8CF0480BEE8347BAA09 (void);
-// 0x000000DD System.Void saveWindowScript::Start()
+// 0x000000E6 System.Void returnPage::yesButton()
+extern void returnPage_yesButton_m0D0D093B684658519FFF87F030FA571323A32FE8 (void);
+// 0x000000E7 System.Void returnPage::noButton()
+extern void returnPage_noButton_mF51E7388617351813900F8AEAED7DA0FBA847785 (void);
+// 0x000000E8 System.Void returnPage::.ctor()
+extern void returnPage__ctor_mEB964E5C7BBBC30210C1A4314214CAF4ED846C50 (void);
+// 0x000000E9 System.Void saveWindowScript::Start()
 extern void saveWindowScript_Start_m18B8D44EB182E44200A16EF1D961DF6CF2905D32 (void);
-// 0x000000DE System.Void saveWindowScript::Update()
+// 0x000000EA System.Void saveWindowScript::Update()
 extern void saveWindowScript_Update_m7A855B24F1CD44E074DFB944D357286510659F69 (void);
-// 0x000000DF System.Void saveWindowScript::guardarPartida()
+// 0x000000EB System.Void saveWindowScript::guardarPartida()
 extern void saveWindowScript_guardarPartida_mDFE226B2C85F11693907AFA1DC56145C7AFC5A3E (void);
-// 0x000000E0 System.Void saveWindowScript::.ctor()
+// 0x000000EC System.Void saveWindowScript::.ctor()
 extern void saveWindowScript__ctor_m14A25D9F1168EBB228E0BCCB848DE298452CE0C7 (void);
-// 0x000000E1 System.Void carPartStatistics::.ctor()
+// 0x000000ED System.Void carPartStatistics::.ctor()
 extern void carPartStatistics__ctor_mD65E10D1EF601E75CB6B1BA845F9B34C48518C2A (void);
-// 0x000000E2 System.Void colorPartStatistic::.ctor()
+// 0x000000EE System.Void colorPartStatistic::.ctor()
 extern void colorPartStatistic__ctor_mEFE11C94B0C02C2793BD5F6B477110080CDD5CCB (void);
-// 0x000000E3 System.Void gameManagerSO::.ctor()
+// 0x000000EF System.Void gameManagerSO::.ctor()
 extern void gameManagerSO__ctor_mF30510068488536A34BC5E988EBE43F788757E63 (void);
-// 0x000000E4 System.Void gameManagerSO/UniqueObject::.ctor(System.String,UnityEngine.GameObject,System.Int32,UnityEngine.Sprite)
+// 0x000000F0 System.Void gameManagerSO/UniqueObject::.ctor(System.String,UnityEngine.GameObject,System.Int32,UnityEngine.Sprite)
 extern void UniqueObject__ctor_mA65EDD3D91BC033A5AC699AF710792BBA7D4BB63 (void);
-// 0x000000E5 System.Void playerDataSO::.ctor()
+// 0x000000F1 System.Void playerDataSO::.ctor()
 extern void playerDataSO__ctor_mFAD5DD6ED7FD9A9FB3AA0CFCF156FDEDE90A7774 (void);
-// 0x000000E6 System.Void showCarStatistics::Update()
+// 0x000000F2 System.Void showCarStatistics::Update()
 extern void showCarStatistics_Update_m44780CAB885DF51258C18BDAD870055789DA4AE3 (void);
-// 0x000000E7 System.Void showCarStatistics::changeStatistics(System.Int32)
+// 0x000000F3 System.Void showCarStatistics::changeStatistics(System.Int32)
 extern void showCarStatistics_changeStatistics_m85E00C1789CCF94B3865FF39420B0DA27E849462 (void);
-// 0x000000E8 System.Void showCarStatistics::.ctor()
+// 0x000000F4 System.Void showCarStatistics::.ctor()
 extern void showCarStatistics__ctor_m8FC708BE41BFEE40C991E4364B0CE474B15446F8 (void);
-// 0x000000E9 System.Void switchRayAndDirect::OnTriggerEnter(UnityEngine.Collider)
+// 0x000000F5 System.Void switchRayAndDirect::OnTriggerEnter(UnityEngine.Collider)
 extern void switchRayAndDirect_OnTriggerEnter_m602065784A3A743D58805CD66352741BB2BCA29B (void);
-// 0x000000EA System.Void switchRayAndDirect::OnTriggerExit(UnityEngine.Collider)
+// 0x000000F6 System.Void switchRayAndDirect::OnTriggerExit(UnityEngine.Collider)
 extern void switchRayAndDirect_OnTriggerExit_m6CA0E8C4E9EBAAF54DE71A48A1F87F11277B93AF (void);
-// 0x000000EB System.Void switchRayAndDirect::.ctor()
+// 0x000000F7 System.Void switchRayAndDirect::.ctor()
 extern void switchRayAndDirect__ctor_mC28D56E30AA6C8210D33DD898C93459677B508A5 (void);
-// 0x000000EC System.Void TMPCurrentTime::Update()
+// 0x000000F8 System.Void TMPCurrentTime::Update()
 extern void TMPCurrentTime_Update_mBD3CAE858DA76C7482AC03DA83AF601AF6493501 (void);
-// 0x000000ED System.Void TMPCurrentTime::.ctor()
+// 0x000000F9 System.Void TMPCurrentTime::.ctor()
 extern void TMPCurrentTime__ctor_mF22D2DAE85EE7190CAC6CBC7CB4E7846DD437319 (void);
-// 0x000000EE System.Void carPartChangesPossibleID::.ctor()
+// 0x000000FA System.Void carPartChangesPossibleID::.ctor()
 extern void carPartChangesPossibleID__ctor_mF65DDDD4BC6724827202B98354788BA8DB040517 (void);
-// 0x000000EF System.Void changeCarParts::Awake()
+// 0x000000FB System.Void changeCarParts::Awake()
 extern void changeCarParts_Awake_m882FFBA6B8B122B0E165B1C0959CA8CF7D371CF8 (void);
-// 0x000000F0 System.Void changeCarParts::Update()
+// 0x000000FC System.Void changeCarParts::Update()
 extern void changeCarParts_Update_m28583D972030EF47ACEF5A4D31CB3812F49D9E5E (void);
-// 0x000000F1 System.Void changeCarParts::.ctor()
+// 0x000000FD System.Void changeCarParts::.ctor()
 extern void changeCarParts__ctor_m855C23A1E38B55990420F138DDF7CC3CD1ED309F (void);
-// 0x000000F2 System.Void changeParentOnGrab::Awake()
+// 0x000000FE System.Void changeParentOnGrab::Awake()
 extern void changeParentOnGrab_Awake_mBF9D290103815F39F93A918BCD5A504DF1D42D69 (void);
-// 0x000000F3 System.Void changeParentOnGrab::Update()
+// 0x000000FF System.Void changeParentOnGrab::Update()
 extern void changeParentOnGrab_Update_mEF6B6A768BBDB0E501CCE53FF5A6E88CC22A7473 (void);
-// 0x000000F4 System.Void changeParentOnGrab::grabItem(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+// 0x00000100 System.Void changeParentOnGrab::grabItem(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
 extern void changeParentOnGrab_grabItem_m25C823C5FB6AD7C7692FA21BC4E7705E8CF1A47A (void);
-// 0x000000F5 System.Void changeParentOnGrab::OnTriggerEnter(UnityEngine.Collider)
+// 0x00000101 System.Void changeParentOnGrab::OnTriggerEnter(UnityEngine.Collider)
 extern void changeParentOnGrab_OnTriggerEnter_m0841BC777B54C984067266DB15DDE92AAB6C2382 (void);
-// 0x000000F6 System.Void changeParentOnGrab::noGrabItem()
+// 0x00000102 System.Void changeParentOnGrab::noGrabItem()
 extern void changeParentOnGrab_noGrabItem_mC6261C2BDAD8E981FF67F54270D79634E1E96DC4 (void);
-// 0x000000F7 System.Void changeParentOnGrab::.ctor()
+// 0x00000103 System.Void changeParentOnGrab::.ctor()
 extern void changeParentOnGrab__ctor_m27A94DB86666E8E7BD41ABA63A656E4C5DD5BDFC (void);
-// 0x000000F8 System.Void checkIfEmptySocket::meterPadre(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+// 0x00000104 System.Void checkIfEmptySocket::ccOs()
+extern void checkIfEmptySocket_ccOs_m72B9E7B021E3EACFC37C343A02A7E001FDF1726C (void);
+// 0x00000105 System.Void checkIfEmptySocket::meterPadre(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
 extern void checkIfEmptySocket_meterPadre_mE44D034B8F555A7D11B60D3E0AB976FECB6F0049 (void);
-// 0x000000F9 System.Void checkIfEmptySocket::sacarPapa(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+// 0x00000106 System.Void checkIfEmptySocket::sacarPapa(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
 extern void checkIfEmptySocket_sacarPapa_m87D02714D9BA3F144CDF134AF76943DA0008473F (void);
-// 0x000000FA System.Void checkIfEmptySocket::.ctor()
+// 0x00000107 System.Void checkIfEmptySocket::.ctor()
 extern void checkIfEmptySocket__ctor_m40EC6533B7C9EBCE9D78185A2A6286BC4DD25C10 (void);
-// 0x000000FB System.Void ppopo::gg()
+// 0x00000108 System.Void ppopo::gg()
 extern void ppopo_gg_m02B9E498081A42DD623313221ACEBB107FBEE051 (void);
-// 0x000000FC System.Void ppopo::.ctor()
+// 0x00000109 System.Void ppopo::.ctor()
 extern void ppopo__ctor_m3650290796BC48FF16F0A2923228CD6B77F621A4 (void);
-// 0x000000FD System.Void Readme::.ctor()
+// 0x0000010A System.Void Readme::.ctor()
 extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
-// 0x000000FE System.Void Readme/Section::.ctor()
+// 0x0000010B System.Void Readme/Section::.ctor()
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
-// 0x000000FF System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
+// 0x0000010C System.UInt32 <PrivateImplementationDetails>::ComputeStringHash(System.String)
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[255] = 
+static Il2CppMethodPointer s_methodPointers[268] = 
 {
 	almacenarScript_Start_mEED7DE020A3C28CDB39174357D2CC39C55A25DAA,
 	almacenarScript_Update_m9C22DFC5172FAD11210F4F74D494413A793ED0D0,
@@ -677,11 +703,14 @@ static Il2CppMethodPointer s_methodPointers[255] =
 	initialWindow_initialToAssistant_m082030EF6EE3A4240F9E5873E758A3E4BE190E4E,
 	initialWindow_returnToHome_m965CA55C0FF3DF7DE43EDD01E6F333418207EC56,
 	initialWindow__ctor_m92E9DEC301D661700971607795B9B417C088545C,
+	kktua_changejej_mB326F746B709BFC7ABEA60EAA135C92EDC6318B1,
+	kktua__ctor_mC225FD5BBC07503B7B7829360E6158DD6519F740,
 	manageCarOrders_Awake_mCECE180FC9DF9D957A283827F1C995C725C9E153,
 	manageCarOrders_Update_mDBAA9D58F0D7A982594B241EA9EDBE3F112B4DE9,
 	manageCarOrders_moveRight_m1FCC2BC7734B26681A16F09980ABBE2C043B9092,
 	manageCarOrders_moveLeft_m7FF334078F9C29E25AC89DC543150100C6EDEF19,
 	manageCarOrders_completeTask_mCBCA0BA3CA4E83DE51AAB05C388E2CF946827CEB,
+	manageCarOrders_DestroyRecursively_m8E0BD0A51C36F82DC47CAC584C2D278ED0936294,
 	manageCarOrders_acceptOrder_mEBC9FC9A6739CC116F660A708E8AB71F32E92D5A,
 	manageCarOrders_waitForCarPartChanges_mE26DCC895622C8BB2E5417F428CBFA1DF0AD4459,
 	manageCarOrders_rejectOrder_mBB5E652AF0D2F95F7FA830FF01EFA8995625A8B6,
@@ -696,33 +725,33 @@ static Il2CppMethodPointer s_methodPointers[255] =
 	manageCarOrders_replaceCarPartsOnCustomize_m45496A5FC43E19B7D2E17746DAAC85B453B4F571,
 	manageCarOrders_customizeOrderCar_m8119FAD3EF38C74ADE3E082133CA201360F25296,
 	manageCarOrders__ctor_m4B62728C9B5D0C49BE8638980664BC09643DAA5C,
-	U3CwaitForCarPartChangesU3Ed__32__ctor_m4DDC312FF815B91F5A49403C7B76A6140575968D,
-	U3CwaitForCarPartChangesU3Ed__32_System_IDisposable_Dispose_m70821CD839944DA5E07664638AA69E1082DBBFC7,
-	U3CwaitForCarPartChangesU3Ed__32_MoveNext_m520A51759F8CAF697ED5B16EA51D19CF5ECC8917,
-	U3CwaitForCarPartChangesU3Ed__32_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4987ADE61D3B4833ADBDE619067F69F5FB6C84D1,
-	U3CwaitForCarPartChangesU3Ed__32_System_Collections_IEnumerator_Reset_m499B5FDA4D7925AED606DFA13C0433B53469C66A,
-	U3CwaitForCarPartChangesU3Ed__32_System_Collections_IEnumerator_get_Current_mB7B10F8E54720D7A70DCF37792653EAA8B9DD090,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35__ctor_m29A1BB84632DE2AF28F4788895727A1F98971BE2,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_IDisposable_Dispose_m196B6AB36BB3E10C714A80AD06CF8BEE37A5FBCC,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35_MoveNext_m4143A8A54CF94E62ABB7747FA3C0C541A17D8E89,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8CC4FB2108E90A281075BC7495E6ED7973B85FF5,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_IEnumerator_Reset_m1EAB22CBEECFFCC1E3F20429D046DCF2CC265237,
-	U3CwaitSecondsAfterCancelOrFinishU3Ed__35_System_Collections_IEnumerator_get_Current_m185ECF1D3C8F8713737EA1A808383B8BE25B05D3,
-	U3ClockCarOrdersU3Ed__36__ctor_m43DD643D367D318D279B7B3FE8864D36CF61732F,
-	U3ClockCarOrdersU3Ed__36_System_IDisposable_Dispose_m850C372EDAE64DC2D3283FF98593A71E92AAEFC0,
-	U3ClockCarOrdersU3Ed__36_MoveNext_m6B2E38B83BD5BC0B56D98A2DEA0D0BEA9B814A03,
-	U3ClockCarOrdersU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA9A38E8D29054C9D1DCC2E3FF7C1185004D9175D,
-	U3ClockCarOrdersU3Ed__36_System_Collections_IEnumerator_Reset_m500CC20EB892B7DDCA62A55B8CA76518487F3907,
-	U3ClockCarOrdersU3Ed__36_System_Collections_IEnumerator_get_Current_m806052C4BED383EAA0C300F3757332A2F659C3C5,
+	U3CwaitForCarPartChangesU3Ed__33__ctor_mE84C3139613F901764FE5530CEFFCA490A17D818,
+	U3CwaitForCarPartChangesU3Ed__33_System_IDisposable_Dispose_m75AF16120729AEC9CA9DFC301DBFB3A32154A1E1,
+	U3CwaitForCarPartChangesU3Ed__33_MoveNext_mF384977007CD827113B8F462765CB5F71FC14686,
+	U3CwaitForCarPartChangesU3Ed__33_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m93BF9B2CA28D7535F0A832B2B11C4D0C8535378A,
+	U3CwaitForCarPartChangesU3Ed__33_System_Collections_IEnumerator_Reset_m2EF2C842347F48A4BF22BB768FAD61083FD810FE,
+	U3CwaitForCarPartChangesU3Ed__33_System_Collections_IEnumerator_get_Current_m4B2E1348394FCC95FAA703AB6181CD290ACA8677,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36__ctor_m35B16497AA966DDA0A1F75CE40C2A82E2BD496BC,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_IDisposable_Dispose_m78304D366370AB23593577FDF5914D0BD79492DE,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36_MoveNext_m3EB34F803814C3DEEBD91EA7C76101B067D8CE89,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m49347AAAB4DC9588CFF976A3B07CF57D37FE5CA6,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_IEnumerator_Reset_mDF3203866E45A48047A54DE69D25B7CB45BBAB11,
+	U3CwaitSecondsAfterCancelOrFinishU3Ed__36_System_Collections_IEnumerator_get_Current_mF63DFD5AB932B0E9D4EB2626F04162FF643A3A1D,
+	U3ClockCarOrdersU3Ed__37__ctor_mC3F776CD655448F5545D9D7F7B92E455968A53C4,
+	U3ClockCarOrdersU3Ed__37_System_IDisposable_Dispose_m6C8111740CF3E76B7AA3D8C08AE520EB37C2F996,
+	U3ClockCarOrdersU3Ed__37_MoveNext_m1F0E814E2FF7248724631A5A504709B16F96CA5B,
+	U3ClockCarOrdersU3Ed__37_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m38917903587736DFB325060B342BA7C20825A9DA,
+	U3ClockCarOrdersU3Ed__37_System_Collections_IEnumerator_Reset_mE9F8D1AD23FA3158172FE378CEEAEFECEFD0CE2D,
+	U3ClockCarOrdersU3Ed__37_System_Collections_IEnumerator_get_Current_m849BA36DA7185B2E8A973C5AB6077B9880A3E7AB,
 	U3CU3Ec__cctor_mB24E0C38E6118070108A7DCCCAE773510D79A1CD,
 	U3CU3Ec__ctor_mF00114DE697DB26243B86769E9B1C14063D84E2A,
-	U3CU3Ec_U3CcheckCorrectChangesMadeU3Eb__39_0_m01B71F6E718F8096A55CC000E6955A8DDD794529,
-	U3CU3Ec__DisplayClass42_0__ctor_m6F81B268642DFFE487C2E9CDBD50FBF809B97444,
-	U3CU3Ec__DisplayClass42_0_U3CreplaceCarPartsOnCustomizeU3Eb__0_m8972882635ED3E531532FE65CBF325AF8F58304E,
+	U3CU3Ec_U3CcheckCorrectChangesMadeU3Eb__40_0_m9007EC4F964FEA57C6782C9E1041F3891982533C,
 	U3CU3Ec__DisplayClass43_0__ctor_m1CB1DCF11B5A741C2FDF7C0A610422722DB45FA7,
-	U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__0_m02F0E0A04C0A6F568962078C4F29E8BD27EFD46C,
-	U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__1_m4DE4B5134F426196A4F4F2A38ADD04FAE958A1B3,
-	U3CU3Ec__DisplayClass43_0_U3CcustomizeOrderCarU3Eb__2_m06025AF4753BF4F4B0F724C1138B8E6576ED0A45,
+	U3CU3Ec__DisplayClass43_0_U3CreplaceCarPartsOnCustomizeU3Eb__0_m90C4DD8B21414104939D9B140CFC35949E51C5B3,
+	U3CU3Ec__DisplayClass44_0__ctor_m50683FD9766D305CAC5ACCACACFA651DFE3AE760,
+	U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__0_mFB9BD21F70D26AB4F3A81D3E32D1E66EF3ED8BCC,
+	U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__1_m83868905CBC6657C37B52254A83EFBAEC23299D5,
+	U3CU3Ec__DisplayClass44_0_U3CcustomizeOrderCarU3Eb__2_mCED0A3B306D35B56D52DF1CA8783F77CB9F526C8,
 	menuScript_Awake_mE5C40D9EE70C7DE7617E10240B9E689FB2C20825,
 	menuScript_Update_mE5AB679C5962B39E9DEFDFAEDE674A4B718C6E52,
 	menuScript_hoverEnter_mC855B18811447C60EB72837A255990CE20180F34,
@@ -742,8 +771,17 @@ static Il2CppMethodPointer s_methodPointers[255] =
 	U3CwaitMenuU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5C5CDA9DF637AEDE0471ECA9370700C7CD249781,
 	U3CwaitMenuU3Ed__11_System_Collections_IEnumerator_Reset_m07EBEFEFDA42C1D92F47AD50847F1DCDE1D1D395,
 	U3CwaitMenuU3Ed__11_System_Collections_IEnumerator_get_Current_mE42FD697E76191708BB67465E1C74CB4930CEE31,
+	OnButtonPress_Awake_mF1EB4A4A6038E058DCB2EC03E965AA1DBD5392E0,
+	OnButtonPress_Pressed_mEC23E35145372BAB3E6656D8CBCC3148D78C45AC,
+	OnButtonPress_OnDestroy_m8E7032823BACBF74071767249612B77A5252AA41,
+	OnButtonPress_OnEnable_mD7AAA4E95ACC643948920DA6851CF841392FFCB1,
+	OnButtonPress_OnDisable_mCFAE890BD3795A46B7522988F8D07E3E3B45E892,
+	OnButtonPress__ctor_mE8866AA42FCF98C3479955EC6E2854A3A2CE3BDE,
 	profileStatisticsScript_Update_mAB73DFC93340A00C7C543637C85F384C2A866700,
 	profileStatisticsScript__ctor_mCC438A2C27436428FA1DE8CF0480BEE8347BAA09,
+	returnPage_yesButton_m0D0D093B684658519FFF87F030FA571323A32FE8,
+	returnPage_noButton_mF51E7388617351813900F8AEAED7DA0FBA847785,
+	returnPage__ctor_mEB964E5C7BBBC30210C1A4314214CAF4ED846C50,
 	saveWindowScript_Start_m18B8D44EB182E44200A16EF1D961DF6CF2905D32,
 	saveWindowScript_Update_m7A855B24F1CD44E074DFB944D357286510659F69,
 	saveWindowScript_guardarPartida_mDFE226B2C85F11693907AFA1DC56145C7AFC5A3E,
@@ -771,6 +809,7 @@ static Il2CppMethodPointer s_methodPointers[255] =
 	changeParentOnGrab_OnTriggerEnter_m0841BC777B54C984067266DB15DDE92AAB6C2382,
 	changeParentOnGrab_noGrabItem_mC6261C2BDAD8E981FF67F54270D79634E1E96DC4,
 	changeParentOnGrab__ctor_m27A94DB86666E8E7BD41ABA63A656E4C5DD5BDFC,
+	checkIfEmptySocket_ccOs_m72B9E7B021E3EACFC37C343A02A7E001FDF1726C,
 	checkIfEmptySocket_meterPadre_mE44D034B8F555A7D11B60D3E0AB976FECB6F0049,
 	checkIfEmptySocket_sacarPapa_m87D02714D9BA3F144CDF134AF76943DA0008473F,
 	checkIfEmptySocket__ctor_m40EC6533B7C9EBCE9D78185A2A6286BC4DD25C10,
@@ -780,7 +819,7 @@ static Il2CppMethodPointer s_methodPointers[255] =
 	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[255] = 
+static const int32_t s_InvokerIndices[268] = 
 {
 	7239,
 	7239,
@@ -941,6 +980,9 @@ static const int32_t s_InvokerIndices[255] =
 	7239,
 	7239,
 	7239,
+	7239,
+	5729,
+	7239,
 	7106,
 	7239,
 	7239,
@@ -1001,6 +1043,15 @@ static const int32_t s_InvokerIndices[255] =
 	7239,
 	7106,
 	7239,
+	5959,
+	7239,
+	7239,
+	7239,
+	7239,
+	7239,
+	7239,
+	7239,
+	7239,
 	7239,
 	7239,
 	7239,
@@ -1029,6 +1080,7 @@ static const int32_t s_InvokerIndices[255] =
 	5729,
 	7239,
 	7239,
+	7239,
 	5729,
 	5729,
 	7239,
@@ -1042,7 +1094,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	255,
+	268,
 	s_methodPointers,
 	0,
 	NULL,

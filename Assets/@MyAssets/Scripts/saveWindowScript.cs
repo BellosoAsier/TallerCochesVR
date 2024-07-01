@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,9 +22,12 @@ public class saveWindowScript : MonoBehaviour
         user = GameObject.Find("GameManager").GetComponent<gameManagerScript>().user;
         lastSave.text ="Último guardado: " + PlayerPrefs.GetString("lastSaveDate","No hay ultimo guardado.");
     }
+    private void Update()
+    {
+        lastSave.text = "Último guardado: " + PlayerPrefs.GetString("lastSaveDate", "No hay ultimo guardado.");
+    }
 
-    // Update is called once per frame
-    void Update()
+    public void guardarPartida()
     {
         listaAlmacen.Clear();
         containerManager[] listaJ = FindObjectsOfType<containerManager>();
@@ -32,10 +36,7 @@ public class saveWindowScript : MonoBehaviour
             containerManager.AlmacenItem x = cm.getItemAlmacen();
             listaAlmacen.Add(x);
         }
-    }
 
-    public void guardarPartida()
-    {
         DateTime fechaYHoraActual = DateTime.Now;
         string stringFormatDate = fechaYHoraActual.ToString();
         PlayerPrefs.SetString("lastSaveDate",stringFormatDate);

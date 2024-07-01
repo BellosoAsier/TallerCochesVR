@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-using static UnityEditor.Progress;
 
 public class checkIfEmptySocket : MonoBehaviour
 {
+    public void ccOs()
+    {
+        this.GetComponent<SphereCollider>().enabled = false;
+    }
     public void meterPadre(SelectEnterEventArgs args)
     {
         args.interactableObject.transform.SetParent(transform, false);
@@ -27,6 +30,7 @@ public class checkIfEmptySocket : MonoBehaviour
 
     public void sacarPapa(SelectExitEventArgs args)
     {
+        this.GetComponent<SphereCollider>().enabled = true;
         args.interactableObject.transform.SetParent(null);
     }
 }

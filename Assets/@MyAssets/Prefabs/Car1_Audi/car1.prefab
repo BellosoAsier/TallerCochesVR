@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 4392619743205392510}
   - component: {fileID: 7436839413842030082}
   - component: {fileID: 5613489765207582259}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SteeringWheelSocket
   m_TagString: Socket
   m_Icon: {fileID: 0}
